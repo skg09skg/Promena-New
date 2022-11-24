@@ -1,4 +1,6 @@
-
+* {
+  font-family: "gotham";
+}
 
 .contents-ol-servicepage {
   display: flex;
