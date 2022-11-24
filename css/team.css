@@ -6,6 +6,7 @@
 }
 
 /* teams first page */
+
 .teams-contents h3 {
   padding: 3.07vw 0;
 }
@@ -25,6 +26,7 @@
 .gallery-box {
   margin-bottom: 30px;
 }
+
 .gallery-box img {
   flex: 33.33%;
   padding: 5px;
@@ -32,14 +34,17 @@
   cursor: pointer;
   transition: 1s;
 }
+
 .gallery-box img:hover {
   transform: scale(1.2);
 }
 
 /* DESIGN QUOTE */
+
 .design h3 {
   padding: 10px 200px;
 }
+
 .design-btn {
   margin-bottom: 30px;
 }
@@ -225,7 +230,7 @@ button[type="submit"]:hover {
 }
 
 /* FOOTER */
-.footer {
+/* .footer {
   padding: 50px 50px;
 }
 .container {
@@ -285,7 +290,7 @@ ul {
 .footer-col-2 ul li a:hover {
   color: #edf6fc;
   padding-left: 8px;
-}
+} */
 
 @media screen and (min-width: 761px) and (max-width: 1120px) {
   .footer {
