@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+}
+
 /* width */
 
 .w100 {
@@ -978,6 +982,7 @@ body {
 
 /*FOOTER DESIGN */
 .design-quote{
+  font-family: 'gotham-bold', sans-serif;
   padding: 50px 30px;
 }
 
@@ -1063,7 +1068,7 @@ list-style: none;
 }
 
 .footer-col-2 h4{
-margin-bottom: 35px;
+  margin: 0 0 35px 0;
 position: relative;
 cursor: pointer;
 }
