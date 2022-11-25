@@ -1212,9 +1212,11 @@ ul {
   margin-bottom: 10px;
   font-family: "gotham-thin", sans-serif;
 }
+
 .footer-col-1 p {
+  margin-top: 15px;
   text-decoration: none;
-  font-family: "gotham-medium", sans-serif;
+  font-family: "gotham-thin", sans-serif;
 }
 .footer-col-2 ul li {
   text-decoration: none;

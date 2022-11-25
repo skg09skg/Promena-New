@@ -2,25 +2,40 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica, Sans-Serif;
 }
 
 /* teams first page */
-
+.teams-contents{
+  font-family: 'gotham-bold', sans-serif;
+}
 .teams-contents h3 {
   padding: 3.07vw 0;
+  font-family: 'gotham-bold', sans-serif;
+}
+.teams-contents p{
+  margin-top: 100px;
 }
 
 /* teams members */
 
 .team-profile {
   margin: 1.5vw 1.97vw;
+  font-family: 'gotham-bold', sans-serif;
+
 }
 /* Gallery Images */
 
 .office-gallery {
   padding: 30px 130px;
   position: relative;
+ 
+}
+.office-team{
+  font-family: 'gotham-bold', sans-serif;
+  text-align: center;
+  height: 30vh;
+  line-height: 1.5;
+
 }
 
 .gallery-box {
