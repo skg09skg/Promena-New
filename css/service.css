@@ -1,20 +1,80 @@
-* {
-  font-family: "gotham";
+/* * {
+  font-family: "gotham-thin";
+} */
+.fnt-fmly {
+  font-family: "gotham-thin", sans-serif;
+  line-height: 1.5;
+}
+.fnt-fmly-nurture {
+  font-family: "gotham-thin";
+  font-weight: 600;
+  line-height: 1.6;
+  padding-right: 90px;
+  text-align: start;
+  margin-bottom: 80px;
+}
+.banner-next-content {
+  text-align: initial;
+  font-family: "gotham-bold";
+  line-height: 1.5;
+  margin-bottom: 70px;
+}
+.fnt-ban-heading {
+  font-family: "gotham-bold";
+  text-align: initial;
+}
+.home li {
+  padding-right: 55px;
+}
+.dot {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: 40%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #404040;
 }
 
 .contents-ol-servicepage {
-  display: flex;
-  font-family: "gotham-xmedium", sans-serif;
-  justify-content: space-between;
+  font-family: "gotham-thin";
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 16px;
   position: relative;
+  background: transparent;
   padding: 0;
 }
-
+.contents-ol-servicepage :not(:last-child) a {
+  color: #404040;
+}
+.contents-ol-servicepage :not(:last-child) {
+  padding-right: 0px;
+  margin-right: 14px;
+}
+.heading-col-2 {
+  margin-bottom: 70px;
+}
+.nurture-heading {
+  font-family: "gotham-bold";
+  font-size: 25px;
+}
+.content {
+  text-align: inherit;
+  padding-left: 35px;
+}
+.services-hover-card {
+  margin-bottom: -18px;
+}
 .hh-1-service-page {
   margin: 0 0 20px 0;
   width: fit-content;
   font-size: 1.6vw;
-
+  font-family: "gotham-thin", sans-serif;
   background: transparent
     url(https://ik.imagekit.io/2eribsa8w/dots_lX3YUgQRrH.svg) repeat-x bottom;
   padding-bottom: 3px;
@@ -34,18 +94,17 @@
 .card-box-service-page {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  background-color: #d0a3ac;
+  background-color: #8bbef5;
   width: 35%;
   display: flex;
-
   position: relative;
-  padding: 70px;
+  padding: 60px;
 }
 
 .card-box-service-page:hover {
   box-shadow: 0 8px 8px 0 rgb(96, 91, 93);
 }
-.overlay-service-page {
+/* .overlay-service-page {
   position: absolute;
   top: 0px;
 
@@ -57,4 +116,27 @@
     url(https://ik.imagekit.io/2eribsa8w/wave1_i45hfFaDzg.svg) repeat-x 0 100%;
   opacity: 0.5;
   animation-delay: 0.1s;
+} */
+
+.overlay-service-page {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #394963;
+  color: white;
+
+  transition: height 1s;
+}
+.overlay-service-page:hover {
+  height: 0%;
+  background: transparent
+    url(https://ik.imagekit.io/2eribsa8w/wave1_i45hfFaDzg.svg) repeat-x 0 100%;
+  opacity: 0.5;
+}
+.tools-img {
+  width: 110px;
+  height: 110px;
+  margin: auto;
 }
