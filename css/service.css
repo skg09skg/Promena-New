@@ -37,7 +37,6 @@
   overflow: hidden;
   background-color: #404040;
 }
-
 .contents-ol-servicepage {
   font-family: "gotham-thin";
   display: inline-block;
@@ -63,9 +62,11 @@
   font-family: "gotham-bold";
   font-size: 25px;
 }
+
 .content {
   text-align: inherit;
   padding-left: 35px;
+  margin-top: -19px;
 }
 .services-hover-card {
   margin-bottom: -18px;
@@ -80,7 +81,6 @@
   padding-bottom: 3px;
   transition: all 1s ease-in-out;
 }
-
 .card-service-page {
   padding: 2vw 0;
   background: #f9f9f9;
@@ -90,7 +90,6 @@
   margin: 1vw 2vw;
   height: fit-content;
 }
-
 .card-box-service-page {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -100,24 +99,9 @@
   position: relative;
   padding: 60px;
 }
-
 .card-box-service-page:hover {
   box-shadow: 0 8px 8px 0 rgb(96, 91, 93);
 }
-/* .overlay-service-page {
-  position: absolute;
-  top: 0px;
-
-  transition: height 1s;
-}
-.overlay-service-page:hover {
-  height: 0%;
-  background: transparent
-    url(https://ik.imagekit.io/2eribsa8w/wave1_i45hfFaDzg.svg) repeat-x 0 100%;
-  opacity: 0.5;
-  animation-delay: 0.1s;
-} */
-
 .overlay-service-page {
   position: absolute;
   top: 0px;
@@ -139,4 +123,19 @@
   width: 110px;
   height: 110px;
   margin: auto;
+}
+.our-services {
+  padding-bottom: 25px;
+  padding-top: 30px;
+  font-family: "gotham-bold";
+  font-size: 15px;
+}
+.tech-fnt {
+  font-family: "gotham-bold";
+}
+.fnt {
+  font-family: "gotham-thin", sans-serif;
+}
+.next-heading {
+  font-family: "gotham-bold";
 }
