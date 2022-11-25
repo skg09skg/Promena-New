@@ -744,7 +744,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
-
+.gap10{
+  gap: 10px;
+}
 /* Header */
 
 .drop-box,
