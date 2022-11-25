@@ -5,23 +5,27 @@
   font-family: "gotham-thin", sans-serif;
   line-height: 1.5;
 }
+
 .fnt-fmly-nurture {
   font-family: "gotham-thin";
   font-weight: 600;
   line-height: 1.6;
   padding-right: 90px;
   text-align: start;
+  font-size: 18px;
   margin-bottom: 80px;
 }
 .banner-next-content {
   text-align: initial;
   font-family: "gotham-bold";
-  line-height: 1.5;
+  line-height: 1.2;
+  font-size: 45px;
   margin-bottom: 70px;
 }
 .fnt-ban-heading {
   font-family: "gotham-bold";
   text-align: initial;
+  font-size: 24px;
 }
 .home li {
   padding-right: 55px;
@@ -60,7 +64,7 @@
 }
 .nurture-heading {
   font-family: "gotham-bold";
-  font-size: 25px;
+  font-size: 42px;
 }
 
 .content {
@@ -138,4 +142,5 @@
 }
 .next-heading {
   font-family: "gotham-bold";
+  font-size: 16px;
 }
