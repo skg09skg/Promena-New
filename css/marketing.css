@@ -6,7 +6,6 @@
 .h1-heading {
   color: #1973d1;
 }
-
 .contents-ol {
   display: inline-block;
   font-size: 16px;
@@ -24,7 +23,6 @@
   padding-right: 0px;
   margin-right: 14px;
 }
-
 .heading-col {
   display: flex;
   justify-content: center;
@@ -42,7 +40,6 @@
   padding-bottom: 3px;
   transition: all 1s ease-in-out;
 }
-
 .child-class {
   flex-wrap: wrap;
   width: 80%;
@@ -56,7 +53,6 @@
   margin: 1vw 2vw;
   height: fit-content;
 }
-
 .content {
   text-align: start;
   padding-left: 10px;
