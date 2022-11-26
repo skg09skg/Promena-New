@@ -9,7 +9,7 @@
   font-family: "gotham-bold", sans-serif;
 }
 .teams-contents h3 {
-  padding: 3.07vw 0;
+
   font-family: "gotham-bold", sans-serif;
 }
 .teams-contents p {
@@ -22,6 +22,12 @@
   margin: 1.5vw 1.97vw;
   font-family: "gotham-bold", sans-serif;
 }
+.team-profile p{
+  margin: 1px;
+}
+.team-profile h4{
+  margin: 1px;
+}
 /* Gallery Images */
 
 .office-gallery {
@@ -31,8 +37,13 @@
 .office-team {
   font-family: "gotham-bold", sans-serif;
   text-align: center;
-  height: 30vh;
   line-height: 1.5;
+}
+.office-team p{
+  margin: 1px;
+}
+.office-team h3{
+  margin: 1px;
 }
 
 .gallery-box {
