@@ -678,6 +678,7 @@ body {
   font-size: 1.23vw; /* 16px */
 }
 
+
 .font-xvsss {
   font-size: 1.0769vw; /* 14px */
 }
@@ -748,18 +749,6 @@ body {
 }
 /* Header */
 
-.logo-flex {
-  width: 20%;
-}
-
-.logo-flex img {
-  width: 90%;
-}
-
-.header-menu {
-  width: 80%;
-}
-
 .drop-box,
 .mobdrop-box {
   position: initial !important;
@@ -811,7 +800,7 @@ body {
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   /* / height: var(--headerHeight); / */
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -828,7 +817,7 @@ body {
 .navigation li a {
   font-size: 16px;
   color: black;
-  font-family: "gotham-medium", sans-serif;
+  font-family: "regular";
   text-transform: uppercase;
 }
 .navigation li:hover a {
@@ -858,14 +847,12 @@ body {
 }
 .drop .f-col {
   padding: 0 8px;
-  /* width: 20%; */
-  width: 360px;
+  width: 20%;
 }
 .desk-header {
   height: 80px;
   z-index: 999;
   background: white;
-  box-shadow: 0 0 20px rgb(0 0 0 / 10%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -977,14 +964,14 @@ body {
   transform: translateX(0);
 }
 .dropbox-cont h6 {
-  font-family: "gotham-medium",sans-serif;
-  font-size: 32px;
+  font-family: "extrabold";
+  font-size: 38px;
   color: #031f4b;
   line-height: 1;
   margin: 0 0 5px 0;
 }
 .dropbox-cont p {
-  font-family: "gotham-medium",sans-serif;
+  font-family: "medium";
   font-size: 16px;
   line-height: 24px;
   color: #031f4b;
