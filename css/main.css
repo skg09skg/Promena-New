@@ -649,8 +649,17 @@ body {
 /* / Font Sizes / */
 
 .font-xlr {
-  font-size: 4.6153vw; /* 42px */
+  font-size: 4.6153vw; /* 60px */
 }
+
+.font-lr {
+  font-size: 3.846vw; /* 50px */
+}
+
+.font-xmd {
+  font-size: 3.23vw; /* 46px */
+}
+
 
 .font-md {
   font-size: 2.769vw; /*36px */
