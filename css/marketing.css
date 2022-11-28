@@ -1,8 +1,8 @@
-.banner-container {
+/* .banner-container {
   width: 85%;
   display: flex;
   justify-content: space-between;
-}
+} */
 .h1-heading {
   color: #1973d1;
 }
@@ -47,7 +47,7 @@
 .card {
   padding: 2vw 0;
   background: #f9f9f9;
-  margin-bottom: 30px;
+  margin-bottom: 2.3vw;
   text-align: center;
   width: 28%;
   margin: 1vw 2vw;
@@ -55,7 +55,7 @@
 }
 .content {
   text-align: start;
-  padding-left: 10px;
+  padding-left: 0.7vw;
 }
 
 @media screen and (min-width: 320px) and (max-width: 760px) {
@@ -67,13 +67,13 @@
     width: 100%;
   }
   .h1 {
-    font-size: 32px;
-    padding-left: 10px;
+    font-size: 2.4vw;
+    padding-left: 0.7vw;
   }
   .font-xlr {
-    font-size: 28px;
+    font-size: 2.15vw;
     line-height: 1.5;
-    padding-left: 20px;
+    padding-left: 1.5vw;
   }
   .w40 {
     width: 100%;
@@ -82,24 +82,24 @@
     width: 100%;
   }
   .fx-dc-all-center {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 1.92vw;
+    padding-bottom: 1.92vw;
   }
   .next {
     width: 100%;
   }
   .fx-center,
   .font-xvs {
-    font-size: 35px;
+    font-size: 2.6vw;
   }
   .font-xlr {
-    font-size: 20px;
+    font-size: 1.5vw;
   }
   .heading-col {
     flex-direction: column;
   }
   .hh-1 {
-    font-size: 23px;
+    font-size: 1.7vw;
     width: max-content;
     text-align: start;
   }
@@ -132,11 +132,11 @@
     width: 80%;
   }
   .h1 {
-    font-size: 35px;
-    padding-left: 10px;
+    font-size: 2.6vw;
+    padding-left: 0.7vw;
   }
   .font-xlr {
-    font-size: 20px;
+    font-size: 1.5vw;
   }
   .w40 {
     width: 100%;
@@ -145,18 +145,18 @@
     width: 100%;
   }
   .fx-dc-all-center {
-    padding-top: 35px;
-    padding-bottom: 25px;
+    padding-top: 2.6vw;
+    padding-bottom: 1.9vw;
   }
   .next {
     width: 100%;
   }
   .fx-center,
   .font-xvs {
-    font-size: 35px;
+    font-size: 2.6vw;
   }
   .font-xlr {
-    font-size: 20px;
+    font-size: 1.5vw;
   }
   .heading-col {
     flex-direction: column;
@@ -165,7 +165,7 @@
     display: flex;
   }
   .hh-1 {
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 700;
     width: max-content;
     text-align: start;

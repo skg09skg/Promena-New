@@ -666,6 +666,10 @@ body {
   font-size: 2.461vw; /* 32px */
 }
 
+.font-xxs {
+  font-size: 2.15vw; /*28px*/
+}
+
 .font-s {
   font-size: 1.846vw; /* 24px */
 }
@@ -744,7 +748,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
-.gap10{
+.gap10 {
   gap: 10px;
 }
 /* Header */
@@ -964,14 +968,14 @@ body {
   transform: translateX(0);
 }
 .dropbox-cont h6 {
-  font-family: "extrabold";
-  font-size: 38px;
+  font-family: "gotham-medium", sans-serif;
+  font-size: 32px;
   color: #031f4b;
   line-height: 1;
   margin: 0 0 5px 0;
 }
 .dropbox-cont p {
-  font-family: "medium";
+  font-family: "gotham-medium", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #031f4b;
