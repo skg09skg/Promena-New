@@ -1,0 +1,20 @@
+.career-banner{
+    height: 100vh;
+    padding: 20px 150px;
+}
+.career-left-content {
+    font-family: 'gotham-bold', sans-serif;
+}
+.career-left-content span{
+    font-family: 'gotham-thin', sans-serif;
+}
+.openings-header h4{
+    font-family: 'gotham-medium', sans-serif;
+}
+.openings-col-1{
+    gap: 15px;
+    font-family: 'gotham-medium', sans-serif;
+}
+.our-services-page{
+    padding: 100px 0;
+}
