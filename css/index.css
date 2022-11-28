@@ -1,0 +1,43 @@
+.fx-design {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10vw;
+}
+.content-heading {
+  font-family: "gotham-bold";
+  font-size: 3.5vw;
+}
+
+.home-child {
+  margin-left: auto;
+}
+.expertise {
+  margin-top: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fx-w {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content-expertise {
+  font-size: 33px;
+  color: #999;
+  line-height: 1;
+  padding-bottom: 3px;
+  font-family: "gotham-bold";
+  transition: all 0s ease-in-out;
+  -webkit-transition: all 0s ease-in-out;
+}
+.expertise li {
+  margin: 1vw 2.6vw;
+}
+.fx-text {
+  font-family: "gotham-bold";
+  font-size: 1.2vw;
+}
+.fx-serve {
+  font-family: "gotham-bold";
+}
