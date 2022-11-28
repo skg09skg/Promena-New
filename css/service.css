@@ -5,30 +5,31 @@
   font-family: "gotham-thin", sans-serif;
   line-height: 1.5;
 }
-
-.fnt-fmly-nurture {
+.main-heading {
+  font-family: "gotham-bold";
+  font-size: 0.8vw;
+}
+/* .fnt-fmly-nurture {
   font-family: "gotham-thin";
   font-weight: 600;
   line-height: 1.6;
-  padding-right: 90px;
+  padding-right: 9vw;
   text-align: start;
-  font-size: 18px;
-  margin-bottom: 80px;
-}
+  font-size: 1.3vw;
+  margin-bottom: 8vw;
+} */
 .banner-next-content {
   text-align: initial;
   font-family: "gotham-bold";
   line-height: 1.2;
-  font-size: 42px;
-  margin-bottom: 70px;
+  margin-bottom: 7vw;
 }
 .fnt-ban-heading {
   font-family: "gotham-bold";
   text-align: initial;
-  font-size: 24px;
 }
 .home li {
-  padding-right: 55px;
+  padding-right: 4.2vw;
 }
 .dot {
   content: "";
@@ -44,10 +45,10 @@
 .contents-ol-servicepage {
   font-family: "gotham-thin";
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.3vw;
   line-height: 1.5;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 1.2vw;
   position: relative;
   background: transparent;
   padding: 0;
@@ -57,19 +58,18 @@
 }
 .contents-ol-servicepage :not(:last-child) {
   padding-right: 0px;
-  margin-right: 14px;
+  margin-right: 1.07vw;
 }
 .heading-col-2 {
-  margin-bottom: 70px;
+  margin-bottom: 5.3vw;
 }
 .nurture-heading {
   font-family: "gotham-bold";
-  font-size: 42px;
 }
 
 .content {
   text-align: inherit;
-  padding-left: 35px;
+  padding-left: 2.6vw;
   margin-top: -19px;
 }
 .services-hover-card {
@@ -88,7 +88,7 @@
 .card-service-page {
   padding: 2vw 0;
   background: #f9f9f9;
-  margin-bottom: 30px;
+  margin-bottom: 2.3vw;
   text-align: center;
   width: 27%;
   margin: 1vw 2vw;
@@ -129,10 +129,9 @@
   margin: auto;
 }
 .our-services {
-  padding-bottom: 25px;
-  padding-top: 30px;
+  padding-bottom: 1.9vw;
+  padding-top: 2.3vw;
   font-family: "gotham-bold";
-  font-size: 15px;
 }
 .tech-fnt {
   font-family: "gotham-bold";
@@ -142,5 +141,8 @@
 }
 .next-heading {
   font-family: "gotham-bold";
-  font-size: 16px;
+  font-size: 1.6vw;
+}
+.fx-padhead {
+  margin-top: 9vw;
 }
