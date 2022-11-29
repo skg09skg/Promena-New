@@ -9,15 +9,14 @@
   font-family: "gotham-bold";
   font-size: 0.8vw;
 }
-/* .fnt-fmly-nurture {
+.fnt-fmly-nurture {
   font-family: "gotham-thin";
   font-weight: 600;
   line-height: 1.6;
   padding-right: 9vw;
   text-align: start;
-  font-size: 1.3vw;
   margin-bottom: 8vw;
-} */
+}
 .banner-next-content {
   text-align: initial;
   font-family: "gotham-bold";
@@ -141,7 +140,6 @@
 }
 .next-heading {
   font-family: "gotham-bold";
-  font-size: 1.6vw;
 }
 .fx-padhead {
   margin-top: 9vw;
