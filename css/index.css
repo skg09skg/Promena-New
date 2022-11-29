@@ -5,7 +5,6 @@
 }
 .content-heading {
   font-family: "gotham-bold";
-  font-size: 3.5vw;
 }
 
 .home-child {
@@ -23,7 +22,7 @@
   justify-content: space-between;
 }
 .content-expertise {
-  font-size: 33px;
+  font-size: 30px;
   color: #999;
   line-height: 1;
   padding-bottom: 3px;
