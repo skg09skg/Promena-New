@@ -1,6 +1,7 @@
 /* * {
   font-family: "gotham-thin";
 } */
+
 .fnt-fmly {
   font-family: "gotham-thin", sans-serif;
   line-height: 1.5;
@@ -72,6 +73,7 @@
 .services-hover-card {
   margin-bottom: -18px;
 }
+
 .hh-1-service-page {
   margin: 0 0 20px 0;
   width: fit-content;
@@ -82,6 +84,9 @@
   padding-bottom: 3px;
   transition: all 1s ease-in-out;
 }
+.hh-1-service-page:hover {
+  background-position: 0 100%;
+}
 .card-service-page {
   padding: 2vw 0;
   background: #f9f9f9;
@@ -91,6 +96,7 @@
   margin: 1vw 2vw;
   height: fit-content;
 }
+
 .card-box-service-page {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -190,4 +196,10 @@
     transform: translateX(0);
     opacity: 1;
   }
+}
+.card-service-page :hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  animation-delay: 0.2s;
 }
