@@ -218,11 +218,14 @@ ul {
 .l-blue {
   color: #1973d1;
 }
-.lg-blue {
+.lg-bluec {
   color: #8bbef5;
 }
 .wl-blue {
   color: #edf6fc;
+}
+.black {
+  color: black;
 }
 
 body {
@@ -409,6 +412,30 @@ body {
 
 .pad60 {
   padding: 4.61vw 0;
+}
+
+.padt50 {
+  padding-top: 3.846vw;
+}
+
+.padb50 {
+  padding-bottom: 3.846vw;
+}
+
+.padtb50 {
+  padding: 3.846vw 0;
+}
+
+.padtb100 {
+  padding: 7.692vw 0;
+}
+
+.padt100 {
+  padding-top: 7.692vw;
+}
+
+.padb100 {
+  padding-bottom: 7.692vw;
 }
 
 .pad5-tb {
@@ -675,6 +702,10 @@ body {
   font-size: 1.846vw; /* 24px */
 }
 
+.font-xxvs {
+  font-size: 1.538vw; /* 20px */
+}
+
 .font-xvs {
   font-size: 1.384vw; /*18px */
 }
@@ -740,6 +771,30 @@ body {
 @font-face {
   font-family: "gotham-xmedium";
   src: url(../Gotham-Font/GothamMedium_1.ttf) format("truetype");
+}
+
+.font-gotham {
+  font-family: "gotham", sans-serif;
+}
+
+.font-xmedium {
+  font-family: "gotham-xmedium", sans-serif;
+}
+
+.font-bold {
+  font-family: "gotham-bold", sans-serif;
+}
+
+.font-thin {
+  font-family: "gotham-thin", sans-serif;
+}
+
+.font-medium {
+  font-family: "gotham-medium", sans-serif;
+}
+
+.font-xthin {
+  font-family: "gotham-xthin", sans-serif;
 }
 
 /* / grid  / */
