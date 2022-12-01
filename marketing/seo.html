@@ -190,7 +190,7 @@
               <li class="font-medium font-vvs l-blue">Seo</li>
             </ul>
           </div>
-          <div class="font-md mar4-t font-bold">
+          <div class="font-md mar4-t font-bold reveal fade-bottom">
             We are the fuel to skyrocket your brand or product to rank first in
             search engines.
           </div>
@@ -205,44 +205,58 @@
 
     <div class="fx-dc-jcenter padtb50">
       <div class="w80 pad1-tb">
-        <h2 class="font-bold font-md l-blue mar0 pad4-b">What is SEO?</h2>
-        <h4 class="font-xmedium font-xxvs black line2 pad4-b mar0">
+        <h2 class="font-bold font-md l-blue mar0 pad4-b reveal fade-bottom">
+          What is SEO?
+        </h2>
+        <h4
+          class="font-xmedium font-xxvs black line2 pad4-b mar0 reveal fade-bottom"
+        >
           Search Engine Optimization improves the visibility of your brand or
           site when users search for products related to your business.
         </h4>
         <ul>
-          <li class="font-xmedium font-vs pad5-tb">
+          <li class="font-xmedium font-vs pad5-tb reveal fade-bottom">
             Keyword research & selection
           </li>
-          <li class="font-xmedium font-vs pad5-tb">
+          <li class="font-xmedium font-vs pad5-tb reveal fade-bottom">
             Title Tags & Meta descriptions
           </li>
-          <li class="font-xmedium font-vs pad5-tb">
+          <li class="font-xmedium font-vs pad5-tb reveal fade-bottom">
             Information architecture audit
           </li>
-          <li class="font-xmedium font-vs pad5-tb">
+          <li class="font-xmedium font-vs pad5-tb reveal fade-bottom">
             Canonicalization analysis
           </li>
-          <li class="font-xmedium font-vs pad5-tb">Advanced interlinking</li>
-          <li class="font-xmedium font-vs pad5-tb">
+          <li class="font-xmedium font-vs pad5-tb reveal fade-bottom">
+            Advanced interlinking
+          </li>
+          <li class="font-xmedium font-vs pad5-tb reveal fade-bottom">
             Customized content marketing
           </li>
-          <li class="font-xmedium font-vs pad5-tb">Competitive analysis</li>
-          <li class="font-xmedium font-vs pad5-tb">Technical SEO</li>
+          <li class="font-xmedium font-vs pad5-tb reveal fade-bottom">
+            Competitive analysis
+          </li>
+          <li class="font-xmedium font-vs pad5-tb reveal fade-bottom">
+            Technical SEO
+          </li>
         </ul>
       </div>
     </div>
     <div class="fx-dc-jcenter padtb50">
       <div class="w80 pad1-tb">
-        <h2 class="font-bold font-md l-blue mar0 pad3-b">We are SEO experts</h2>
-        <h4 class="font-xmedium font-xxvs black line2 mar0 padb50">
+        <h2 class="font-bold font-md l-blue mar0 pad3-b reveal fade-bottom">
+          We are SEO experts
+        </h2>
+        <h4
+          class="font-xmedium font-xxvs black line2 mar0 padb50 reveal fade-bottom"
+        >
           who turn traffic increases into revenue. At Promena, our elite team of
           SEO experts focuses on driving real revenue and building a customized
           SEO strategy tailored to your business. We market your brand and
           accelerate growth through our actionable insights that generate
           revenue.
         </h4>
-        <div class="fx-dc-jcenter pad4-t">
+        <div class="fx-dc-jcenter pad4-t reveal fade-bottom">
           <img class="w60" src="../images/marketing-pages/seo.png" alt="seo" />
         </div>
       </div>
@@ -253,17 +267,19 @@
     <div class="fx-center padtb50">
       <div class="w80 txc">
         <div class="fnt-ban-heading">
-          <h2 class="next-heading d-blue">WHAT DO WE SERVE ?</h2>
+          <h2 class="next-heading d-blue reveal fade-bottom">
+            WHAT DO WE SERVE ?
+          </h2>
         </div>
         <div class="banner-next-content font-md">
-          <h3 class="mar0 mar4-b ft-w5">
+          <h3 class="mar0 mar4-b ft-w5 reveal fade-bottom">
             Innovative marketing and branding led solutions to the
             end-user-oriented problem.
           </h3>
         </div>
         <div class="we-do-container fx-center">
           <div class="w90">
-            <div class="fx-wrp fx-spbtw">
+            <div class="fx-wrp fx-spbtw reveal fade-bottom">
               <!-- <div class="w30">
                 <h6 class="hh-1-service-page">
                   <a class="black" href="../marketing/seo.html">SEO</a>
@@ -399,5 +415,25 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+    </script>
   </body>
 </html>
