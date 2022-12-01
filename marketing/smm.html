@@ -190,7 +190,7 @@
               <li class="font-medium font-vvs l-blue">SMM</li>
             </ul>
           </div>
-          <div class="font-md mar4-t font-bold">
+          <div class="font-md mar4-t font-bold reveal fade-bottom">
             Social Media Marketing that drives success.
           </div>
         </div>
@@ -205,11 +205,15 @@
     <div class="fx-dc-jcenter padtb50">
       <div class="w80 pad1-tb">
         <h2 class="font-bold font-md l-blue mar0 pad4-b">What is SMM?</h2>
-        <h4 class="font-xmedium font-xxvs black line2 pad4-b mar0">
+        <h4
+          class="font-xmedium font-xxvs black line2 pad4-b mar0 reveal fade-bottom"
+        >
           We position your brand rank first by scaling engagement and making it
           more likable on social media.
         </h4>
-        <h4 class="font-xmedium font-xxvs black line2 pad4-b mar0">
+        <h4
+          class="font-xmedium font-xxvs black line2 pad4-b mar0 reveal fade-bottom"
+        >
           SMM utilizes the unparallel power of social media to market products
           or brands in three pivotal marketing cones: connection, interaction,
           and customer data. SMM helps transform how businesses influence
@@ -219,35 +223,49 @@
     </div>
     <div class="fx-dc-jcenter padtb50">
       <div class="w80 pad1-tb">
-        <h2 class="font-bold font-md l-blue mar0 pad4-b">We are SMM experts</h2>
-        <h4 class="font-xmedium font-xxvs black line2 pad4-b mar0">
+        <h2 class="font-bold font-md l-blue mar0 pad4-b reveal fade-bottom">
+          We are SMM experts
+        </h2>
+        <h4
+          class="font-xmedium font-xxvs black line2 pad4-b mar0 reveal fade-bottom"
+        >
           Utilize social media marketing to create a bright presence for your
           brand on various social media platforms. It not only effectively
           amplifies your brand's message across media while capturing the
           correct audience.
         </h4>
-        <h4 class="font-xmedium font-xxvs black line2 pad4-b mar0">
+        <h4
+          class="font-xmedium font-xxvs black line2 pad4-b mar0 reveal fade-bottom"
+        >
           Promena, with its unique formulation of creativity and strategies,
           helps grow and increase brand awareness.
         </h4>
-        <h4 class="font-xmedium font-xxvs black line2 pad4-b mar0">
+        <h4
+          class="font-xmedium font-xxvs black line2 pad4-b mar0 reveal fade-bottom"
+        >
           We are social media marketing experts
         </h4>
         <ul class="pad4-b">
-          <li class="font-xmedium font-vs pad5-tb">• Social Media Audit</li>
-          <li class="font-xmedium font-vs pad5-tb">
+          <li class="font-xmedium font-vs pad5-tb reveal fade-bottom">
+            • Social Media Audit
+          </li>
+          <li class="font-xmedium font-vs pad5-tb reveal fade-bottom">
             • Social Media Management
           </li>
-          <li class="font-xmedium font-vs pad5-tb">• Social Media Ads</li>
+          <li class="font-xmedium font-vs pad5-tb reveal fade-bottom">
+            • Social Media Ads
+          </li>
         </ul>
-        <h4 class="font-xmedium font-xxvs black line2 mar0 padb50">
+        <h4
+          class="font-xmedium font-xxvs black line2 mar0 padb50 reveal fade-bottom"
+        >
           We at Promena, are proud of having more than a half-decade of
           experience in social media marketing. We create a compelling story,
           track results, understand the objective of your brand, and curate
           creative marketing strategies that grants your brand leverage over
           others.
         </h4>
-        <div class="fx-dc-jcenter pad4-t">
+        <div class="fx-dc-jcenter pad4-t reveal fade-bottom">
           <img class="w60" src="../images/marketing-pages/smm.gif" alt="smm" />
         </div>
       </div>
@@ -258,17 +276,19 @@
     <div class="fx-center padtb50">
       <div class="w80 txc">
         <div class="fnt-ban-heading">
-          <h2 class="next-heading d-blue">WHAT DO WE SERVE ?</h2>
+          <h2 class="next-heading d-blue reveal fade-bottom">
+            WHAT DO WE SERVE ?
+          </h2>
         </div>
         <div class="banner-next-content font-md">
-          <h3 class="mar0 mar4-b ft-w5">
+          <h3 class="mar0 mar4-b ft-w5 reveal fade-bottom">
             Innovative marketing and branding led solutions to the
             end-user-oriented problem.
           </h3>
         </div>
         <div class="we-do-container fx-center">
           <div class="w90">
-            <div class="fx-wrp fx-spbtw">
+            <div class="fx-wrp fx-spbtw reveal fade-bottom">
               <div class="w30">
                 <h6 class="hh-1-service-page">
                   <a class="black" href="../marketing/seo.html">SEO</a>
@@ -404,5 +424,25 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+    </script>
   </body>
 </html>
