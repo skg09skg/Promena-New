@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 
  /* ABOUT US CONTENTS */
 .contents{
@@ -32,80 +34,98 @@
 .card-contents-1{
     padding: 3vw 5vw;
 }
+  
+    /* VISION PAGE */
 
 
-
-
-   /* VISSION PAGE */
-html {
-	scroll-behavior: smooth;
+.vision{
+    padding: 100px;
 }
-
-/* / 2. Make nav sticky / */
-main > nav {
+nav{
+   
 	position: sticky;
-	top: 2rem;
-	align-self: start;
+	top: 40%;
+	bottom: auto;
+	z-index: 10;
 }
-
-/* / 3. ScrollSpy active styles (see JS tab for activation) / */
-.section-nav li.active > a {
-	color: #333;
-	font-weight: 500;
-}
-
-/* / Sidebar Navigation / */
-.section-nav {
-	padding-left: 0;
-	border-left: 1px solid #efefef;
-}
-
-.section-nav a {
-	text-decoration: none;
-	display: block;
-	padding: .125rem 0;
-	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
-}
-
-.section-nav a:hover,
-.section-nav a:focus {
-	color: #666;
-}
-
-/* Poor man's reset */
-
-
-ul, ol {
+nav ul{
 	list-style: none;
-	margin: 0;
 	padding: 0;
 }
-.section-nav li a{
-	margin-left: 1rem;
-    font-family: 'gotham-bold', sans-serif;
-    
+nav ul li{
+	padding: 10px 0;
+}
+nav ul li a span{
+	display: inline-block;
+	position:relative;
    
 }
-
-h1 {
-	font-weight: 300;
+nav a{
+	display: flex;
+  align-items: center;
+    color: #031f4b;
+	text-decoration: none;
 }
 
-/* page layout */
-main {
-	display: grid;
-	grid-template-columns: 1fr 15em;
-	max-width: 100em;
-	width: 90%;
-	margin: 0 auto;
+nav a:hover,nav .active-section {
+	color: #1973d1;
 }
-
-/* enlarge the sections for this demo, so that we have a long scrollable page */
-section {
-	padding-bottom: 50rem;
+nav .dot:hover,
+nav .active-section .dot {
+	background-color: #1973d1;
 }
+.content-section{
+	position: relative;
+	left: 80%;
+  top: 30%;
+	height: 80vh;
+	text-align: center;
+	-webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.content-section h3{
+	position: absolute;
+	top: 40%;
+	right: -50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 
+}
+.slider-dot {
+	display: flex;
+	
+}
+.round-image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav .dot {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #031f4b;
 
+}
+.round-image{
+	animation: rotate 3s linear infinite;
+}
+	@keyframes rotate {
+	 0% { 
+	   transform: rotate(0); 
+	 }
+	 100% { 
+	   transform: rotate(360deg);
+	 }
+	}
+  
 
 /* SLIDER PAGE */
 * {
