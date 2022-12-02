@@ -275,48 +275,43 @@
       <div class="vision pad4-t">
         <nav>
           <ul>
-              <li>
-                  <a class="font-bold font-md" href="#section1">
-                      <div class="slider-dot">
-                        <div class="round-image">
-                          <img src="./images/technology-images/round_sVony6uRCE5.svg"
-                          width="50%">
-                          <span class="dot"></span>
-                        </div>
-                         
-                       
-                      </div>
-                      VISION
-                  </a>
-              </li>
-              <li>
-                  <a class="font-bold font-md" href="#section2">
-                      <div class="slider-dot">
-                        <div class="round-image">
-                          <img src="./images/technology-images/round_sVony6uRCE5.svg"
-                          width="50%">
-                          <span class="dot"></span>
-                        </div>
-                      </div>
-  
-                      MISSION
-                  </a>
-              </li>
-              <li>
-                  <a class="font-bold font-md" href="#section3">
-                      <div class="slider-dot">
-                        <div class="round-image">
-                          <img src="./images/technology-images/round_sVony6uRCE5.svg"
-                          width="50%">
-                          <span class="dot"></span>
-                        </div>
-                      </div>
-  
-                      VALUE
-                  </a>
-              </li>
+            <li>
+              <a class="font-bold font-md" href="#section1">
+                <div class="slider-dot">
+                  <div class="round-image">
+                    <img src="./images/technology-images/round_sVony6uRCE5.svg" width="50%">
+                    <span class="dot"></span>
+                  </div>
+                </div>
+                VISION
+              </a>
+            </li>
+            <li>
+              <a class="font-bold font-md" href="#section2">
+                <div class="slider-dot">
+                  <div class="round-image">
+                    <img src="./images/technology-images/round_sVony6uRCE5.svg" width="50%">
+                    <span class="dot"></span>
+                  </div>
+                </div>
+
+                MISSION
+              </a>
+            </li>
+            <li>
+              <a class="font-bold font-md" href="#section3">
+                <div class="slider-dot">
+                  <div class="round-image">
+                    <img src="./images/technology-images/round_sVony6uRCE5.svg" width="50%">
+                    <span class="dot"></span>
+                  </div>
+                </div>
+
+                VALUE
+              </a>
+            </li>
           </ul>
-      </nav>
+        </nav>
         <section id="section1" class="content-section w40 ">
           <h3 class=" font-md font-bold black">To be the leading trusted Software and Digital Marketing company. </h3>
         </section>
@@ -324,7 +319,8 @@
           <h3 class=" font-md font-bold black">To elevate businesses with revenue-building strategies. </h3>
         </section>
         <section id="section3" class="content-section w40">
-          <h3 class=" font-md font-bold black">To offer businesses all over the world industry leading digital marketing & IT services through a leading expert team.</h3>
+          <h3 class=" font-md font-bold black">To offer businesses all over the world industry leading digital marketing
+            & IT services through a leading expert team.</h3>
         </section>
       </div>
 
@@ -349,7 +345,7 @@
         </div>
       </div>
 
-      <div class="design-quote tx-center fx-dc-acenter pad30">
+      <div class="design-quote padt50 font-bold tx-center fx-dc-acenter pad30">
         <div class="w80 pad30">
           <h3 class="dg-blue font-xmd ft-w6 txc">
             Let's revolutionize your brand into a high revenue-driving
@@ -431,9 +427,9 @@
       </footer>
     </div>
   </div>
- 
 
-  <!-- script for read more -->
+
+  <!-- script for vision page -->
   <script>
     $(document).ready(function () {
       var contentSection = $('.content-section');
@@ -472,6 +468,22 @@
         }, 800);
       }
     });
+
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
   </script>
 
   <!-- <script>
