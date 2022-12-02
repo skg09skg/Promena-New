@@ -19,15 +19,10 @@
 .card-service-page {
   padding: 2vw 0;
   background: #f9f9f9;
-  margin-bottom: 2.3vw;
-  text-align: center;
   width: 27%;
   margin: 1vw 2vw;
-  height: fit-content;
 }
 .tools-img {
-  width: 110px;
-  height: 110px;
   margin: auto;
 }
 .reveal {
