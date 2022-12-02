@@ -26,6 +26,7 @@
   <script src="https://kit.fontawesome.com/4ee427eb24.js" crossorigin="anonymous">
     var x = document.getElementById("myVideo").autoplay;
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <!-- main -->
 </head>
 
@@ -150,8 +151,6 @@
   </div>
   <div class="aboutus fx-dr">
     <div class="aboutus-container">
-
-
       <div class=" aboutus-banner font-bold fx-center pad30 mart100">
         <div class="fx-spbtw w85">
 
@@ -184,7 +183,8 @@
             applications. Our team members are outstanding experts who are laser focussed on delivering
             high-revenue-building solutions.
           </p>
-          <p class="dg-blue mar3-tb font-xmedium font-s">Our motivation for setting out on this adventure in 2017 was the hope of making a
+          <p class="dg-blue mar3-tb font-xmedium font-s">Our motivation for setting out on this adventure in 2017 was
+            the hope of making a
             name for ourselves in the IT industry; this exciting new venture, which we have called "Promena," promises
             to be full of growth, transformation & discovery.<span id="dots"></span><span id="more">
               Promena is an Ultra-Solution Agency that can develop your website, mobile app, and can also deploy your
@@ -271,36 +271,61 @@
         </div>
       </div>
 
+
       <div class="vision pad4-t">
-        <main>
-          <nav class="section-nav">
-            <ol>
+        <nav>
+          <ul>
               <li>
-                <a class="d-blue font-lr" href="#introduction">VISION</a>
+                  <a class="font-bold font-md" href="#section1">
+                      <div class="slider-dot">
+                        <div class="round-image">
+                          <img src="./images/technology-images/round_sVony6uRCE5.svg"
+                          width="50%">
+                          <span class="dot"></span>
+                        </div>
+                         
+                       
+                      </div>
+                      VISION
+                  </a>
               </li>
               <li>
-                <a class="d-blue font-lr" href="#request-response">MISSION</a>
+                  <a class="font-bold font-md" href="#section2">
+                      <div class="slider-dot">
+                        <div class="round-image">
+                          <img src="./images/technology-images/round_sVony6uRCE5.svg"
+                          width="50%">
+                          <span class="dot"></span>
+                        </div>
+                      </div>
+  
+                      MISSION
+                  </a>
               </li>
               <li>
-                <a class="d-blue font-lr" href="#authentication">VALUES</a>
+                  <a class="font-bold font-md" href="#section3">
+                      <div class="slider-dot">
+                        <div class="round-image">
+                          <img src="./images/technology-images/round_sVony6uRCE5.svg"
+                          width="50%">
+                          <span class="dot"></span>
+                        </div>
+                      </div>
+  
+                      VALUE
+                  </a>
               </li>
-            </ol>
-          </nav>
-          <div>
-            <section id="introduction">
-              <h2>
-                To be the leading trusted Software and Digital Marketing company.
-              </h2>
-            </section>
-            <section id="request-response">
-              <h2>To elevate businesses with revenue-building strategies. </h2>
-            </section>
-            <section id="authentication">
-              <h2>To offer businesses all over the world industry-leading digital marketing & IT services through a
-                leading expert team.</h2>
-            </section>
-          </div>
-        </main>
+          </ul>
+      </nav>
+        <section id="section1" class="content-section w40 ">
+          <h3 class=" font-md font-bold black">To be the leading trusted Software and Digital Marketing company. </h3>
+        </section>
+        <section id="section2" class="content-section w40">
+          <h3 class=" font-md font-bold black">To elevate businesses with revenue-building strategies. </h3>
+        </section>
+        <section id="section3" class="content-section w40">
+          <h3 class=" font-md font-bold black">To offer businesses all over the world industry leading digital marketing & IT services through a leading expert team.</h3>
+        </section>
       </div>
 
       <div class="testimonials  font-medium fx-center">
@@ -406,9 +431,50 @@
       </footer>
     </div>
   </div>
+ 
 
   <!-- script for read more -->
   <script>
+    $(document).ready(function () {
+      var contentSection = $('.content-section');
+      var navigation = $('nav');
+
+      //when a nav link is clicked, smooth scroll to the section
+      navigation.on('click', 'a', function (event) {
+        event.preventDefault(); //prevents previous event
+        smoothScroll($(this.hash));
+      });
+
+      //update navigation on scroll...
+      $(window).on('scroll', function () {
+        updateNavigation();
+      })
+      //...and when the page starts
+      updateNavigation();
+
+      /////FUNCTIONS
+      function updateNavigation() {
+        contentSection.each(function () {
+          var sectionName = $(this).attr('id');
+          var navigationMatch = $('nav a[href="#' + sectionName + '"]');
+          if (($(this).offset().top - $(window).height() / 2 < $(window).scrollTop()) &&
+            ($(this).offset().top + $(this).height() - $(window).height() / 2 > $(window).scrollTop())) {
+            navigationMatch.addClass('active-section');
+          }
+          else {
+            navigationMatch.removeClass('active-section');
+          }
+        });
+      }
+      function smoothScroll(target) {
+        $('body,html').animate({
+          scrollTop: target.offset().top
+        }, 800);
+      }
+    });
+  </script>
+
+  <!-- <script>
     function myFunction() {
       var dots = document.getElementById("dots");
       var moreText = document.getElementById("more");
@@ -456,28 +522,47 @@
       dots[slideIndex - 1].className += " active";
     }
 
-    window.addEventListener("DOMContentLoaded", () => {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          const id = entry.target.getAttribute("id");
-          if (entry.intersectionRatio > 0) {
-            document
-              .querySelector(`nav li a[href="#${id}"]`)
-              .parentElement.classList.add("active");
-          } else {
-            document
-              .querySelector(`nav li a[href="#${id}"]`)
-              .parentElement.classList.remove("active");
-          }
-        });
-      });
 
-      // Track all sections that have an `id` applied
-      document.querySelectorAll("section[id]").forEach((section) => {
-        observer.observe(section);
-      });
+    // vision page
+    
+ $(document).ready(function () {
+        var contentSection = $('.content-section');
+        var navigation = $('nav');
+
+        //when a nav link is clicked, smooth scroll to the section
+        navigation.on('click', 'a', function (event) {
+            event.preventDefault(); //prevents previous event
+            smoothScroll($(this.hash));
+        });
+
+        //update navigation on scroll...
+        $(window).on('scroll', function () {
+            updateNavigation();
+        })
+        //...and when the page starts
+        updateNavigation();
+
+        /////FUNCTIONS
+        function updateNavigation() {
+            contentSection.each(function () {
+                var sectionName = $(this).attr('id');
+                var navigationMatch = $('nav a[href="#' + sectionName + '"]');
+                if (($(this).offset().top - $(window).height() / 2 < $(window).scrollTop()) &&
+                    ($(this).offset().top + $(this).height() - $(window).height() / 2 > $(window).scrollTop())) {
+                    navigationMatch.addClass('active-section');
+                }
+                else {
+                    navigationMatch.removeClass('active-section');
+                }
+            });
+        }
+        function smoothScroll(target) {
+            $('body,html').animate({
+                scrollTop: target.offset().top
+            }, 800);
+        }
     });
-  </script>
+  </script>  -->
 </body>
 
 </html>
