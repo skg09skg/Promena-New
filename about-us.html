@@ -23,6 +23,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/4ee427eb24.js" crossorigin="anonymous">
     var x = document.getElementById("myVideo").autoplay;
   </script>
@@ -149,23 +151,27 @@
       </div>
     </header>
   </div>
+  
   <div class="aboutus fx-dr">
     <div class="aboutus-container">
       <div class=" aboutus-banner font-bold fx-center pad30 mart100">
         <div class="fx-spbtw w85">
 
           <div class="w50">
-            <div class="fnt-ban-heading">
+            <div class="fnt-ban-heading" data-aos="fade-right" data-aos-duration="1500"
+            data-aos-offset="300">
               <h3 class="font-xlr mar4-t">About Us</h3>
             </div>
-            <div class="fnt-fmly">
+            <div class="fnt-fmly" data-aos="fade-right" data-aos-duration="1800"
+            data-aos-offset="300">
               <h6 class="font-s ft-w9 mart40">
                 We, at Promena, are driven by innovation and technology to leverage your business with the power it
                 needs.
               </h6>
             </div>
           </div>
-          <div class="w50">
+          <div class="w50" data-aos="fade-left" data-aos-duration="1800"
+          data-aos-offset="300">
             <img class="w90 h80" src="./images/aboutusss.gif">
             <!-- <video playsinline autoplay muted loop class="w90 h80">
               <source src="./images/aboutusss.gif" type="Video/mp4" />
@@ -176,14 +182,17 @@
 
       <div class="contents font-medium fx-dc-jcenter">
         <div class="contents-header w80">
-          <h3 class="pad4-t d-blue font-xxs">ABOUT US</h3>
-          <p class="dg-blue font-xmedium font-s ">
+          <h3 class="pad4-t d-blue font-xxs" data-aos="fade-up" data-aos-duration="1800"
+          data-aos-offset="300">ABOUT US</h3>
+          <p class="dg-blue font-xmedium font-s " data-aos="fade-up" data-aos-duration="1800"
+          data-aos-offset="300">
             Promena is a tech-enabled IT service and marketing agency. We are transformers driven by a passion for
             technology and innovation. We are leaders with 5+ years of experience in developing web-based and mobile
             applications. Our team members are outstanding experts who are laser focussed on delivering
             high-revenue-building solutions.
           </p>
-          <p class="dg-blue mar3-tb font-xmedium font-s">Our motivation for setting out on this adventure in 2017 was
+          <p class="dg-blue mar3-tb font-xmedium font-s" data-aos="fade-up" data-aos-duration="1800"
+          data-aos-offset="300">Our motivation for setting out on this adventure in 2017 was
             the hope of making a
             name for ourselves in the IT industry; this exciting new venture, which we have called "Promena," promises
             to be full of growth, transformation & discovery.<span id="dots"></span><span id="more">
@@ -202,7 +211,8 @@
         </div>
       </div>
 
-      <div class="slider">
+      <div class="slider" data-aos="fade-up" data-aos-duration="1800"
+      data-aos-offset="300">
         <input type="radio" id="s-1" name="slider-control" checked="checked" />
         <input type="radio" id="s-2" name="slider-control" />
         <input type="radio" id="s-3" name="slider-control" />
@@ -272,7 +282,7 @@
       </div>
 
 
-      <div class="vision pad4-t">
+      <div class="vision pad4-t" data-aos="fade-right" data-aos-duration="800" data-aos-offset="300">
         <nav>
           <ul>
             <li>
@@ -312,7 +322,7 @@
             </li>
           </ul>
         </nav>
-        <section id="section1" class="content-section w40 ">
+        <section id="section1" class="content-section w40 " >
           <h3 class=" font-md font-bold black">To be the leading trusted Software and Digital Marketing company. </h3>
         </section>
         <section id="section2" class="content-section w40">
@@ -326,7 +336,7 @@
 
       <div class="testimonials  font-medium fx-center">
         <div class="card-1 w70 fx-dr">
-          <div class="card-contents-1 mart40 w65">
+          <div class="card-contents-1 mart40 w65"  data-aos="fade-up" data-aos-duration="1500">
             <i class="fa-solid fa-quote-left icon dg-blue ps-ab"></i>
             <p class="ft-w7">
               Jugal Shah is the founder, CXO, and growth hacker at Leo9 Studio
@@ -339,13 +349,14 @@
               Neuromarketing expert
             </p>
           </div>
-          <div class="card-image w35">
+          <div class="card-image w35" data-aos="fade-down" data-aos-duration="1500"> 
             <img src="./images/card-image.png" width="100%" />
           </div>
         </div>
       </div>
 
-      <div class="design-quote padt50 font-bold tx-center fx-dc-acenter pad30">
+      <div class="design-quote padt50 font-bold tx-center fx-dc-acenter pad30" data-aos="fade-up" data-aos-duration="1800"
+      data-aos-offset="300">
         <div class="w80 pad30">
           <h3 class="dg-blue font-xmd ft-w6 txc">
             Let's revolutionize your brand into a high revenue-driving
@@ -362,7 +373,7 @@
       <!-- footer -->
       <footer class="footer primary-col">
         <div class="container">
-          <div class="row fx-wrp fx-spbtw">
+          <div class="row fx-wrp fx-spbtw" data-aos="fade-up" data-aos-duration="1700">
             <div class="footer-col-1 pad1-rl w33">
               <img src="./images/white-logo.png" width="60%" />
               <p class="wl-blue font-vs pad1-tb line4 w90">
@@ -575,6 +586,12 @@
         }
     });
   </script>  -->
+
+      <!-- script for animation -->
+
+      <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
