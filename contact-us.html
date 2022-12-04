@@ -22,7 +22,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4ee427eb24.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- main -->
 </head>
 
@@ -145,74 +147,80 @@
       </div>
     </header>
   </div>
-  <div class="contact-form font-bold fx-dc-acenter mart100">
-    <div class="contact-form-headding pad1 w50 primary-col wl-blue mar4-t">
-      <div class="mar1-b x-dc-all-center txc">
-        <h3 class="font-xs">Now, about your project...</h3>
-        <p class="font-s font-thin  mar1-t">
-          Tell us what you need help with, the purpose of the project or the
-          problem we’re solving.
-        </p>
+  <div class="contact-form   font-bold fx-dc-acenter mart100">
+    <div class="fx-spbtw w80 padtb50">
+      <div class="w40">
+        <img src="https://promena.in/images/Benefits%20of%20working%20with%20us.png" data-aos="fade-right"
+          data-aos-duration="1500" data-aos-offset="300">
       </div>
-      <div class="inputbox">
-        <div class="row-1 grid">
-          <div class="col fx-wrp fx-dc gap10">
-            <label>First Name</label>
-            <input class="padinput" type="text" required="required" placeholder="Your first name.." />
-          </div>
-          <div class="col fx-dc gap10">
-            <label>Last Name</label>
-            <input class="padinput" type="text" required="required" placeholder="Your last name.." />
-          </div>
+      <div class="contact-form-headding pad1 w60 primary-col wl-blue mar4-t" data-aos="fade-up" data-aos-duration="1500"
+        data-aos-offset="300">
+        <div class="mar1-b x-dc-all-center txc">
+          <h3 class="font-xs">Contact Us</h3>
+          <!-- <p class="font-s font-thin  mar1-t">
+            Tell us what you need help with, the purpose of the project or the
+            problem we’re solving.
+          </p> -->
         </div>
+        <div class="inputbox">
+          <div class="row-1 grid">
+            <div class="col fx-wrp fx-dc gap10">
+              <label>First Name</label>
+              <input class="padinput" type="text" required="required" placeholder="Your first name.." />
+            </div>
+            <div class="col fx-dc gap10">
+              <label>Last Name</label>
+              <input class="padinput" type="text" required="required" placeholder="Your last name.." />
+            </div>
+          </div>
 
-        <div class="row-1 grid">
-          <div class="col fx-dc gap10">
-            <label>Email</label>
-            <input class="padinput" type="email" required="required" placeholder="Your email id.." />
+          <div class="row-1 grid">
+            <div class="col fx-dc gap10">
+              <label>Email</label>
+              <input class="padinput" type="email" required="required" placeholder="Your email id.." />
+            </div>
+            <div class="col fx-dc gap10">
+              <label>Phone Number</label>
+              <input class="padinput" type="text" required="required" placeholder="Your phone number.." />
+            </div>
           </div>
-          <div class="col fx-dc gap10">
-            <label>Phone Number</label>
-            <input class="padinput" type="text" required="required" placeholder="Your phone number.." />
-          </div>
-        </div>
 
-        <div class="row-1 grid">
-          <div class="col fx-dc gap10">
-            <label>Services</label>
-            <select class="padinput">
-              <option value="webdevelopment">Web Developement</option>
-              <option value="canada">Design</option>
-              <option value="usa">Marketing</option>
-            </select>
+          <div class="row-1 grid">
+            <div class="col fx-dc gap10">
+              <label>Services</label>
+              <select class="padinput">
+                <option value="webdevelopment">Web Developement</option>
+                <option value="canada">Design</option>
+                <option value="usa">Marketing</option>
+              </select>
+            </div>
+            <div class="col fx-dc gap10">
+              <label>Location</label>
+              <select class="padinput">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            </div>
           </div>
-          <div class="col fx-dc gap10">
-            <label>Location</label>
-            <select class="padinput">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-          </div>
-        </div>
 
-        <div class="row-1 grid">
-          <div class="col fx-dc gap10">
-            <label for="subject">Subject</label>
-            <textarea class="padinput" id="subject" name="subject" placeholder="Write something.."
-              style="height: 200px"></textarea>
+          <div class="row-1 grid">
+            <div class="col fx-dc gap10">
+              <label for="subject">Subject</label>
+              <textarea class="padinput" id="subject" name="subject" placeholder="Write something.."
+                style="height: 50px"></textarea>
+            </div>
           </div>
-        </div>
 
-        <div class="row-2">
-          <div class="col fx-dc-all-center">
-            <input type="submit" value="Submit" />
+          <div class="row-2">
+            <div class="col fx-dc-all-center">
+              <input type="submit" value="Submit" />
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="location-page font-bold pad1 mar4-t">
+    <div class="location-page font-bold pad1 mar4-t" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
       <div class="grid">
         <div class="location-col-1">
           <div class="mapouter">
@@ -225,7 +233,7 @@
         </div>
         <div class="location-col-2 fx-dr">
           <div class="address-col fx-dc">
-            <h3 class="d-blue font-s">Visit Us</h3>
+            <h3 class="d-blue font-s" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">Visit Us</h3>
             <p class="dg-blue font-vs">
               273, 2nd floor,<br />
               Jois Plaza, Dr Puneeth Rajkumar Rd, <br />5th Block,
@@ -235,20 +243,20 @@
             </p>
           </div>
           <div class="address-col fx-dc">
-            <h3 class="d-blue font-s">Reach Us</h3>
+            <h3 class="d-blue font-s" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">Reach Us</h3>
             <div>
-              <p class="dg-blue font-vs">
+              <p class="dg-blue font-vs mar1-b">
                 Phone:<a class="dg-blue font-vs" href="#">91+ 99000-43908</a>
               </p>
             </div>
             <div>
-              <p class="dg-blue font-vs">
+              <p class="dg-blue font-vs mar1-b">
                 Email:
                 <a class="dg-blue font-vs" href="#">contact@promena.com</a>
               </p>
             </div>
             <div>
-              <ul class="fx-dr gap10 dg-blue ">
+              <ul class="fx-dr gap10 dg-blue mar1-b">
                 <li class="font-s"><i class="fa fa-instagram" aria-hidden="true"></i></li>
                 <li class="font-s"> <i class="fa fa-facebook-official" aria-hidden="true"></i></li>
                 <li class="font-s"><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
@@ -261,7 +269,10 @@
       </div>
     </div>
 
-    <div class="design-quote padt50 font-bold tx-center fx-dc-acenter pad30">
+
+
+    <div class=" padt50 font-bold tx-center fx-dc-acenter pad30" data-aos="fade-up" data-aos-duration="1700"
+      data-aos-offset="300">
       <div class="w80 pad30">
         <h3 class="dg-blue font-xmd ft-w6 txc">
           Let's revolutionize your brand into a high revenue-driving business
@@ -278,8 +289,8 @@
     <!-- footer -->
     <footer class="footer primary-col">
       <div class="container">
-        <div class="row fx-wrp fx-spbtw">
-          <div class="footer-col-1 pad1-rl w33">
+        <div class="row fx-wrp fx-spbtw"  data-aos="fade-up" data-aos-duration="1500">
+          <div class="footer-col-1 pad1-rl w33"  >
             <img src="./images/white-logo.png" width="60%" />
             <p class="wl-blue font-vs pad1-tb line4 w90">
               Give your business the digital power of PROMENA, to make your
@@ -287,7 +298,7 @@
               your sector
             </p>
           </div>
-          <div class="footer-col-2 pad1-rl w18">
+          <div class="footer-col-2 pad1-rl w18" >
             <h4 class="wl-blue font-xvs ft-w5">Services</h4>
             <ul>
               <li>
@@ -304,7 +315,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer-col-2 pad1-rl w20">
+          <div class="footer-col-2 pad1-rl w20" >
             <h4 class="wl-blue font-xvs ft-w5">Quick Links</h4>
             <ul>
               <li><a class="wl-blue font-vs" href="#">About Us</a></li>
@@ -318,7 +329,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer-col-2 pad1-rl w18">
+          <div class="footer-col-2 pad1-rl w18" >
             <h4 class="wl-blue font-xvs ft-w5">Contact Us</h4>
             <ul>
               <li class="wl-blue font-vs">
@@ -342,6 +353,12 @@
       </div>
     </footer>
   </div>
+
+  <!-- script for animation -->
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

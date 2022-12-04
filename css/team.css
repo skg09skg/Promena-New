@@ -2,7 +2,40 @@
 /* teams members */
 
 .team-profile {
-  margin: 1.5vw 1.97vw;
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #096685;
+}
+
+.team-profile:hover .overlay {
+   opacity: 0.5;
+}
+.team-profile:hover h4{
+display: none;
+}
+/* .team-profile:hover p{
+  display: none;
+  } */
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 /* Gallery Images */
 
@@ -12,7 +45,9 @@
 }
 .gallery-box {
   margin-bottom: 30px;
+ 
 }
+
 
 .gallery-box img {
   flex: 33.33%;
