@@ -5,7 +5,7 @@
   position: relative;
   overflow: hidden;
 }
-.overlay {
+/* .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -21,7 +21,7 @@
 }
 .team-profile:hover h4{
 display: none;
-}
+} */
 /* .team-profile:hover p{
   display: none;
   } */
