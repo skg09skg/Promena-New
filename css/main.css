@@ -196,6 +196,18 @@ body {
   justify-content: space-between;
 }
 
+.fx-ac-spbtw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fx-jc-spbtw {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
 .fx-dc-spbtw {
   display: flex;
   flex-direction: column;
@@ -686,8 +698,15 @@ body {
   line-height: 60px;
 }
 
+.linexs {
+  line-height: 56px;
+}
 .linesm {
   line-height: 50px;
+}
+
+.linevs {
+  line-height: 44px;
 }
 
 .line1 {
@@ -812,6 +831,10 @@ body {
   /* 32px */
 }
 
+.font-xsv {
+  font-size: 2.307vw; /*30px*/
+}
+
 .font-xxs {
   font-size: 2.15vw;
   /*28px*/
@@ -822,6 +845,9 @@ body {
   /* 24px */
 }
 
+.font-sv {
+  font-size: 1.692vw; /*22px*/
+}
 .font-xxvs {
   font-size: 1.538vw;
   /* 20px */
