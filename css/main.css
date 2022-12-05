@@ -939,24 +939,6 @@ body {
 .borderl {
   border-left: 1px solid #031f4b;
 }
-.bordertb {
-  border: 1px 0 1px 0 solid #031f4b;
-}
-.borderlr {
-  border: 0 1px 0 1px solid #031f4b;
-}
-.borderrb {
-  border: 0 1px 1px 0 solid #031f4b;
-}
-.borderlb {
-  border: 0 0 1px 1px solid #031f4b;
-}
-.bordertl {
-  border: 1px 0 0 1px solid #031f4b;
-}
-.bordertr {
-  border: 1px 1px 0 0 solid #031f4b;
-}
 
 /* / grid  / */
 .grid {
