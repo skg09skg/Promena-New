@@ -6,19 +6,24 @@ html{
   scroll-behavior: smooth;
 }
  /* ABOUT US CONTENTS */
-.contents-header{
-    line-height: 3vw;
-}
-.contents-header h3{
-    padding: 3.07vw 0;
- 
-}
+
 .contents-header button{
     border: none;
     background-color: transparent;
 }
   
-    
+.readmore__content {
+  max-width: 45rem;
+}
+
+button.readmore__toggle {
+  display: flex;
+  justify-content: start;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  
+}  
     /* testimonials */
 
 .card-1{
