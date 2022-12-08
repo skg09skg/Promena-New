@@ -29,6 +29,8 @@
       src="https://kit.fontawesome.com/4ee427eb24.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main -->
   </head>
   <body>
@@ -170,7 +172,7 @@
     </div>
     <div class="fx-center pad30 mart100">
       <div class="fx-spbtw w80">
-        <div class="w45">
+        <div class="w45"  data-aos="fade-right" data-aos-duration="1800">
           <div class="font-xvs font-bold">
             <h1 class="font-xvs l-blue">UX design</h1>
           </div>
@@ -188,13 +190,13 @@
             </ul>
           </div>
           <div class="font-bold txs">
-            <h3 class="font-slr mar4-t reveal fade-bottom linexs mar0">
+            <h3 class="font-slr mar4-t linexs mar0">
               User experience (UX) design is aimed at creating a meaningful and
               relevant user experience.
             </h3>
           </div>
         </div>
-        <div class="w50 fx-center padtb50">
+        <div class="w50 fx-center padtb50"  data-aos="fade-left" data-aos-duration="1800">
           <img src="../images/images-desigN/ux.png" width="60%" />
         </div>
         <!-- <div class="w50">
@@ -205,8 +207,7 @@
     <div class="fx-design fx-center mart100">
       <div class="font-thin w85">
         <h6 class="font-xxvs ft-w9 mart40 txs reveal fade-bottom mar0 pad3-b">
-          We don’t just make smooth UX designs, we help you gain lifelong
-          customers.
+         
         </h6>
       </div>
     </div>
@@ -238,12 +239,13 @@
             We are UX design experts
           </h2>
         </div>
-        <div class="txs font-s w95 mar4-tb font-bold">
-          <h3 class="mar0 mar4-b txs reveal fade-bottom linesm mar0">
+        <div class="txs font-s w95 mar4-tb font-thin">
+          <h3 class="mar0 mar4-b font-xxvs txs reveal fade-bottom line2 mar0">
             Our expert design team will help you revolutionize the way users
             feel about your brand or product. At Promena, we analyze human
             behavior and employ a data-driven strategy that is backed by real
-            results.
+            results. We don’t just make smooth UX designs, we help you gain lifelong
+            customers.
           </h3>
         </div>
         <ul class="fx-wrp w80 padt50">
@@ -269,25 +271,7 @@
             USER TESTING
           </li>
         </ul>
-        <!-- <div class="heading-col-2">
-          <div class="fx-wrp mar1-b pad1-tb mar4-tb reveal fade-bottom">
-            <div class="mar-we w25">
-              <h6 class="hh-1-service-page font-bold">PRODUCT DEFINITION</h6>
-            </div>
-            <div class="w25 mar-we">
-              <h6 class="hh-1-service-page font-bold">RESEARCH</h6>
-            </div>
-            <div class="w25 mar-we">
-              <h6 class="hh-1-service-page font-bold">ANALYSIS</h6>
-            </div>
-            <div class="w25 mar-we">
-              <h6 class="hh-1-service-page font-bold">DESIGN</h6>
-            </div>
-            <div class="w25 mar-we">
-              <h6 class="hh-1-service-page font-bold">USER TESTING</h6>
-            </div>
-          </div>
-        </div> -->
+      
       </div>
     </div>
     <div class="fx-center padtb50 reveal fade-bottom">
@@ -297,14 +281,14 @@
       <div class="w80 txc">
         <div class="font-bold txs">
           <h2
-            class="font-bold txs l-blue font-vs reveal fade-bottom mar0 pad3-b"
+            class="font-bold txc l-blue font-vs reveal fade-bottom mar0 pad3-b"
           >
             WHAT DO WE SERVE ?
           </h2>
         </div>
         <div class="txs font-bold">
           <h3
-            class="mar0 mar4-b font-bold font-xs reveal fade-bottom linevs mar0"
+            class="mar0 mar4-b font-bold txc font-xs reveal fade-bottom linevs mar0"
           >
             We help you transform your ideas into <br />
             flawless, groundbreaking design experiences for your brand.
@@ -449,6 +433,9 @@
       }
 
       window.addEventListener("scroll", reveal);
+    </script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

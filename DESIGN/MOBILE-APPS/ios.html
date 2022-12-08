@@ -28,6 +28,8 @@
       src="https://kit.fontawesome.com/4ee427eb24.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main -->
   </head>
   <body>
@@ -170,7 +172,7 @@
     </div>
     <div class="fx-center pad30 mart100">
       <div class="fx-spbtw w80">
-        <div class="w45">
+        <div class="w45" data-aos="fade-right" data-aos-duration="1800">
           <div class=" font-bold">
             <h1 class="font-xvs l-blue">IOS</h1>
           </div>
@@ -186,13 +188,13 @@
             <li class="font-medium font-xvss l-blue">IOS</li>
           </ul>
           <div class="font-bold txs">
-            <h3 class="font-slr mar4-t reveal fade-bottom linexs mar0">
+            <h3 class="font-slr mar4-t  linexs mar0">
             IOS is a powerful mobile operating application created by Apple
               Inc
             </h3>
           </div>
         </div>
-        <div class="w50 fx-center padtb50">
+        <div class="w50 fx-center padtb50" data-aos="fade-left" data-aos-duration="1800">
           <img src="../../images/images-desigN/apple.png" width="60%" />
         </div>
         <!-- <div class="w50">
@@ -413,5 +415,8 @@
 
       window.addEventListener("scroll", reveal);
     </script>
+      <script>
+        AOS.init();
+      </script>
   </body>
 </html>

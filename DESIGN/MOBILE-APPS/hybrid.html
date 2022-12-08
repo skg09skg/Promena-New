@@ -28,6 +28,8 @@
       src="https://kit.fontawesome.com/4ee427eb24.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main -->
   </head>
   <body>
@@ -170,7 +172,7 @@
     </div>
     <div class="fx-center pad30 mart100 padb50">
       <div class="fx-spbtw w80">
-        <div class="w45">
+        <div class="w45" data-aos="fade-right" data-aos-duration="1800">
           <div class="font-bold">
             <h1 class="font-xvs l-blue">HYBRID</h1>
           </div>
@@ -186,14 +188,14 @@
             <li class="font-medium font-xvss l-blue">Hybrid</li>
           </ul>
           <div class="font-bold txs">
-            <h3 class="font-slr mar4-t reveal fade-bottom linexs mar0">
+            <h3 class="font-slr mar4-t linexs mar0">
               Hybrid apps are a combination of native and online solutions.
               Where the application's core language is written with web
               technologies.
             </h3>
           </div>
         </div>
-        <div class="w50 padtb50 fx-center">
+        <div class="w50 padtb50 fx-center" data-aos="fade-left" data-aos-duration="1800">
           <img
             src="../../images/images-design/hybrid appICON.png"
             width="60%"
@@ -406,5 +408,8 @@
 
       window.addEventListener("scroll", reveal);
     </script>
+      <script>
+        AOS.init();
+      </script>
   </body>
 </html>

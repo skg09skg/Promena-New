@@ -28,6 +28,8 @@
       src="https://kit.fontawesome.com/4ee427eb24.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main -->
   </head>
   <body>
@@ -169,7 +171,7 @@
     </div>
     <div class="fx-center pad30 mart100">
       <div class="fx-spbtw w80">
-        <div class="w45">
+        <div class="w45" data-aos="fade-right" data-aos-duration="1800">
           <div class="font-xvs font-bold">
             <h1 class="font-xvs l-blue">ILLUSTRATIONS</h1>
           </div>
@@ -185,13 +187,13 @@
             <li class="font-medium font-xvss l-blue">Illustration</li>
           </ul>
           <div class="font-bold txs">
-            <h3 class="font-slr mar4-t reveal fade-bottom linexs mar0">
+            <h3 class="font-slr mar4-t  linexs mar0">
               Illustration is a creative method of simplifying complex
               interpretations into comprehensible data.
             </h3>
           </div>
         </div>
-        <div class="w50 fx-center padtb50">
+        <div class="w50 fx-center padtb50" data-aos="fade-left" data-aos-duration="1800">
           <img src="../images/images-desigN/illustration.png" width="60%" />
         </div>
         <!-- <div class="w50">
@@ -221,8 +223,11 @@
 
     <div class="fx-center padb50">
       <div class="w85 txc">
-        <div class="txs font-s w95 font-bold">
-          <h3 class="mar0 mar4-b txs reveal fade-bottom linesm mar0">
+        <div class="txs font-s w95 ">
+          <h2 class="font-bold txs l-blue font-xsv reveal fade-bottom mar0">
+           we are illustration experts
+          </h2>
+          <h3 class="mar0 font-xxvs font-thin txs mar4-b mar4-t reveal fade-bottom line2">
             Our graphic illustrators describe a text or explanation by creating
             spectacular illustrations and representing them visually in such a
             way that the viewers do not get carried away by the illustration.
@@ -257,14 +262,14 @@
       <div class="w80 txc">
         <div class="font-bold txs">
           <h2
-            class="font-bold txs l-blue font-vs reveal fade-bottom mar0 pad3-b"
+            class="font-bold txc l-blue font-vs reveal fade-bottom mar0 pad3-b"
           >
             WHAT DO WE SERVE ?
           </h2>
         </div>
         <div class="txs font-md font-bold">
           <h3
-            class="mar0 mar4-b font-bold font-xs reveal fade-bottom linevs mar0"
+            class="mar0 mar4-b txc font-bold font-xs reveal fade-bottom line2 mar0"
           >
             We help you transform your ideas into flawless, groundbreaking
             design experiences for your brand.
@@ -409,6 +414,9 @@
       }
 
       window.addEventListener("scroll", reveal);
+    </script>
+     <script>
+      AOS.init();
     </script>
   </body>
 </html>
