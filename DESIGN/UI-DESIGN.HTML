@@ -28,6 +28,8 @@
       src="https://kit.fontawesome.com/4ee427eb24.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main -->
   </head>
   <body>
@@ -169,7 +171,7 @@
     </div>
     <div class="fx-center pad30 mart100">
       <div class="fx-spbtw w80">
-        <div class="w45">
+        <div class="w45" data-aos="fade-right" data-aos-duration="1800">
           <div class="font-xvs font-bold">
             <h1 class="font-md l-blue">UI DESIGN</h1>
           </div>
@@ -185,12 +187,12 @@
             <li class="font-medium font-xvss l-blue">UI Design</li>
           </ul>
           <div class="font-bold txs">
-            <h3 class="font-slr mar4-t reveal fade-bottom linexs mar0">
+            <h3 class="font-slr mar4-t  linexs mar0">
               Accelerate Creative UI Designs at a swift scale.
             </h3>
           </div>
         </div>
-        <div class="w50 fx-center padtb50">
+        <div class="w50 fx-center padtb50" data-aos="fade-left" data-aos-duration="1800">
           <img src="../images/images-desigN/ui.png" width="60%" />
         </div>
         <!-- <div class="w50">
@@ -200,6 +202,11 @@
     </div>
     <div class="fx-design fx-center">
       <div class="font-thin w85">
+        <h2
+        class="font-bold txs l-blue font-xsv reveal fade-bottom mar0 pad3-b"
+      >
+        What is UI Design?
+      </h2>
         <h6
           class="font-xxvs ft-w9 mart40 txs mart100 reveal fade-bottom line2 mar0 padb50"
         >
@@ -221,7 +228,7 @@
         </div>
         <div class="font-thin mar4-tb">
           <h3
-            class="mar0 font-xxvs ft-w9 txs mar4-b reveal fade-bottom line2 mar0"
+            class="mar0 font-xxvs  txs mar4-b reveal fade-bottom line2 mar0"
           >
             Our expert design team carefully curates the best interactive
             elements geared toward developing a visually attractive, compelling,
@@ -232,27 +239,7 @@
             a result-oriented UI design blueprint to get your users a seamless
             experience.
           </h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="fx-center padtb50">
-      <div class="w85 txc">
-        <div class="font-bold txs">
-          <h2
-            class="font-bold txs l-blue font-xsv reveal fade-bottom mar0 pad3-b"
-          >
-            What is UI Design?
-          </h2>
-        </div>
-        <div class="txs font-s w95 mar4-tb font-bold">
-          <h3 class="mar0 mar4-b txs reveal fade-bottom linevs mar0">
-            UI (User Interface) is the process of designing the interactivity,
-            look, and feel of a product. UI designers ensure that the product is
-            intuitive by carefully curating each interactive visual or element
-            the users might encounter.
-          </h3>
-        </div>
+          
         <ul class="fx-wrp w80 pad3-t">
           <li
             class="font-xmedium font-vs pad4 reveal fade-bottom borderr borderb w40"
@@ -276,25 +263,12 @@
             USER TESTING
           </li>
         </ul>
-        <!-- <div class="heading-col-2">
-          <div class="fx-wrp mar1-b pad1-tb reveal fade-bottom padb50">
-            <div class="mar-we w25">
-              <h6 class="hh-1-service-page font-bold">PRODUCT DEFINITION</h6>
-            </div>
-            <div class="w25 mar-we">
-              <h6 class="hh-1-service-page font-bold">RESEARCH</h6>
-            </div>
-            <div class="w25 mar-we">
-              <h6 class="hh-1-service-page font-bold">ANALYSIS</h6>
-            </div>
-            <div class="w25 mar-we">
-              <h6 class="hh-1-service-page font-bold">DESIGN</h6>
-            </div>
-            <div class="w25 mar-we">
-              <h6 class="hh-1-service-page font-bold">USER TESTING</h6>
-            </div>
-          </div>
-        </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="fx-center padtb50">
+   
       </div>
     </div>
     <div class="fx-center padtb50 reveal fade-bottom">
@@ -307,12 +281,12 @@
       <div class="w80 txc">
         <div class="font-bold txs">
           <h2
-            class="font-bold txs l-blue font-vs reveal fade-bottom mar0 pad3-b"
+            class="font-bold txc l-blue font-vs reveal fade-bottom mar0 pad3-b"
           >
             WHAT DO WE SERVE ?
           </h2>
         </div>
-        <div class="txs font-s font-bold">
+        <div class="txc font-s font-bold">
           <h3
             class="mar0 mar4-b font-bold font-xs reveal fade-bottom linevs mar0"
           >
@@ -459,6 +433,9 @@
       }
 
       window.addEventListener("scroll", reveal);
+    </script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

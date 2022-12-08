@@ -33,6 +33,8 @@
       src="https://kit.fontawesome.com/4ee427eb24.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main -->
   </head>
   <body>
@@ -175,13 +177,13 @@
     </div>
     <div class="fx-center pad30 mart100">
       <div class="fx-spbtw w80">
-        <div class="w45">
+        <div class="w45"  data-aos="fade-right" data-aos-duration="1800">
           <!-- <img src="./favicon-194x194.png"> -->
           <video playsinline autoplay muted loop class="w100">
             <source src="./videos/home-2.mp4" />
           </video>
         </div>
-        <div class="w50">
+        <div class="w50"  data-aos="fade-left" data-aos-duration="1800">
           <div class="font-xvss font-bold">
             <h1 class="l-blue font-xvs">MARKETING</h1>
           </div>
@@ -204,7 +206,7 @@
             </h3>
           </div>
           <div class="font-thin">
-            <h6 class="font-s ft-w9 mart40 reveal fade-bottom mar0 line1">
+            <h6 class="font-s ft-w9 mart40 mar0 line1">
               We analyze human behavioral patterns and blend them with data
               science and information architecture to design a unique 'blended
               experience'.
@@ -560,6 +562,9 @@
       }
 
       window.addEventListener("scroll", reveal);
+    </script>
+     <script>
+      AOS.init();
     </script>
   </body>
 </html>

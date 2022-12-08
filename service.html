@@ -28,6 +28,8 @@
       src="https://kit.fontawesome.com/4ee427eb24.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main -->
   </head>
   <body>
@@ -170,13 +172,13 @@
     </div>
     <div class="bnr fx-center pad30 padtb100">
       <div class="fx-spbtw w80">
-        <div class="img w45">
+        <div class="img w45" data-aos="fade-right" data-aos-duration="1500">
           <!-- <img src="./favicon-194x194.png"> -->
           <video playsinline autoplay muted loop class="w100">
             <source src="./videos/home-3.mp4" />
           </video>
         </div>
-        <div class="w50">
+        <div class="w50" data-aos="fade-left" data-aos-duration="1500">
           <div class="font-bold">
             <h1 class="l-blue font-xvs">DESIGN</h1>
           </div>
@@ -199,7 +201,7 @@
             </h3>
           </div>
           <div class="font-thin">
-            <h6 class="font-s ft-w9 mart40 reveal fade-bottom mar0 line1 mar0">
+            <h6 class="font-s ft-w9 mart40  mar0 line1 mar0" >
               Powered by human behavioral patterns, we create unique designs by
               analyzing science and information architecture.
             </h6>
@@ -564,5 +566,9 @@
 
       window.addEventListener("scroll", reveal);
     </script>
+     <script>
+      AOS.init();
+    </script>
+  </body>
   </body>
 </html>
