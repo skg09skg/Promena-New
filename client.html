@@ -33,6 +33,8 @@
       src="https://kit.fontawesome.com/4ee427eb24.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main -->
   </head>
   <body>
@@ -175,18 +177,18 @@
     </div>
     <div class="bnr fx-center pad4-tb padtb50">
       <div class="fx-spbtw w80 fx-ac-spbtw">
-        <div class="img w45">
+        <div class="img w45" data-aos="fade-right" data-aos-duration="1800">
           <!-- <img src="./favicon-194x194.png"> -->
           <video playsinline autoplay muted loop class="w100">
             <source src="./images/clients-images/Clients.mp4" />
           </video>
         </div>
-        <div class="w50">
+        <div class="w50" data-aos="fade-left" data-aos-duration="1800">
           <div class="font-bold">
             <h1 class="l-blue font-vs pad4-tb">CLIENT</h1>
           </div>
           <div class="font-bold txs">
-            <h3 class="font-slr reveal fade-bottom linexs mar0">
+            <h3 class="font-slr  linexs mar0">
               We make happy clients by interconnecting technology with business
               & art.
             </h3>
@@ -747,6 +749,9 @@
       }
 
       window.addEventListener("scroll", reveal);
+    </script>
+     <script>
+      AOS.init();
     </script>
   </body>
 </html>

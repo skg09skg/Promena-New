@@ -26,6 +26,8 @@
       src="https://kit.fontawesome.com/4ee427eb24.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main -->
   </head>
 
@@ -174,7 +176,7 @@
 
     <div class="mart100 fx-dc-jcenter padtb50">
       <div class="w80 fx-spbtw">
-        <div class="w45">
+        <div class="w45"data-aos="fade-right" data-aos-duration="1500">
           <div class="seo-banner-heading">
             <h1 class="font-bold font-xvs mar0 l-blue pad1-b">
               E-MAIL MARKETING
@@ -201,7 +203,7 @@
             Create successful email campaigns and leverage revenue.
           </div>
         </div>
-        <div class="w45 fx-center">
+        <div class="w45 fx-center" data-aos="fade-left" data-aos-duration="1500">
           <img
             class="w60"
             src="../images/Marketing-icons/email-marketing.png"
@@ -469,6 +471,9 @@
       }
 
       window.addEventListener("scroll", reveal);
+    </script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
