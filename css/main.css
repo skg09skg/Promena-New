@@ -968,6 +968,18 @@ body {
   font-family: "gotham-xthin", sans-serif;
 }
 
+/*Boder radius*/
+
+.boder5{
+  border-radius: 5px;
+}
+.border10{
+  border-radius: 10px;
+}
+.border15{
+  border-radius: 15px;
+}
+
 /* border */
 
 .border {
