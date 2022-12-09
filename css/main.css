@@ -1788,6 +1788,48 @@ ul {
 
   /* Margin */
 
+
+  /* Font-Sizes */
+
+  .mfont-xvss {
+    font-size: 3.75vw; /* 12px */
+  }
+
+  .mfont-xvss {
+    font-size: 4.375vw; /* 14px */
+  }
+
+  .mfont-vs {
+    font-size: 5vw; /* 16px */
+  }
+
+  .mfont-xvs {
+    font-size: 5.625vw; /* 18px */
+  }
+
+  .mfont-xxvs {
+    font-size: 6.25vw; /* 20px */
+  }
+
+  .mfont-sv {
+    font-size: 6.875vw; /* 22px */
+  }
+
+  .mfont-s {
+    font-size: 7.5vw; /* 24px */
+  }
+
+  .mfont-xxs {
+    font-size: 8.75vw; /* 28px */
+  }
+
+  .mfont-xsv {
+    font-size: 9.375vw; /* 30px */
+  }
+
+  .mfont-xs {
+    font-size: 10vw; /* 32px */
+
   .mr0 {
     margin: 0;
   }
