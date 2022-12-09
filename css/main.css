@@ -1781,43 +1781,43 @@ ul {
 
   /* Font-Sizes */
 
-  .font-xvss {
+  .mfont-xvss {
     font-size: 3.75vw; /* 12px */
   }
 
-  .font-xvss {
+  .mfont-xvss {
     font-size: 4.375vw; /* 14px */
   }
 
-  .font-vs {
+  .mfont-vs {
     font-size: 5vw; /* 16px */
   }
 
-  .font-xvs {
+  .mfont-xvs {
     font-size: 5.625vw; /* 18px */
   }
 
-  .font-xxvs {
+  .mfont-xxvs {
     font-size: 6.25vw; /* 20px */
   }
 
-  .font-sv {
+  .mfont-sv {
     font-size: 6.875vw; /* 22px */
   }
 
-  .font-s {
+  .mfont-s {
     font-size: 7.5vw; /* 24px */
   }
 
-  .font-xxs {
+  .mfont-xxs {
     font-size: 8.75vw; /* 28px */
   }
 
-  .font-xsv {
+  .mfont-xsv {
     font-size: 9.375vw; /* 30px */
   }
 
-  .font-xs {
+  .mfont-xs {
     font-size: 10vw; /* 32px */
   }
 
