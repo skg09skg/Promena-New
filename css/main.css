@@ -1839,4 +1839,9 @@ ul {
   .mline8 {
     line-height: 10vw; /* 32px */
   }
+  /* alignment */
+
+  .clr {
+    flex-direction: column-reverse;
+  }
 }
