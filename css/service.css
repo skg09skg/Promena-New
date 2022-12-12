@@ -5,9 +5,7 @@
   margin-bottom: -18px;
 }
 .hh-1-service-page {
-  margin: 0 0 20px 0;
   width: fit-content;
-  font-size: 1.6vw;
   background: transparent
     url(https://ik.imagekit.io/2eribsa8w/dots_lX3YUgQRrH.svg) repeat-x bottom;
   padding-bottom: 3px;
@@ -77,4 +75,87 @@
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
   z-index: 10;
   transition: 0.4s ease-in-out;
+}
+
+@media screen and (min-width: 280px) and (max-width: 760px) {
+  .service-banner {
+    padding-top: 75px;
+  }
+
+  .home-next-content {
+    margin: 0;
+  }
+  .hh-1-service-page {
+    font-family: "gotham-thin";
+    margin: 0 0 0 0;
+  }
+  .card-service-page {
+    width: 44%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .rs100 {
+    flex-direction: column;
+  }
+  .dropbox-cont {
+    margin-bottom: 30px;
+    width: 75%;
+  }
+  .fnt-thn {
+    font-family: "gotham-thin";
+  }
+  .dropbox-cont.col1:after {
+    background: transparent url(../images/header-back.svg) repeat-x 0 80%;
+    background-size: 179%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .service-banner {
+    padding-top: 75px;
+  }
+  .pbh {
+    font-size: 3vw;
+  }
+  .pbhl {
+    font-size: 2vw;
+  }
+  .pbc {
+    font-size: 2vw;
+  }
+  .t-pbc {
+    font-size: 3vw;
+  }
+  .pqh {
+    font-size: 2vw;
+  }
+  .t-mw90 {
+    width: 90%;
+  }
+
+  .t-mw40 {
+    width: 40%;
+  }
+  .t-mw55 {
+    width: 55%;
+  }
+
+  .t-mtxc {
+    text-align: center;
+  }
+  .t-mw90 {
+    width: 90%;
+  }
+  .line4 {
+    line-height: 20px;
+  }
+  .line3 {
+    line-height: 27px;
+  }
+  .t-line4 {
+    line-height: 34px;
+  }
+  .t-pad {
+    padding-bottom: 23px;
+  }
 }
