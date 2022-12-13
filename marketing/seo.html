@@ -34,6 +34,108 @@
   <body>
     <!-- Header -->
 
+    <div class="navbar">
+      <!-- Navbar logo -->
+      <div class="nav-header">
+        <div class="nav-logo">
+          <a class="nav-brand" href="../index.html">
+            <img src="../images/PROMENA LOGO WHITE.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <!-- responsive navbar toggle button -->
+      <input type="checkbox" id="nav-check" />
+      <!-- <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div> -->
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <!-- Navbar items -->
+      <ul class="nav-links">
+        <!-- <a href="#">Home</a>
+        <a href="#">About</a> -->
+
+        <!-- Dropdown menu -->
+        <li class="dropdown">
+          <a class="dropBtn" href="#"
+            >Services
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="drop-content">
+            <a href="../service.html">Design</a>
+            <a href="../technology.html">Technology</a>
+            <a href="../marketing.html">Marketing</a>
+
+            <!-- Creating sub menu Dropdown -->
+            <!-- <div class="dropdown2">
+              <a class="dropBtn2" href="#"
+                >More
+                <i class="fas fa-angle-right"></i>
+              </a>
+              <div class="drop-content2">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JavaScript</a>
+                <a href="#">jQuery</a>
+              </div>
+            </div> -->
+          </div>
+        </li>
+
+        <li><a href="../client.html">Client</a></li>
+        <li class="dropdown">
+          <a class="dropBtn" href="#"
+            >About Us
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="drop-content">
+            <a href="../about-us.html">About Us</a>
+            <a href="../team.html">Team</a>
+            <a href="../career.html">Career</a>
+          </div>
+        </li>
+        <li><a href="../blockchain.html">BlockChain</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../contact-us.html">Contact Us</a></li>
+        <!-- <button class="loginBtn">Login</button> -->
+      </ul>
+    </div>
+
+    <!-- <header class="new-header">
+      <div class="con w80">
+        <nav class="new-nav mpad1-tb">
+          <a class="nav-brand" href="../index.html">
+            <img src="../images/PROMENA LOGO WHITE.png" alt="" />
+            </a>
+          <ul class="nav-list">
+            <li class="nav-item1"><a class="nav-link-li" href="">home</a></li>
+            <li class="nav-item1"><a class="nav-link-li" href="">about</a></li>
+            <li class="nav-item1"><a class="nav-link-li" href="">videos</a></li>
+            <li class="nav-item1">
+              <a class="nav-link-li" href="">competences</a>
+            </li>
+            <li class="nav-item1">
+              <a class="nav-link-li" href="">contacts</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </div>
+    </header> -->
+
     <div class="deskHeader header-service">
       <header class="desk-header innerHeader">
         <div class="container w80">
@@ -163,7 +265,8 @@
                   </ul>
                 </div>
               </li>
-              <li><a href="#">Training</a></li>
+              <!-- <li><a href="#">Training</a></li> -->
+              <li><a href="../blockchain.html">Blockchain</a></li>
               <li><a href="../blog.html">Blog</a></li>
               <li><a href="../contact-us.html">Contact Us</a></li>
             </ul>
@@ -174,7 +277,7 @@
 
     <!-- Banner -->
 
-    <div class="mart100 fx-dc-jcenter padtb50 mpad4-tb">
+    <div class="mart100 fx-dc-jcenter padtb50 mpad4-tb mmar0">
       <div class="w80 fx-spbtw fx-wrp t-mw90">
         <div
           class="w45 mw100 t-mw40"
@@ -206,15 +309,13 @@
               <li class="font-medium font-xvss l-blue pbhl">Seo</li>
             </ul>
           </div>
-          <div
-            class="font-md mar4-t font-bold t-pbc pbc t-pad t-line4 mline3 pad4-b k-line"
-          >
+          <div class="font-md mar4-t font-bold pbc linevs mline3">
             We are the fuel to skyrocket your brand or product to rank first in
             search engines.
           </div>
         </div>
         <div
-          class="w45 fx-center mw100 t-mw55"
+          class="w45 fx-center mw100"
           data-aos="fade-left"
           data-aos-duration="1500"
         >
@@ -232,69 +333,27 @@
     <div class="fx-dc-jcenter padtb50 mpad4-tb">
       <div class="w80 pad1-tb">
         <h2
-          class="font-bold font-xsv l-blue mar0 pad4-b reveal fade-bottom pqh"
+          class="font-bold font-xsv l-blue mar0 pad4-b reveal fade-bottom pqh mpad0"
         >
           What is SEO?
         </h2>
         <h4
-          class="font-thin font-xxvs black line2 pad4-b mar0 reveal fade-bottom pbc mline3 tpbh mline3 mpad1-t k-line2"
+          class="font-thin font-xxvs black line2 pad4-b mar0 reveal fade-bottom pbc mline3 mline3 mpad1-t tfont-xxvs"
         >
           Search Engine Optimization improves the visibility of your brand or
           site when users search for products related to your business.
         </h4>
-        <ul class="fx-wrp w80 pad4-b mw100">
-          <li
-            class="font-xmedium font-vs pad4 reveal fade-bottom borderr borderb w40 pc"
-          >
-            Keyword research & selection
-          </li>
-          <li
-            class="font-xmedium font-vs pad4 reveal fade-bottom borderb w40 pc"
-          >
-            Title Tags & Meta descriptions
-          </li>
-          <li
-            class="font-xmedium font-vs pad4 reveal fade-bottom borderr borderb w40 pc"
-          >
-            Information architecture audit
-          </li>
-          <li
-            class="font-xmedium font-vs pad4 reveal fade-bottom borderb w40 pc"
-          >
-            Canonicalization analysis
-          </li>
-          <li
-            class="font-xmedium font-vs pad4 reveal fade-bottom borderr borderb w40 pc"
-          >
-            Advanced interlinking
-          </li>
-          <li
-            class="font-xmedium font-vs pad4 reveal fade-bottom borderb w40 pc"
-          >
-            Customized content marketing
-          </li>
-          <li
-            class="font-xmedium font-vs pad4 reveal fade-bottom borderr borderb w40 pc"
-          >
-            Competitive analysis
-          </li>
-          <li
-            class="font-xmedium font-vs pad4 reveal fade-bottom borderb w40 pc"
-          >
-            Technical SEO
-          </li>
-        </ul>
       </div>
     </div>
     <div class="fx-dc-jcenter padtb50 mpad4-tb">
       <div class="w80 pad1-tb">
         <h2
-          class="font-bold font-xsv l-blue mar0 pad3-b reveal fade-bottom pqh"
+          class="font-bold font-xsv l-blue mar0 pad3-b reveal fade-bottom pqh mpad0"
         >
           We are SEO experts
         </h2>
         <h4
-          class="font-thin font-xxvs black line2 mar0 padb50 reveal fade-bottom pbc mline3 tpbh mline3 mpad1-t k-line2"
+          class="font-thin font-xxvs black line2 mar0 padb50 reveal fade-bottom pbc mline3 mpad1-t tfont-xxvs"
         >
           who turn traffic increases into revenue. At Promena, our elite team of
           SEO experts focuses on driving real revenue and building a customized
@@ -302,6 +361,48 @@
           accelerate growth through our actionable insights that generate
           revenue.
         </h4>
+        <ul class="fx-wrp w80 pad4-b mw100 mpad2-tb">
+          <li
+            class="font-xmedium font-vs pad4 reveal fade-bottom borderr borderb w40 pc tsv"
+          >
+            Keyword research & selection
+          </li>
+          <li
+            class="font-xmedium font-vs pad4 reveal fade-bottom borderb w40 pc tsv"
+          >
+            Title Tags & Meta descriptions
+          </li>
+          <li
+            class="font-xmedium font-vs pad4 reveal fade-bottom borderr borderb w40 pc tsv"
+          >
+            Information architecture audit
+          </li>
+          <li
+            class="font-xmedium font-vs pad4 reveal fade-bottom borderb w40 pc tsv"
+          >
+            Canonicalization analysis
+          </li>
+          <li
+            class="font-xmedium font-vs pad4 reveal fade-bottom borderr borderb w40 pc tsv"
+          >
+            Advanced interlinking
+          </li>
+          <li
+            class="font-xmedium font-vs pad4 reveal fade-bottom borderb w40 pc tsv"
+          >
+            Customized content marketing
+          </li>
+          <li
+            class="font-xmedium font-vs pad4 reveal fade-bottom borderr borderb w40 pc tsv"
+          >
+            Competitive analysis
+          </li>
+          <li
+            class="font-xmedium font-vs pad4 reveal fade-bottom borderb w40 pc tsv"
+          >
+            Technical SEO
+          </li>
+        </ul>
         <div class="fx-dc-jcenter pad4-t reveal fade-bottom">
           <img
             class="w60 mw80"
@@ -318,14 +419,14 @@
       <div class="w80 txc mw90">
         <div class="fnt-ban-heading">
           <h2
-            class="next-heading font-medium font-vs d-blue reveal fade-bottom pqh"
+            class="next-heading font-medium mar0 font-vs d-blue reveal fade-bottom pqh tsv"
           >
             WHAT DO WE SERVE ?
           </h2>
         </div>
         <div class="banner-next-content font-md">
           <h3
-            class="mar0 mar4-b font-medium font-xsv reveal fade-bottom extrabold pbc tpbh mline3 mpad1-t k-line2"
+            class="mar0 mar4-b pad1-tb font-medium font-xsv reveal fade-bottom extrabold pbc mline3 mpad1-t tmd tline1 tpad1-tb"
           >
             Innovative marketing and branding led solutions to the
             end-user-oriented problem.
@@ -402,14 +503,16 @@
 
     <div class="font-bold tx-center fx-dc-acenter padtb50 mpad4-tb">
       <div class="w80 mw90">
-        <h3 class="mar0 dg-blue font-xmd ft-w6 txc pad1-tb pbc mline1">
+        <h3
+          class="mar0 dg-blue font-xmd ft-w6 txc pad1-tb pbc mline1 tfont-xmd"
+        >
           Let's revolutionize your brand into a high revenue-driving business
           model.
         </h3>
       </div>
       <div class="design-btn txc pad1-tb mpad1-tb w100">
         <button
-          class="dg-blue font-xvs ft-w6 pbc bw12 pad1-tb mw30 mpadb-tb"
+          class="dg-blue font-xvs ft-w6 pbc bw12 pad1-tb mw30 mpadb-tb tsv"
           type="submit"
         >
           Read More
@@ -420,11 +523,13 @@
     <!-- footer -->
 
     <footer class="footer primary-col">
-      <div class="container w80 mw90 padtb50 mpad3-tb">
+      <div class="container w80 mw90 padtb50 mpad3-tb tw85">
         <div class="row fx-wrp fx-spbtw">
           <div class="footer-col-1 pad1-rl w33 mw100">
             <img src="../images/white-logo.png" class="w60 mw30" />
-            <p class="wl-blue font-xvss pad1-tb line5 w90 mline1 pc mar1-t">
+            <p
+              class="wl-blue font-xvss pad1-tb line5 w90 mline1 pc mar1-t tfontp"
+            >
               Give your business the digital power of PROMENA, to make your
               brand value bigger, connect with the bigger brand to be top in
               your sector
@@ -434,16 +539,24 @@
             <h4 class="wl-blue font-xvs ft-w5 mar4-b pbc">Services</h4>
             <ul class="mpad1-t">
               <li class="mar2-b">
-                <a class="wl-blue font-xvss pc" href="#">Digital Marketing</a>
+                <a class="wl-blue font-xvss pc tfontl" href="#"
+                  >Digital Marketing</a
+                >
               </li>
               <li class="mar2-b">
-                <a class="wl-blue font-xvss pc" href="#">UI|UX Development</a>
+                <a class="wl-blue font-xvss pc tfontl" href="#"
+                  >UI|UX Development</a
+                >
               </li>
               <li class="mar2-b">
-                <a class="wl-blue font-xvss pc" href="#">Influence Marketing</a>
+                <a class="wl-blue font-xvss pc tfontl" href="#"
+                  >Influence Marketing</a
+                >
               </li>
               <li class="mar2-b">
-                <a class="wl-blue font-xvss pc" href="#">Mobile development</a>
+                <a class="wl-blue font-xvss pc tfontl" href="#"
+                  >Mobile development</a
+                >
               </li>
             </ul>
           </div>
@@ -451,34 +564,36 @@
             <h4 class="wl-blue font-xvs ft-w5 mar4-b pbc">Quick Links</h4>
             <ul class="mpad1-t">
               <li class="mar2-b">
-                <a class="wl-blue font-xvss pc" href="#">About Us</a>
+                <a class="wl-blue font-xvss pc tfontl" href="#">About Us</a>
               </li>
               <li class="mar2-b">
-                <a class="wl-blue font-xvss pc" href="#">Careers</a>
+                <a class="wl-blue font-xvss pc tfontl" href="#">Careers</a>
               </li>
               <li class="mar2-b">
-                <a class="wl-blue font-xvss pc" href="#">Blogs</a>
+                <a class="wl-blue font-xvss pc tfontl" href="#">Blogs</a>
               </li>
               <li class="mar2-b">
-                <a class="wl-blue font-xvss pc" href="#"
+                <a class="wl-blue font-xvss pc tfontl" href="#"
                   >Social Media Marketing</a
                 >
               </li>
               <li class="mar2-b">
-                <a class="wl-blue font-xvss pc" href="#">Privacy Policy</a>
+                <a class="wl-blue font-xvss pc tfontl" href="#"
+                  >Privacy Policy</a
+                >
               </li>
             </ul>
           </div>
-          <div class="footer-col-2 pad1-rl w18 mw100">
+          <div class="footer-col-2 pad1-rl w18 mw100 tw20">
             <h4 class="wl-blue font-xvs ft-w5 mar4-b pbc">Contact Us</h4>
             <ul class="mpad1-t">
               <a href="tel:9900043908">
-                <li class="wl-blue font-xvss mar1-b pc">
+                <li class="wl-blue font-xvss mar1-b pc tfontl">
                   <i class="fa-solid fa-phone wl-blue"></i> +91 9900043908
                 </li></a
               >
               <a href="mailto:contact@promena.in">
-                <li class="wl-blue font-xvss mar1-b pc">
+                <li class="wl-blue font-xvss mar1-b pc tfontl">
                   <i class="fa-solid fa-envelope wl-blue"></i>
                   contact@promena.in
                 </li></a
@@ -487,7 +602,7 @@
                 <ul class="fx-dr pad2-t mpad1-t">
                   <li class="mpad1-r">
                     <a
-                      class="white"
+                      class="white tsv"
                       href="https://www.facebook.com/PromenaLLP/"
                       target="_blank"
                     >
@@ -496,7 +611,7 @@
                   </li>
                   <li class="mpad1-r">
                     <a
-                      class="white"
+                      class="white tsv"
                       href="https://www.facebook.com/PromenaLLP/"
                       target="_blank"
                     >
@@ -508,7 +623,7 @@
                   </li>
                   <li class="mpad1-r">
                     <a
-                      class="white"
+                      class="white tsv"
                       href="https://www.linkedin.com/company/promena-in/mycompany/"
                       target="_blank"
                     >
@@ -520,7 +635,7 @@
                   </li>
                   <li class="mpad1-r">
                     <a
-                      class="white"
+                      class="white tsv"
                       href="https://api.whatsapp.com/message/DEEJEJJ7JI4KL1?autoload=1&app_absent=0"
                       target="_blank"
                     >
@@ -555,6 +670,14 @@
     </script>
     <script>
       AOS.init();
+
+      const elment = document.querySelector(".hamburger");
+      const elment1 = document.querySelector(".nav-list");
+
+      elment.addEventListener("click", () => {
+        elment.classList.toggle("active");
+        elment1.classList.toggle("active");
+      });
     </script>
   </body>
 </html>
