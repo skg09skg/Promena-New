@@ -1587,9 +1587,189 @@ ul {
   font-style: normal;
   font-display: block;
 }
+
+.navbar {
+  display: none;
+}
+
 /* 280 to 760 responsive */
 
 @media screen and (min-width: 280px) and (max-width: 760px) {
+  /* Header */
+
+  .desk-header {
+    display: none;
+  }
+
+  /* Mobile-Header */
+
+  .navbar {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5vw 0 4vw 0px;
+    background-color: #061993;
+    position: relative;
+  }
+  .navbar .nav-header {
+    display: inline;
+    padding-left: 10vw;
+  }
+  .navbar .nav-header .nav-logo {
+    display: inline-block;
+    width: 40vw;
+  }
+  .navbar .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  .navbar .nav-links a {
+    text-decoration: none;
+    font-weight: 550;
+    color: white;
+  }
+  /* Hover effects */
+  .navbar .nav-links a:hover {
+    background-color: #0000004d;
+  }
+
+  /* responsive navbar toggle button */
+  .navbar #nav-check,
+  .navbar .nav-btn {
+    display: none;
+  }
+
+  @media (max-width: 760px) {
+    .navbar {
+      display: flex;
+    }
+
+    .navbar .nav-btn {
+      display: flex;
+      top: 0px;
+      right: 0px;
+      padding-right: 10vw;
+    }
+
+    .navbar .nav-btn label {
+      display: inline-block;
+    }
+
+    .navbar .nav-btn label span {
+      display: block;
+      height: 6px;
+      width: 25px;
+      border-top: 3px solid #eee;
+    }
+
+    .navbar .nav-btn label:hover,
+    .navbar #nav-check:checked ~ .nav-btn label {
+      transition: all 0.5s ease;
+    }
+
+    .navbar .nav-links {
+      position: absolute;
+      display: block;
+      text-align: center;
+      width: 100%;
+      background-color: #1973d1;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 56px;
+      right: 0px;
+      z-index: 1;
+    }
+
+    .navbar .nav-links a {
+      padding: 5vw 0;
+      display: block;
+    }
+
+    .navbar ul li a {
+      border-bottom: 1px solid #d1d1d1;
+    }
+
+    /* when nav toggle button not checked */
+    .navbar #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+
+    /* when nav toggle button is checked */
+    .navbar #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 60px);
+      overflow-y: auto;
+    }
+    .navbar .nav-links .loginBtn {
+      padding: 10px 40px;
+      margin: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #090e5a;
+    }
+    /* Responsive dropdown code */
+    .navbar .nav-links .dropdown,
+    .navbar .nav-links .dropdown2 {
+      float: none;
+      width: 100%;
+    }
+    .navbar .nav-links .drop-content,
+    .navbar .nav-links .drop-content2 {
+      position: relative;
+      background-color: #dcdcfa;
+      top: 0px;
+      left: 0px;
+    }
+    /* Text color */
+    .navbar .nav-links .drop-content a {
+      color: #090e5a;
+    }
+  }
+
+  /* Dropdown menu CSS code */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .drop-content,
+  .drop-content2 {
+    display: none;
+    position: absolute;
+    background-color: #1b4cd3;
+    min-width: 120px;
+    font-size: 16px;
+    top: 34px;
+    z-index: 1;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+  }
+  /* on hover show dropdown */
+  .dropdown:hover .drop-content,
+  .dropdown2:hover .drop-content2 {
+    display: block;
+  }
+  /* drondown links */
+  .drop-content a {
+    padding: 12px 10px;
+    border-bottom: 1px solid rgb(197, 197, 250);
+    display: block;
+    transition: all 0.5s ease !important;
+  }
+  .dropBtn .drop-content a:hover {
+    background-color: rgb(230, 230, 230);
+  }
+  .dropdown:hover .dropBtn,
+  .dropdown2:hover .dropBtn2 {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .dropdown2 .drop-content2 {
+    position: absolute;
+    left: 120px;
+    top: 126px;
+  }
+  .dropBtn2 i {
+    margin-left: 15px;
+  }
+
   /* Width */
 
   .mw100 {
@@ -1638,7 +1818,17 @@ ul {
     text-align: end;
   }
 
+  /* margin */
+
+  .mmar0 {
+    margin: 0;
+  }
+
   /* padding */
+
+  .mpad0 {
+    padding: 0;
+  }
 
   .mpadb-tb {
     padding: 2.6vw 0;
@@ -1843,5 +2033,164 @@ ul {
 
   .clr {
     flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .w80 {
+    width: 85%;
+  }
+
+  /* Header */
+
+  .logo-flex {
+    width: 25%;
+  }
+
+  .desk-header .container {
+    align-items: flex-start;
+  }
+
+  .navigation li {
+    padding: 0 1.2vw;
+  }
+
+  .navigation li a {
+    font-size: 1.5vw;
+  }
+
+  .drop .f-col {
+    width: 30%;
+  }
+
+  .dropbox-cont {
+    padding: 2.4vw 1.6vw;
+  }
+
+  .dropbox-cont h6 {
+    font-size: 3.2vw;
+  }
+
+  .dropbox-cont p {
+    font-size: 2vw;
+    line-height: 2.8vw;
+  }
+
+  /* Banner */
+
+  .font-xvs {
+    font-size: 2.4vw;
+  }
+
+  .font-md {
+    font-size: 3vw;
+  }
+
+  .linevs {
+    line-height: 4vw;
+  }
+
+  .font-xsv {
+    font-size: 1.8vw;
+  }
+
+  .font-xxvs {
+    font-size: 1.8vw;
+  }
+
+  .tfont-xxvs {
+    font-size: 2.4vw;
+  }
+
+  .tfont-xmd {
+    font-size: 3vw;
+  }
+
+  .line2 {
+    line-height: 3.4vw;
+  }
+
+  .tsv {
+    font-size: 1.8vw;
+  }
+
+  .tmd {
+    font-size: 2.6vw;
+  }
+
+  .tpad1-tb {
+    padding: 2vw 0;
+  }
+
+  .tline1 {
+    line-height: 3.2vw;
+  }
+
+  .bw12 {
+    width: 16vw;
+  }
+
+  /* Footer */
+
+  .tfontp {
+    font-size: 1.4vw;
+    width: 100%;
+    line-height: 2.4vw;
+  }
+
+  .tfontl {
+    font-size: 1.4vw;
+    padding: 1vw 0 0 0;
+  }
+
+  .tw20 {
+    width: 20%;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+  /* Header */
+
+  .desk-header .container {
+    justify-content: flex-start;
+  }
+
+  .navigation li {
+    padding: 0 1vw;
+  }
+
+  /* Banner */
+
+  .tsv {
+    font-size: 1.6vw;
+  }
+
+  .bw12 {
+    width: 16vw;
+    font-size: 1.8vw;
+  }
+
+  /* Footer */
+
+  .tfontp {
+    font-size: 1.4vw;
+  }
+
+  .tfontl {
+    font-size: 1.3vw;
+  }
+
+  .tw85 {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 2560px) {
+  .linevs {
+    line-height: 3.2vw;
+  }
+  .line2 {
+    line-height: 2.3vw;
   }
 }
