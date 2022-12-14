@@ -45,3 +45,13 @@
     justify-content: center;
 }
  
+@media screen and (min-width: 280px) and (max-width: 760px) {
+    .location-col-2{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer{
+        margin: 0;
+    }
+}
