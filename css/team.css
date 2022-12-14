@@ -1,52 +1,30 @@
-
 /* teams members */
 
 .team-profile {
   position: relative;
   overflow: hidden;
 }
-/* .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #096685;
-}
-
-.team-profile:hover .overlay {
-   opacity: 0.5;
-}
-.team-profile:hover h4{
-display: none;
-} */
-/* .team-profile:hover p{
-  display: none;
-  } */
-
-/* Gallery Images */
 
 .office-gallery {
-  padding: 30px 130px;
+
   position: relative;
 }
+
 .gallery-box {
   margin-bottom: 30px;
- 
+
 }
 
-
 .gallery-box img {
-  flex: 33.33%;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
 }
-/* 
-.gallery-box img:hover {
-  transform: scale(1.2);
-} */
 
+@media screen and (min-width: 280px) and (max-width: 760px) {
+  .office-gallery {
+    padding: 0;
+  }
+
+}

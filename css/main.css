@@ -1016,6 +1016,9 @@ body {
 .gap10 {
   gap: 10px;
 }
+.gap1 {
+  gap: 3vw;
+}
 
 /* / Header / */
 
@@ -1360,10 +1363,6 @@ body {
 
 /*FOOTER DESIGN */
 
-.design-btn {
-  margin-bottom: 30px;
-}
-
 button[type="submit"] {
   border: none;
   border-radius: 8px;
@@ -1510,6 +1509,8 @@ button[type="submit"]:hover {
 }
 
 .footer {
+  background-image: url("../images/footer-background.jpg");
+  background-size: cover;
   font-family: "gotham-thin", sans-serif;
 }
 
@@ -1833,6 +1834,34 @@ ul {
   .mpadb-tb {
     padding: 2.6vw 0;
   }
+  
+  .mpads {
+    padding: 2vw;
+  }
+
+  .mpads-tb {
+    padding: 2vw 0;
+  }
+
+  .mpads-rl {
+    padding: 0 2vw;
+  }
+
+  .mpads-t {
+    padding: 2vw 0 0 0;
+  }
+
+  .mpads-b {
+    padding: 0 0 2vw 0;
+  }
+
+  .mpads-r {
+    padding: 0 2vw 0 0;
+  }
+
+  .mpads-l {
+    padding: 0 0 0 2vw;
+  }
 
   .mpad1 {
     padding: 4vw;
@@ -2118,6 +2147,10 @@ ul {
     font-size: 2.6vw;
   }
 
+  .tmds {
+    font-size: 2.8vw;
+  }
+
   .tpad1-tb {
     padding: 2vw 0;
   }
@@ -2146,6 +2179,9 @@ ul {
   .tw20 {
     width: 20%;
     padding: 0;
+  }
+  .margt{
+    margin-top: 6.5vw;
   }
 }
 
