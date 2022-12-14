@@ -23,18 +23,91 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/4ee427eb24.js" crossorigin="anonymous">
-    
+
     var x = document.getElementById("myVideo").autoplay;
   </script>
-    <script src="./index.js"></script>
+  <script src="./index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <!-- main -->
 </head>
 
 <body>
+  <div class="navbar">
+    <!-- Navbar logo -->
+    <div class="nav-header">
+      <div class="nav-logo">
+        <a class="nav-brand" href="./index.html">
+          <img src="./images/PROMENA LOGO WHITE.png" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <!-- responsive navbar toggle button -->
+    <input type="checkbox" id="nav-check" />
+    <!-- <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div> -->
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <!-- Navbar items -->
+    <ul class="nav-links">
+      <!-- <a href="#">Home</a>
+      <a href="#">About</a> -->
+
+      <!-- Dropdown menu -->
+      <li class="dropdown">
+        <a class="dropBtn" href="#">Services
+          <i class="fas fa-angle-down"></i>
+        </a>
+        <div class="drop-content">
+          <a href="./service.html">Design</a>
+          <a href="./technology.html">Technology</a>
+          <a href="./marketing.html">Marketing</a>
+
+          <!-- Creating sub menu Dropdown -->
+          <!-- <div class="dropdown2">
+            <a class="dropBtn2" href="#"
+              >More
+              <i class="fas fa-angle-right"></i>
+            </a>
+            <div class="drop-content2">
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+              <a href="#">jQuery</a>
+            </div>
+          </div> -->
+        </div>
+      </li>
+
+      <li><a href="./client.html">Client</a></li>
+      <li class="dropdown">
+        <a class="dropBtn" href="#">About Us
+          <i class="fas fa-angle-down"></i>
+        </a>
+        <div class="drop-content">
+          <a href="./about-us.html">About Us</a>
+          <a href="./team.html">Team</a>
+          <a href="./career.html">Career</a>
+        </div>
+      </li>
+      <li><a href="./blockchain.html">BlockChain</a></li>
+      <li><a href="./blog.html">Blog</a></li>
+      <li><a href="./contact-us.html">Contact Us</a></li>
+      <!-- <button class="loginBtn">Login</button> -->
+    </ul>
+  </div>
   <div class="deskHeader header-service">
     <header class="desk-header innerHeader">
       <div class="container w80">
@@ -56,10 +129,7 @@
                           <h6>Design</h6>
                           <div class="dropFlex">
                             <p>Handcraft the user experience.</p>
-                            <img
-                              src="./images/arrow-right.svg"
-                              alt="arrow-right"
-                            />
+                            <img src="./images/arrow-right.svg" alt="arrow-right" />
                           </div>
                         </div>
                       </div>
@@ -72,10 +142,7 @@
                           <h6>Technology</h6>
                           <div class="dropFlex">
                             <p>Leverage the power of code.</p>
-                            <img
-                              src="./images/arrow-right.svg"
-                              alt="arrow-right"
-                            />
+                            <img src="./images/arrow-right.svg" alt="arrow-right" />
                           </div>
                         </div>
                       </div>
@@ -88,10 +155,7 @@
                           <h6>Marketing</h6>
                           <div class="dropFlex">
                             <p>Creative strategies for brands.</p>
-                            <img
-                              src="./images/arrow-right.svg"
-                              alt="arrow-right"
-                            />
+                            <img src="./images/arrow-right.svg" alt="arrow-right" />
                           </div>
                         </div>
                       </div>
@@ -114,10 +178,7 @@
                             <p>
                               We are super-efficient yet humble to serve you!
                             </p>
-                            <img
-                              src="./images/arrow-right.svg"
-                              alt="arrow-right"
-                            />
+                            <img src="./images/arrow-right.svg" alt="arrow-right" />
                           </div>
                         </div>
                       </div>
@@ -133,10 +194,7 @@
                               We are proud of our experienced and accomplished
                               team!
                             </p>
-                            <img
-                              src="./images/arrow-right.svg"
-                              alt="arrow-right"
-                            />
+                            <img src="./images/arrow-right.svg" alt="arrow-right" />
                           </div>
                         </div>
                       </div>
@@ -152,10 +210,7 @@
                               Can you offer such <br />
                               experience?
                             </p>
-                            <img
-                              src="./images/arrow-right.svg"
-                              alt="arrow-right"
-                            />
+                            <img src="./images/arrow-right.svg" alt="arrow-right" />
                           </div>
                         </div>
                       </div>
@@ -164,7 +219,7 @@
                 </ul>
               </div>
             </li>
-            <li><a href="#">Training</a></li>
+            <li><a href="blockchain.html">Blockchain</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
           </ul>
@@ -172,23 +227,21 @@
       </div>
     </header>
   </div>
-  
+
   <div class="aboutus fx-dr">
     <div class="aboutus-container">
-      <div class=" aboutus-banner font-bold fx-center pad30 mart100">
-        <div class="fx-center w85 ">
-          <div class="w60">
-            <div class="fnt-fmly" data-aos="fade-right" data-aos-duration="1800"
-           >
-              <h6 class="font-xs">
+      <div class=" aboutus-banner font-bold fx-center padtb50 mpad4-tb  margt">
+        <div class="fx-center fx-wrp w85">
+          <div class="w50 mw100">
+            <div class="fnt-fmly" data-aos="fade-right" data-aos-duration="1800">
+              <h6 class="font-xs pbh mtxc mline2 mw100 tline1 tmds">
                 We, at Promena, are driven by innovation and technology to leverage your business with the power it
                 needs.
               </h6>
             </div>
           </div>
-          <div class="w50" data-aos="fade-left" data-aos-duration="1800"
-          data-aos-offset="300">
-            <img class="w80" src="./images/aboutusss.gif">
+          <div class="w50  mw100 mtxc" data-aos="fade-left" data-aos-duration="1800" data-aos-offset="300">
+            <img class="w80 mpad2-tb" src="./images/aboutusss.gif">
             <!-- <video playsinline autoplay muted loop class="w90 h80">
               <source src="./images/aboutusss.gif" type="Video/mp4" />
             </video> -->
@@ -196,33 +249,34 @@
         </div>
       </div>
 
-      <div class="contents font-medium fx-dc-jcenter" >
+      <div class="contents font-medium fx-dc-jcenter padtb50 mpad4-tb ">
         <div class="contents-header w80 fx-dc gap10">
-          <h3 class="pad4-t d-blue font-xxvs" data-aos="fade-up" data-aos-duration="1800"
-          data-aos-offset="300">ABOUT US</h3>
-          <div id="readmore" data-aos="fade-up" data-aos-duration="1800"
-          data-aos-offset="300">
-            <span class="readmore__content dg-blue line4 font-xmedium font-xvs" >
+          <h3 class="pad4-t d-blue font-xxvs pqh" data-aos="fade-up" data-aos-duration="1800" data-aos-offset="300">
+            ABOUT US</h3>
+          <div id="readmore" data-aos="fade-up" data-aos-duration="1800" data-aos-offset="300">
+            <span class="readmore__content black line4 font-xmedium font-xvs pbc mline1 line2 tfont-xxvs">
               Promena is a tech-enabled IT service and marketing agency. We are transformers driven by a passion for
               technology and innovation. We are leaders with 5+ years of experience in developing web-based and mobile
               applications.Our team members are outstanding experts who are laser focussed on delivering
               high-revenue-building solutions.
-              Our motivation for setting out on this adventure in 2017 was the hope of making a name for ourselves in the IT industry;<br> This exciting new venture, which we have called "Promena," promises
+              Our motivation for setting out on this adventure in 2017 was the hope of making a name for ourselves in
+              the IT industry;<br> This exciting new venture, which we have called "Promena," promises
               to be full of growth, transformation & discovery.
               Promena is an Ultra-Solution Agency that can develop your website, mobile app, and can also deploy your
               product into the hands of the right audience. We benefit from having a diverse workforce recognized fully
               and incorporated into our organizational philosophy. Our clients are our priority, and we focus on driving
               goal-oriented results.<br>
-              We are a group of out-of-the-box thinkers who can help you get the spectacular results your company deserves. Our reputation as a media agency speaks for itself regarding originality and innovation.
+              We are a group of out-of-the-box thinkers who can help you get the spectacular results your company
+              deserves. Our reputation as a media agency speaks for itself regarding originality and innovation.
             </span>
-            <button class="readmore__toggle black font-bold font-vs" role="switch" aria-checked="true">
-                Read more
+            <button class="readmore__toggle l-blue font-bold font-vs pbc tfont-xxvs" role="switch" aria-checked="true">
+              Read more
             </button>
-            
-        </div>
+
+          </div>
         </div>
       </div>
-
+      <!-- 
       <div class="slider" data-aos="fade-up" data-aos-duration="1800"
       data-aos-offset="300">
         <input type="radio" id="s-1" name="slider-control" checked="checked" />
@@ -291,10 +345,10 @@
             <div class="js-slider-indi indi-3"></div>
           </div>
         </div>
-      </div>
+      </div> -->
 
 
-      <div class="vision pad4-t" data-aos="fade-right" data-aos-duration="800" data-aos-offset="300">
+      <div class="vision pad4-t padtb50 " data-aos="fade-right" data-aos-duration="800" data-aos-offset="300">
         <nav>
           <ul>
             <li>
@@ -334,19 +388,43 @@
             </li>
           </ul>
         </nav>
-        <section id="section1" class="content-section w40 " >
-          <h3 class=" font-xs font-thin black line1">To be the leading trusted Software and Digital Marketing company. </h3>
+        <section id="section1" class="content-section w40 ">
+          <h3 class=" font-xs font-thin black line1  pbc linevs ">To be the leading trusted Software and Digital
+            Marketing company. </h3>
         </section>
         <section id="section2" class="content-section w40">
-          <h3 class=" font-xs font-thin black line1">To elevate businesses with revenue-building strategies. </h3>
+          <h3 class=" font-xs font-thin black line1 linevs ">To elevate businesses with revenue-building strategies.
+          </h3>
         </section>
         <section id="section3" class="content-section w40">
-          <h3 class=" font-xs font-thin black line1">To offer businesses all over the world industry leading digital marketing
+          <h3 class=" font-xs font-thin black line1 linevs ">To offer businesses all over the world industry leading
+            digital marketing
             & IT services through a leading expert team.</h3>
         </section>
       </div>
 
-      <div class="testimonials  font-medium fx-center">
+      <div class="vision-mobile fx-dc-all-center padtb50 mpad4-tb ">
+        <section id="section1" class="mobile-section w40 mpad2 mw90 w80 tpad1-tb" data-aos="fade-up"
+          data-aos-duration="1500">
+          <h2 class="font-bold l-blue line1  pbh mline2 mpads-b">Vission</h2>
+          <h3 class=" font-xs font-thin black line1  pbc mline3 ">To be the leading trusted Software and Digital
+            Marketing company. </h3>
+        </section>
+        <section id="section1" class="mobile-section w40 mw90 mpad2 w80 tpad1-tb" data-aos="fade-up"
+          data-aos-duration="1500">
+          <h2 class=" font-bold l-blue line1  pbh mline2 mpads-b ">Mission</h2>
+          <h3 class=" font-xs font-thin black line1  pbc mline3 ">To elevate businesses with revenue-building
+            strategies.</h3>
+        </section>
+        <section id="section1" class="mobile-section w40 mw90 mpad2 w80 tpad1-tb" data-aos="fade-up"
+          data-aos-duration="1500">
+          <h2 class="font-bold l-blue line1  pbh mline2 mpads-b">Value</h2>
+          <h3 class=" font-xs font-thin black line1  pbc mline3 ">To offer businesses all over the world industry
+            leading digital marketing & IT services through a leading expert team.</h3>
+        </section>
+      </div>
+
+      <!-- <div class="testimonials  font-medium fx-center">
         <div class="card-1 w70 fx-dr">
           <div class="card-contents-1 mart40 w65"  data-aos="fade-up" data-aos-duration="1500">
             <i class="fa-solid fa-quote-left icon dg-blue ps-ab"></i>
@@ -360,87 +438,114 @@
               Neuromarketing expert
             </p>
           </div>
-          <div class="card-image w35" data-aos="fade-down" data-aos-duration="1500"> 
+          <div class="card-image w35" data-aos="fade-up" data-aos-duration="1500"> 
             <img src="./images/card-image.png" width="100%" />
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="font-bold tx-center fx-dc-acenter pad30"data-aos="fade-up" data-aos-duration="1700"
-      data-aos-offset="300">
-        <div class="w80 pad30">
-          <h3 class="dg-blue font-xmd ft-w6 txc">
-            Let's revolutionize your brand into a high revenue-driving
-            business model.
+
+      <div class="font-bold tx-center fx-dc-acenter padtb50 mpad4-tb">
+        <div class="w80 mw90">
+          <h3 class="mar0 dg-blue font-xmd ft-w6 txc pad1-tb pbc mline1 tfont-xmd">
+            Let's revolutionize your brand into a high revenue-driving business
+            model.
           </h3>
         </div>
-        <div class="design-btn txc">
-          <button class="dg-blue font-xvs ft-w6" type="submit">Read More</button>
+        <div class="design-btn txc pad1-tb mpad1-tb w100">
+          <button class="dg-blue font-xvs ft-w6 pbc bw12 pad1-tb mw30 mpadb-tb tsv" type="submit">
+            Read More
+          </button>
         </div>
       </div>
+
+      <!-- footer -->
+
       <footer class="footer primary-col">
-        <div class="container">
+        <div class="container w80 mw90 padtb50 mpad3-tb tw85">
           <div class="row fx-wrp fx-spbtw">
-            <div class="footer-col-1 pad1-rl w33">
-              <img src="./images/white-logo.png" width="60%" />
-              <p class="wl-blue font-xvss pad1-tb line4 w90">
+            <div class="footer-col-1 pad1-rl w33 mw100">
+              <img src="./images/white-logo.png" class="w60 mw30" />
+              <p class="wl-blue font-xvss pad1-tb line5 w90 mline1 pc mar1-t tfontp">
                 Give your business the digital power of PROMENA, to make your
                 brand value bigger, connect with the bigger brand to be top in
                 your sector
               </p>
             </div>
-            <div class="footer-col-2 pad1-rl w18">
-              <h4 class="wl-blue font-xvs ft-w5">Services</h4>
-              <ul>
-                <li>
-                  <a class="wl-blue font-xvss" href="#">Digital Marketing</a>
+            <div class="footer-col-2 pad1-rl w20 mw45 mpad1-t">
+              <h4 class="wl-blue font-xvs ft-w5 mar4-b pbc">Services</h4>
+              <ul class="mpad1-t">
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#">Digital Marketing</a>
                 </li>
-                <li>
-                  <a class="wl-blue font-xvss" href="#">UI|UX Development</a>
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#">UI|UX Development</a>
                 </li>
-                <li>
-                  <a class="wl-blue font-xvss" href="#">Influence Marketing</a>
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#">Influence Marketing</a>
                 </li>
-                <li>
-                  <a class="wl-blue font-xvss" href="#">Mobile development</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-col-2 pad1-rl w20">
-              <h4 class="wl-blue font-xvs ft-w5">Quick Links</h4>
-              <ul>
-                <li><a class="wl-blue font-xvss" href="#">About Us</a></li>
-                <li><a class="wl-blue font-xvss" href="#">Careers</a></li>
-                <li><a class="wl-blue font-xvss" href="#">Blogs</a></li>
-                <li>
-                  <a class="wl-blue font-xvss" href="#">Social Media Marketing</a>
-                </li>
-                <li>
-                  <a class="wl-blue font-xvss" href="#">Privacy Policy</a>
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#">Mobile development</a>
                 </li>
               </ul>
             </div>
-            <div class="footer-col-2 pad1-rl w18">
-              <h4 class="wl-blue font-xvs ft-w5">Contact Us</h4>
-              <ul>
-                <li class="wl-blue font-xvss">
-                  <i class="fa-solid fa-phone wl-blue"></i> +91 9900043908
+            <div class="footer-col-2 pad1-rl w22 mw45 mpad1-t">
+              <h4 class="wl-blue font-xvs ft-w5 mar4-b pbc">Quick Links</h4>
+              <ul class="mpad1-t">
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#">About Us</a>
                 </li>
-                <li class="wl-blue font-xvss">
-                  <i class="fa-solid fa-envelope wl-blue"></i>
-                  contact@promena.in
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#">Careers</a>
                 </li>
-                <li class="wl-blue font-vs">
-                  <ul class="fx-dr pad2-t">
-                    <li><i class="fa fa-instagram pad1-r" aria-hidden="true"></i></li>
-                    <li>
-                      <i class="fa fa-facebook-official pad1-r" aria-hidden="true"></i>
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#">Blogs</a>
+                </li>
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#">Social Media Marketing</a>
+                </li>
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col-2 pad1-rl w20 mw100 tw20">
+              <h4 class="wl-blue font-xvs ft-w5 mar4-b pbc">Contact Us</h4>
+              <ul class="mpad1-t">
+                <a href="tel:9900043908">
+                  <li class="wl-blue font-xvss mar1-b pc tfontl">
+                    <i class="fa-solid fa-phone wl-blue"></i> +91 9900043908
+                  </li>
+                </a>
+                <a href="mailto:contact@promena.in">
+                  <li class="wl-blue font-xvss mar1-b pc tfontl">
+                    <i class="fa-solid fa-envelope wl-blue"></i>
+                    contact@promena.in
+                  </li>
+                </a>
+                <li class="wl-blue font-vs pbh">
+                  <ul class="fx-dr pad2-t mpad1-t">
+                    <li class="mpad1-r">
+                      <a class="white tsv" href="https://www.facebook.com/PromenaLLP/" target="_blank">
+                        <i class="fa fa-instagram pad1-r" aria-hidden="true"></i>
+                      </a>
                     </li>
-                    <li>
-                      <i class="fa fa-linkedin-square pad1-r" aria-hidden="true"></i>
+                    <li class="mpad1-r">
+                      <a class="white tsv" href="https://www.facebook.com/PromenaLLP/" target="_blank">
+                        <i class="fa fa-facebook-official pad1-r" aria-hidden="true"></i>
+                      </a>
                     </li>
-                    <li>
-                      <i class="fa fa-twitter-square pad1-r" aria-hidden="true"></i>
+                    <li class="mpad1-r">
+                      <a class="white tsv" href="https://www.linkedin.com/company/promena-in/mycompany/"
+                        target="_blank">
+                        <i class="fa fa-linkedin-square pad1-r" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="mpad1-r">
+                      <a class="white tsv"
+                        href="https://api.whatsapp.com/message/DEEJEJJ7JI4KL1?autoload=1&app_absent=0" target="_blank">
+                        <i class="fa fa-whatsapp pad1-r" aria-hidden="true"></i>
+                      </a>
                     </li>
                   </ul>
                 </li>
@@ -456,7 +561,9 @@
   <!-- script for vision page -->
   <script>
     $(document).ready(function () {
+      // debugger;
       var contentSection = $('.content-section');
+      // debugger;
       var navigation = $('nav');
 
       //when a nav link is clicked, smooth scroll to the section
@@ -471,12 +578,14 @@
       })
       //...and when the page starts
       updateNavigation();
-
       /////FUNCTIONS
       function updateNavigation() {
+
         contentSection.each(function () {
           var sectionName = $(this).attr('id');
           var navigationMatch = $('nav a[href="#' + sectionName + '"]');
+          console.log($(this).offset().top);
+          console.log($(window).height());
           if (($(this).offset().top - $(window).height() / 2 < $(window).scrollTop()) &&
             ($(this).offset().top + $(this).height() - $(window).height() / 2 > $(window).scrollTop())) {
             navigationMatch.addClass('active-section');
@@ -510,154 +619,67 @@
     }
 
     class readMore {
-    constructor() {
+      constructor() {
         this.content = '.readmore__content';
         this.buttonToggle = '.readmore__toggle';
-    }
+      }
 
-    bootstrap() {
+      bootstrap() {
         this.setNodes();
         this.init();
         this.addEventListeners();
-    }
+      }
 
-    setNodes() {
+      setNodes() {
         this.nodes = {
-            contentToggle: document.querySelector(this.content)
+          contentToggle: document.querySelector(this.content)
         };
 
         this.buttonToggle = this.nodes.contentToggle.parentElement.querySelector(this.buttonToggle);
-    }
+      }
 
-    init() {
+      init() {
         const { contentToggle } = this.nodes;
 
         this.stateContent = contentToggle.innerHTML;
 
         contentToggle.innerHTML = `${this.stateContent.substring(0, 500)}...`;
-    }
+      }
 
-    addEventListeners() {
+      addEventListeners() {
         this.buttonToggle.addEventListener('click', this.onClick.bind(this))
-    }
+      }
 
-    onClick(event) {
+      onClick(event) {
         const targetEvent = event.currentTarget;
         const { contentToggle } = this.nodes
 
         if (targetEvent.getAttribute('aria-checked') === 'true') {
-            targetEvent.setAttribute('aria-checked', 'false')
-            contentToggle.innerHTML = this.stateContent;
-            this.buttonToggle.innerHTML = 'Show less'
+          targetEvent.setAttribute('aria-checked', 'false')
+          contentToggle.innerHTML = this.stateContent;
+          this.buttonToggle.innerHTML = 'Show less'
 
         } else {
-            targetEvent.setAttribute('aria-checked', 'true')
-            contentToggle.innerHTML = `${this.stateContent.substring(0, 500)}...`
-            this.buttonToggle.innerHTML = 'Show more'
+          targetEvent.setAttribute('aria-checked', 'true')
+          contentToggle.innerHTML = `${this.stateContent.substring(0, 500)}...`
+          this.buttonToggle.innerHTML = 'Show more'
         }
+      }
     }
-}
 
 
-const initReadMore = new readMore();
-initReadMore.bootstrap()
+    const initReadMore = new readMore();
+    initReadMore.bootstrap()
   </script>
 
-  <!-- <script>
-    function myFunction() {
-      var dots = document.getElementById("dots");
-      var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
 
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
-    }
+ 
 
-    let slideIndex = 1;
-    showSlides(slideIndex);
+    <!-- script for animation -->
 
-    function plusSlides(n) {
-      showSlides((slideIndex += n));
-    }
-
-    function currentSlide(n) {
-      showSlides((slideIndex = n));
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {
-        slideIndex = 1;
-      }
-      if (n < 1) {
-        slideIndex = slides.length;
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-
-
-    // vision page
-    
- $(document).ready(function () {
-        var contentSection = $('.content-section');
-        var navigation = $('nav');
-
-        //when a nav link is clicked, smooth scroll to the section
-        navigation.on('click', 'a', function (event) {
-            event.preventDefault(); //prevents previous event
-            smoothScroll($(this.hash));
-        });
-
-        //update navigation on scroll...
-        $(window).on('scroll', function () {
-            updateNavigation();
-        })
-        //...and when the page starts
-        updateNavigation();
-
-        /////FUNCTIONS
-        function updateNavigation() {
-            contentSection.each(function () {
-                var sectionName = $(this).attr('id');
-                var navigationMatch = $('nav a[href="#' + sectionName + '"]');
-                if (($(this).offset().top - $(window).height() / 2 < $(window).scrollTop()) &&
-                    ($(this).offset().top + $(this).height() - $(window).height() / 2 > $(window).scrollTop())) {
-                    navigationMatch.addClass('active-section');
-                }
-                else {
-                    navigationMatch.removeClass('active-section');
-                }
-            });
-        }
-        function smoothScroll(target) {
-            $('body,html').animate({
-                scrollTop: target.offset().top
-            }, 800);
-        }
-    });
-  </script>  -->
-
-      <!-- script for animation -->
-
-      <script>
-        AOS.init();
-      </script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
