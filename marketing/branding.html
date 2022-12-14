@@ -34,6 +34,108 @@
   <body>
     <!-- Header -->
 
+    <div class="navbar">
+      <!-- Navbar logo -->
+      <div class="nav-header">
+        <div class="nav-logo">
+          <a class="nav-brand" href="../index.html">
+            <img src="../images/PROMENA LOGO WHITE.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <!-- responsive navbar toggle button -->
+      <input type="checkbox" id="nav-check" />
+      <!-- <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div> -->
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <!-- Navbar items -->
+      <ul class="nav-links">
+        <!-- <a href="#">Home</a>
+        <a href="#">About</a> -->
+
+        <!-- Dropdown menu -->
+        <li class="dropdown">
+          <a class="dropBtn" href="#"
+            >Services
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="drop-content">
+            <a href="../service.html">Design</a>
+            <a href="../technology.html">Technology</a>
+            <a href="../marketing.html">Marketing</a>
+
+            <!-- Creating sub menu Dropdown -->
+            <!-- <div class="dropdown2">
+              <a class="dropBtn2" href="#"
+                >More
+                <i class="fas fa-angle-right"></i>
+              </a>
+              <div class="drop-content2">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JavaScript</a>
+                <a href="#">jQuery</a>
+              </div>
+            </div> -->
+          </div>
+        </li>
+
+        <li><a href="../client.html">Client</a></li>
+        <li class="dropdown">
+          <a class="dropBtn" href="#"
+            >About Us
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="drop-content">
+            <a href="../about-us.html">About Us</a>
+            <a href="../team.html">Team</a>
+            <a href="../career.html">Career</a>
+          </div>
+        </li>
+        <li><a href="../blockchain.html">BlockChain</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../contact-us.html">Contact Us</a></li>
+        <!-- <button class="loginBtn">Login</button> -->
+      </ul>
+    </div>
+
+    <!-- <header class="new-header">
+      <div class="con w80">
+        <nav class="new-nav mpad1-tb">
+          <a class="nav-brand" href="../index.html">
+            <img src="../images/PROMENA LOGO WHITE.png" alt="" />
+            </a>
+          <ul class="nav-list">
+            <li class="nav-item1"><a class="nav-link-li" href="">home</a></li>
+            <li class="nav-item1"><a class="nav-link-li" href="">about</a></li>
+            <li class="nav-item1"><a class="nav-link-li" href="">videos</a></li>
+            <li class="nav-item1">
+              <a class="nav-link-li" href="">competences</a>
+            </li>
+            <li class="nav-item1">
+              <a class="nav-link-li" href="">contacts</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </div>
+    </header> -->
+
     <div class="deskHeader header-service">
       <header class="desk-header innerHeader">
         <div class="container w80">
@@ -163,7 +265,8 @@
                   </ul>
                 </div>
               </li>
-              <li><a href="#">Training</a></li>
+              <!-- <li><a href="#">Training</a></li> -->
+              <li><a href="../blockchain.html">Blockchain</a></li>
               <li><a href="../blog.html">Blog</a></li>
               <li><a href="../contact-us.html">Contact Us</a></li>
             </ul>
@@ -174,7 +277,7 @@
 
     <!-- Banner -->
 
-    <div class="mart100 fx-dc-jcenter padtb50">
+    <div class="mart100 fx-dc-jcenter padtb50 mmar0">
       <div class="w80 fx-spbtw fx-wrp t-mw90">
         <div
           class="w45 mw100 t-mw40"
@@ -206,9 +309,7 @@
               <li class="font-medium font-xvss l-blue pbhl">Branding</li>
             </ul>
           </div>
-          <div
-            class="font-md mar4-t font-bold t-pbc pbc t-pad t-line4 mline3 pad4-b k-line"
-          >
+          <div class="font-md mar4-t font-bold pbc linevs mline3">
             Complete transparency of a brand is vital to 94% of consumers.
           </div>
         </div>
@@ -231,12 +332,12 @@
     <div class="fx-dc-jcenter padtb50">
       <div class="w80 pad1-tb">
         <h2
-          class="font-bold font-xsv l-blue mar0 pad4-b reveal fade-bottom pqh"
+          class="font-bold font-xsv l-blue mar0 pad4-b reveal fade-bottom pqh mpad0"
         >
           What is Branding?
         </h2>
         <h4
-          class="font-thin font-xxvs black line2 pad4-b mar0 reveal fade-bottom pbc mline3 tpbh mline3 mpad1-t k-line2"
+          class="font-thin font-xxvs black line2 pad4-b mar0 reveal fade-bottom pbc mline3 mline3 mpad1-t tfont-xxvs"
         >
           Branding is the establishment of a lifelong relationship between a
           brand and customers.
@@ -246,18 +347,18 @@
     <div class="fx-dc-jcenter padtb50">
       <div class="w80 pad1-tb">
         <h2
-          class="font-bold font-xsv l-blue mar0 pad4-b reveal fade-bottom pqh"
+          class="font-bold font-xsv l-blue mar0 pad3-b reveal fade-bottom pqh mpad0"
         >
           We are Branding experts
         </h2>
         <h4
-          class="font-thin font-xxvs black line2 mar0 pad4-b reveal fade-bottom pbc mline3 tpbh mline3 mpad1-t k-line2 t-pad mpad5b kpad-4"
+          class="font-thin font-xxvs black line2 mar0 padb50 reveal fade-bottom pbc mline3 mpad1-t tfont-xxvs"
         >
           We don’t just launch your brand, we market & shape your brand in your
           audience’s mind.
         </h4>
         <h4
-          class="font-thin font-xxvs black line2 mar0 pad4-b reveal fade-bottom pbc mline3 tpbh mline3 mpad1-t k-line2 mpad5b kpad-4 t-pad"
+          class="font-thin font-xxvs black line2 mar0 padb50 reveal fade-bottom pbc mline3 mpad1-t tfont-xxvs"
         >
           We are branding experts with build in brand solutions based on proven
           strategy. We help you structure your brand’s voice by articulating
@@ -282,14 +383,14 @@
       <div class="w80 txc">
         <div class="fnt-ban-heading">
           <h2
-            class="next-heading font-medium font-vs d-blue reveal fade-bottom pqh"
+            class="next-heading font-medium mar0 font-vs d-blue reveal fade-bottom pqh tsv"
           >
             WHAT DO WE SERVE ?
           </h2>
         </div>
         <div class="banner-next-content">
           <h3
-            class="mar0 mar4-b font-medium font-xsv reveal fade-bottom extrabold pbc mline3 tpbh mline3 mpad1-t k-line2 kpad-4 t-pad mpad5b"
+            class="mar0 mar4-b pad1-tb font-medium font-xsv reveal fade-bottom extrabold pbc mline3 mpad1-t tmd tline1 tpad1-tb"
           >
             Innovative marketing and branding led solutions to the
             end-user-oriented problem.
@@ -368,14 +469,16 @@
 
     <div class="font-bold tx-center fx-dc-acenter padtb50 mpad4-tb">
       <div class="w80 mw90">
-        <h3 class="mar0 dg-blue font-xmd ft-w6 txc pad1-tb pbc mline1">
+        <h3
+          class="mar0 dg-blue font-xmd ft-w6 txc pad1-tb pbc mline1 tfont-xmd"
+        >
           Let's revolutionize your brand into a high revenue-driving business
           model.
         </h3>
       </div>
       <div class="design-btn txc pad1-tb mpad1-tb w100">
         <button
-          class="dg-blue font-xvs ft-w6 pbc bw12 pad1-tb mw30 mpadb-tb"
+          class="dg-blue font-xvs ft-w6 pbc bw12 pad1-tb mw30 mpadb-tb tsv"
           type="submit"
         >
           Read More
