@@ -38,11 +38,115 @@
     <!-- main -->
   </head>
   <body>
+    <!-- Header -->
+
+    <div class="navbar">
+      <!-- Navbar logo -->
+      <div class="nav-header">
+        <div class="nav-logo">
+          <a class="nav-brand" href="../index.html">
+            <img src="../images/PROMENA LOGO WHITE.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <!-- responsive navbar toggle button -->
+      <input type="checkbox" id="nav-check" />
+      <!-- <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div> -->
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <!-- Navbar items -->
+      <ul class="nav-links">
+        <!-- <a href="#">Home</a>
+      <a href="#">About</a> -->
+
+        <!-- Dropdown menu -->
+        <li class="dropdown">
+          <a class="dropBtn" href="#"
+            >Services
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="drop-content">
+            <a href="../service.html">Design</a>
+            <a href="../technology.html">Technology</a>
+            <a href="../marketing.html">Marketing</a>
+
+            <!-- Creating sub menu Dropdown -->
+            <!-- <div class="dropdown2">
+            <a class="dropBtn2" href="#"
+              >More
+              <i class="fas fa-angle-right"></i>
+            </a>
+            <div class="drop-content2">
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+              <a href="#">jQuery</a>
+            </div>
+          </div> -->
+          </div>
+        </li>
+
+        <li><a href="../client.html">Client</a></li>
+        <li class="dropdown">
+          <a class="dropBtn" href="#"
+            >About Us
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="drop-content">
+            <a href="../about-us.html">About Us</a>
+            <a href="../team.html">Team</a>
+            <a href="../career.html">Career</a>
+          </div>
+        </li>
+        <li><a href="../blockchain.html">BlockChain</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../contact-us.html">Contact Us</a></li>
+        <!-- <button class="loginBtn">Login</button> -->
+      </ul>
+    </div>
+
+    <!-- <header class="new-header">
+    <div class="con w80">
+      <nav class="new-nav mpad1-tb">
+        <a class="nav-brand" href="../index.html">
+          <img src="../images/PROMENA LOGO WHITE.png" alt="" />
+          </a>
+        <ul class="nav-list">
+          <li class="nav-item1"><a class="nav-link-li" href="">home</a></li>
+          <li class="nav-item1"><a class="nav-link-li" href="">about</a></li>
+          <li class="nav-item1"><a class="nav-link-li" href="">videos</a></li>
+          <li class="nav-item1">
+            <a class="nav-link-li" href="">competences</a>
+          </li>
+          <li class="nav-item1">
+            <a class="nav-link-li" href="">contacts</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </div>
+  </header> -->
+
     <div class="deskHeader header-service">
       <header class="desk-header innerHeader">
         <div class="container w80">
           <div class="logo-flex">
-            <a href="index.html">
+            <a href="./index.html">
               <img src="./images/PROMENALOGOBLUE.png" alt="" />
             </a>
           </div>
@@ -53,7 +157,7 @@
                 <div class="drop">
                   <ul class="f-row f-3">
                     <li class="f-col">
-                      <a href="service.html" class="anim-link">
+                      <a href="./service.html" class="anim-link">
                         <div class="dropbox-cont col1">
                           <div>
                             <h6>Design</h6>
@@ -69,7 +173,7 @@
                       </a>
                     </li>
                     <li class="f-col">
-                      <a href="technology.html" class="anim-link">
+                      <a href="./technology.html" class="anim-link">
                         <div class="dropbox-cont col1">
                           <div>
                             <h6>Technology</h6>
@@ -85,7 +189,7 @@
                       </a>
                     </li>
                     <li class="f-col">
-                      <a href="marketing.html" class="anim-link">
+                      <a href="./marketing.html" class="anim-link">
                         <div class="dropbox-cont col1">
                           <div>
                             <h6>Marketing</h6>
@@ -103,13 +207,13 @@
                   </ul>
                 </div>
               </li>
-              <li><a href="client.html" style="color: #1973d1">Client</a></li>
+              <li><a href="./client.html">Client</a></li>
               <li class="drop-box">
                 <a class="about-link">About Us</a>
                 <div class="drop">
                   <ul class="f-row f-3">
                     <li class="f-col">
-                      <a href="about-us.html" class="anim-link">
+                      <a href="./about-us.html" class="anim-link">
                         <div class="dropbox-cont col1">
                           <div>
                             <h6>About Us.</h6>
@@ -127,7 +231,7 @@
                       </a>
                     </li>
                     <li class="f-col">
-                      <a href="team.html" class="anim-link">
+                      <a href="./team.html" class="anim-link">
                         <div class="dropbox-cont col1">
                           <div>
                             <h6>Team.</h6>
@@ -146,7 +250,7 @@
                       </a>
                     </li>
                     <li class="f-col">
-                      <a href="career.html" class="anim-link">
+                      <a href="./career.html" class="anim-link">
                         <div class="dropbox-cont col1">
                           <div>
                             <h6>Career.</h6>
@@ -167,15 +271,16 @@
                   </ul>
                 </div>
               </li>
-              <li><a href="#">Training</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact-us.html">Contact Us</a></li>
+              <!-- <li><a href="#">Training</a></li> -->
+              <li><a href="./blockchain.html">Blockchain</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact-us.html">Contact Us</a></li>
             </ul>
           </div>
         </div>
       </header>
     </div>
-    <div class="bnr fx-center pad4-tb padtb50">
+    <div class="bnr fx-center pad4-tb padtb50 mmar0">
       <div class="fx-spbtw w80 fx-ac-spbtw clr service-banner">
         <div
           class="img w45 mw100"

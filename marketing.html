@@ -38,22 +38,126 @@
     <!-- main -->
   </head>
   <body>
+    <!-- Header -->
+
+    <div class="navbar">
+      <!-- Navbar logo -->
+      <div class="nav-header">
+        <div class="nav-logo">
+          <a class="nav-brand" href="../index.html">
+            <img src="../images/PROMENA LOGO WHITE.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <!-- responsive navbar toggle button -->
+      <input type="checkbox" id="nav-check" />
+      <!-- <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div> -->
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <!-- Navbar items -->
+      <ul class="nav-links">
+        <!-- <a href="#">Home</a>
+      <a href="#">About</a> -->
+
+        <!-- Dropdown menu -->
+        <li class="dropdown">
+          <a class="dropBtn" href="#"
+            >Services
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="drop-content">
+            <a href="../service.html">Design</a>
+            <a href="../technology.html">Technology</a>
+            <a href="../marketing.html">Marketing</a>
+
+            <!-- Creating sub menu Dropdown -->
+            <!-- <div class="dropdown2">
+            <a class="dropBtn2" href="#"
+              >More
+              <i class="fas fa-angle-right"></i>
+            </a>
+            <div class="drop-content2">
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+              <a href="#">jQuery</a>
+            </div>
+          </div> -->
+          </div>
+        </li>
+
+        <li><a href="../client.html">Client</a></li>
+        <li class="dropdown">
+          <a class="dropBtn" href="#"
+            >About Us
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="drop-content">
+            <a href="../about-us.html">About Us</a>
+            <a href="../team.html">Team</a>
+            <a href="../career.html">Career</a>
+          </div>
+        </li>
+        <li><a href="../blockchain.html">BlockChain</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../contact-us.html">Contact Us</a></li>
+        <!-- <button class="loginBtn">Login</button> -->
+      </ul>
+    </div>
+
+    <!-- <header class="new-header">
+    <div class="con w80">
+      <nav class="new-nav mpad1-tb">
+        <a class="nav-brand" href="../index.html">
+          <img src="../images/PROMENA LOGO WHITE.png" alt="" />
+          </a>
+        <ul class="nav-list">
+          <li class="nav-item1"><a class="nav-link-li" href="">home</a></li>
+          <li class="nav-item1"><a class="nav-link-li" href="">about</a></li>
+          <li class="nav-item1"><a class="nav-link-li" href="">videos</a></li>
+          <li class="nav-item1">
+            <a class="nav-link-li" href="">competences</a>
+          </li>
+          <li class="nav-item1">
+            <a class="nav-link-li" href="">contacts</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </div>
+  </header> -->
+
     <div class="deskHeader header-service">
       <header class="desk-header innerHeader">
         <div class="container w80">
           <div class="logo-flex">
-            <a href="index.html">
+            <a href="./index.html">
               <img src="./images/PROMENALOGOBLUE.png" alt="" />
             </a>
           </div>
           <div class="header-menu">
             <ul class="navigation">
               <li class="drop-box">
-                <a class="service-link" style="color: #1973d1">Services</a>
+                <a class="service-link">Services</a>
                 <div class="drop">
                   <ul class="f-row f-3">
                     <li class="f-col">
-                      <a href="service.html" class="anim-link">
+                      <a href="./service.html" class="anim-link">
                         <div class="dropbox-cont col1">
                           <div>
                             <h6>Design</h6>
@@ -69,7 +173,7 @@
                       </a>
                     </li>
                     <li class="f-col">
-                      <a href="technology.html" class="anim-link">
+                      <a href="./technology.html" class="anim-link">
                         <div class="dropbox-cont col1">
                           <div>
                             <h6>Technology</h6>
@@ -85,7 +189,7 @@
                       </a>
                     </li>
                     <li class="f-col">
-                      <a href="marketing.html" class="anim-link">
+                      <a href="./marketing.html" class="anim-link">
                         <div class="dropbox-cont col1">
                           <div>
                             <h6>Marketing</h6>
@@ -103,13 +207,13 @@
                   </ul>
                 </div>
               </li>
-              <li><a href="client.html">Client</a></li>
+              <li><a href="./client.html">Client</a></li>
               <li class="drop-box">
                 <a class="about-link">About Us</a>
                 <div class="drop">
                   <ul class="f-row f-3">
                     <li class="f-col">
-                      <a href="about-us.html" class="anim-link">
+                      <a href="./about-us.html" class="anim-link">
                         <div class="dropbox-cont col1">
                           <div>
                             <h6>About Us.</h6>
@@ -127,7 +231,7 @@
                       </a>
                     </li>
                     <li class="f-col">
-                      <a href="team.html" class="anim-link">
+                      <a href="./team.html" class="anim-link">
                         <div class="dropbox-cont col1">
                           <div>
                             <h6>Team.</h6>
@@ -146,7 +250,7 @@
                       </a>
                     </li>
                     <li class="f-col">
-                      <a href="career.html" class="anim-link">
+                      <a href="./career.html" class="anim-link">
                         <div class="dropbox-cont col1">
                           <div>
                             <h6>Career.</h6>
@@ -167,15 +271,17 @@
                   </ul>
                 </div>
               </li>
-              <li><a href="#">Training</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact-us.html">Contact Us</a></li>
+              <!-- <li><a href="#">Training</a></li> -->
+              <li><a href="./blockchain.html">Blockchain</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact-us.html">Contact Us</a></li>
             </ul>
           </div>
         </div>
       </header>
     </div>
-    <div class="fx-center pad30 mart100">
+
+    <div class="fx-center pad30 mart100 mmar0">
       <div class="fx-spbtw w80 clr mpad5t t-mw90">
         <div
           class="w45 mw100 t-mw40"
@@ -209,14 +315,12 @@
             </ul>
           </div>
           <div class="font-bold txs font-s">
-            <h3
-              class="font-slr mar4-t linexs mar0 t-pbc t-pad t-line4 pad2-b k-line"
-            >
+            <h3 class="font-slr linexs mar0 pbc mline3 linevs mline3">
               We create designs to augment User Experiences.
             </h3>
           </div>
           <div class="font-thin">
-            <h6 class="font-s ft-w9 mart40 mar0 line1 mar0 pbc linevs k-line2">
+            <h6 class="font-s ft-w9 mart40 mar0 mar0 pbc linexs linevs mline3">
               We analyze human behavioral patterns and blend them with data
               science and information architecture to design a unique 'blended
               experience'.
@@ -236,7 +340,7 @@
         </div>
         <div class="txs font-bold">
           <h3
-            class="font-bold font-xs reveal fade-bottom mar4-tb mar0 pbc t-pbc ll-pbc mpad5tb linevs k-line"
+            class="font-bold font-xs txs reveal fade-bottom mar0 pbc mline3 mline3 mpad1-t tfont-xxvs"
           >
             Innovative marketing and branding<br />
             led solutions to the end-user-oriented problem.
@@ -246,41 +350,41 @@
           <div class="w90 mw100">
             <div class="fx-wrp fx-spbtw reveal fade-bottom">
               <div class="w30 mw40 mar0 mw50 mpad1-t">
-                <h6 class="hh-1-service-page font-bold font-xxvs pbc">
+                <h6 class="hh-1-service-page font-thin font-xxvs pc">
                   <a class="black" href="marketing/seo.html">SEO</a>
                 </h6>
               </div>
               <div class="w30 mw40 mar0 mw50 mpad1-t">
-                <h6 class="hh-1-service-page font-bold mar0 font-xxvs pbc">
+                <h6 class="hh-1-service-page font-thin font-xxvs pc">
                   <a class="black" href="marketing/sem.html">SEM</a>
                 </h6>
               </div>
               <div class="w30 mw40 mar0 mw50 mpad1-t">
-                <h6 class="hh-1-service-page font-bold mar0 font-xxvs pbc">
+                <h6 class="hh-1-service-page font-thin font-xxvs pc">
                   <a class="black" href="marketing/branding.html">BRANDING</a>
                 </h6>
               </div>
               <div class="w30 mw40 mar0 mw50 mpad1-t">
-                <h6 class="hh-1-service-page font-bold mar0 font-xxvs pbc">
+                <h6 class="hh-1-service-page font-thin font-xxvs pc">
                   <a class="black" href="marketing/ppc.html">PPC</a>
                 </h6>
               </div>
               <div class="w30 mw20 mar0 mw50 mpad1-t">
-                <h6 class="hh-1-service-page font-bold mar0 font-xxvs pbc">
+                <h6 class="hh-1-service-page font-thin font-xxvs pc">
                   <a class="black" href="marketing/email-marketing.html"
                     >EMAIL MARKETING</a
                   >
                 </h6>
               </div>
               <div class="w26 mw50 mar0 mw50 mpad1-t">
-                <h6 class="hh-1-service-page font-bold mar0 font-xxvs pbc">
+                <h6 class="hh-1-service-page font-thin font-xxvs pc">
                   <a class="black" href="marketing/content-marketing.html"
                     >CONTENT MARKETING</a
                   >
                 </h6>
               </div>
               <div class="w30 mw40 mar0 mw50 mpad1-t">
-                <h6 class="hh-1-service-page font-bold mar0 font-xxvs pbc">
+                <h6 class="hh-1-service-page font-thin font-xxvs pc">
                   <a class="black" href="marketing/smm.html">SMM</a>
                 </h6>
               </div>
@@ -317,12 +421,12 @@
                   width="25%"
                 />
                 <h3
-                  class="font-bold txs font-sv mar0 pad1-t reveal fade-bottom pbc mtxc t-mtxc"
+                  class="font-bold txs font-sv mar0 pad1-b reveal fade-bottom pbc mtxc t-mtxc tfont-xxvs"
                 >
                   Research
                 </h3>
                 <p
-                  class="font-thin txs font-vs reveal fade-bottom line4 mar0 pbc mline3 t-mtxc mtxc l-pbc k-line-3"
+                  class="font-thin txs font-vs reveal fade-bottom line4 mar0 pbc mline3 t-mtxc mtxc tsv"
                 >
                   With intensive meticulous research techniques, we ensure to
                   capture a brand’s unique voice and assess extant marketing
@@ -336,12 +440,12 @@
                   width="25%"
                 />
                 <h3
-                  class="font-bold txs font-sv mar0 pad1-t reveal fade-bottom pbc mtxc t-mtxc"
+                  class="font-bold txs font-sv mar0 pad1-b reveal fade-bottom pbc mtxc t-mtxc tfont-xxvs"
                 >
                   Positioning
                 </h3>
                 <p
-                  class="font-thin txs font-vs reveal fade-bottom line4 mar0 pbc mline3 t-mtxc mtxc l-pbc k-line-3"
+                  class="font-thin txs font-vs reveal fade-bottom line4 mar0 pbc mline3 t-mtxc mtxc tsv"
                 >
                   We thrive to establish a future-proof system by positioning
                   the brand in the digital universe to redefine purpose, voice,
@@ -356,12 +460,12 @@
                   width="25%"
                 />
                 <h3
-                  class="font-bold txs font-sv mar0 pad1-t reveal fade-bottom pbc mtxc t-mtxc"
+                  class="font-bold txs font-sv mar0 pad1-b reveal fade-bottom pbc mtxc t-mtxc tfont-xxvs"
                 >
                   Creative marketing
                 </h3>
                 <p
-                  class="font-thin txs font-vs reveal fade-bottom line4 mar0 pbc mline3 t-mtxc mtxc l-pbc k-line-3"
+                  class="font-thin txs font-vs reveal fade-bottom line4 mar0 pbc mline3 t-mtxc mtxc tsv"
                 >
                   We analyze and create world-class unique visuals to ensure a
                   smooth interaction between the end users and the brand to
@@ -375,12 +479,12 @@
                   width="25%"
                 />
                 <h3
-                  class="font-bold txs font-sv mar0 pad1-t reveal fade-bottom pbc mtxc t-mtxc"
+                  class="font-bold txs font-sv mar0 pad1-b reveal fade-bottom pbc mtxc t-mtxc tfont-xxvs"
                 >
                   Rediscovering
                 </h3>
                 <p
-                  class="font-thin txs font-vs reveal fade-bottom line4 mar0 pbc mline3 t-mtxc mtxc l-pbc k-line-3"
+                  class="font-thin txs font-vs reveal fade-bottom line4 mar0 pbc mline3 t-mtxc mtxc tsv"
                 >
                   We keep rediscovering solutions to identify the audience’s
                   pain points and help bridge the gap between customers and

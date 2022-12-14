@@ -79,8 +79,8 @@
 }
 
 @media screen and (min-width: 280px) and (max-width: 760px) {
-  .service-banner {
-    padding-top: 75px;
+  .mw65 {
+    width: 65%;
   }
 
   .home-next-content {
@@ -102,50 +102,19 @@
     margin-bottom: 30px;
     width: 75%;
   }
-  .fnt-thn {
-    font-family: "gotham-thin";
-  }
   .dropbox-cont.col1:after {
     background: transparent url(../images/header-back.svg) repeat-x 0 80%;
     background-size: 179%;
   }
-  .mw55 {
-    width: 55%;
-  }
-  .mw60 {
-    width: 60%;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
-  .service-banner {
-    padding-top: 75px;
-  }
-  .tpbh {
-    font-size: 3vw;
-  }
-  .tpbh-2 {
-    font-size: 3.2vw;
-  }
-  .tpc {
-    font-size: 2.2vw;
+  .t-pbhl {
+    font-size: 1.5vw;
   }
   .pbhl {
     font-size: 2vw;
   }
-
-  .tpbc {
-    font-size: 2.4vw;
-  }
-  /* .pbc {
-    font-size: 2vw;
-  } */
-  .t-pbc {
-    font-size: 3vw;
-  }
-  /* .pqh {
-    font-size: 2vw;
-  } */
   .t-mw90 {
     width: 90%;
   }
@@ -159,129 +128,7 @@
   .t-w80 {
     width: 80%;
   }
-
-  .t-mtxc {
-    text-align: center;
-  }
   .t-mw90 {
     width: 90%;
-  }
-  .line4 {
-    line-height: 20px;
-  }
-  .line3 {
-    line-height: 27px;
-  }
-  .t-line4 {
-    line-height: 34px;
-  }
-  .t-pad {
-    padding-bottom: 23px;
-  }
-  .t-pqh {
-    font-size: 2.8vw;
-  }
-  .c-font {
-    font-size: 12px;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1299px) {
-  .service-banner {
-    padding-top: 75px;
-  }
-  .pbh {
-    font-size: 3vw;
-  }
-  .pbhl {
-    font-size: 2vw;
-  }
-  /* .pbc {
-    font-size: 2.5vw;
-  } */
-  .t-pbc {
-    font-size: 3.8vw;
-  }
-  .ll-pbc {
-    font-size: 3vw;
-  }
-
-  .l-pbc {
-    font-size: 2.3vw;
-  }
-  .pqh {
-    font-size: 2vw;
-  }
-  .t-mw90 {
-    width: 90%;
-  }
-
-  .t-mw40 {
-    width: 40%;
-  }
-  .t-mw55 {
-    width: 55%;
-  }
-
-  .t-mtxc {
-    text-align: center;
-  }
-  .t-mw90 {
-    width: 90%;
-  }
-  .line4 {
-    line-height: 2.92vw;
-  }
-  .line3 {
-    line-height: 3.33vw;
-  }
-  .t-line4 {
-    line-height: 4.49vw;
-  }
-  .t-pad {
-    padding-bottom: 23px;
-  }
-  .mpad5t {
-    padding: 8vw 0 0 0;
-  }
-  .mpad5tb {
-    padding: 3vw 0 3vw 0;
-  }
-  .t-pqh {
-    font-size: 3vw;
-  }
-  .ll-bw12 {
-    width: 18vw;
-  }
-}
-@media screen and (min-width: 1300px) and (max-width: 2560px) {
-  .k-line {
-    line-height: 3.625vw;
-  }
-  .k-line2 {
-    line-height: 3vw;
-  }
-  .k-line-3 {
-    line-height: 2vw;
-  }
-  .kpad {
-    padding: 25px;
-  }
-  .k-font {
-    font-size: 2vw;
-  }
-  .k-pbc {
-    font-size: 1.8vw;
-  }
-  .kpadb {
-    padding-bottom: 100px;
-  }
-  .kpad-4 {
-    padding-bottom: 35px;
-  }
-  .c-k-font {
-    font-size: 1.4vw;
-  }
-  .kline4 {
-    line-height: 42px;
   }
 }
