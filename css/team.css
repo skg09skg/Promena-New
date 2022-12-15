@@ -16,7 +16,6 @@
 }
 
 .gallery-box img {
-  padding: 5px;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;

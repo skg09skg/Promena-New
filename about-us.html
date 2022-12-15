@@ -251,7 +251,7 @@
 
       <div class="contents font-medium fx-dc-jcenter padtb50 mpad4-tb ">
         <div class="contents-header w80 fx-dc gap10">
-          <h3 class="pad4-t d-blue font-xxvs pqh" data-aos="fade-up" data-aos-duration="1800" data-aos-offset="300">
+          <h3 class="pad4-t d-blue font-xxvs pbh tmds" data-aos="fade-up" data-aos-duration="1800" data-aos-offset="300">
             ABOUT US</h3>
           <div id="readmore" data-aos="fade-up" data-aos-duration="1800" data-aos-offset="300">
             <span class="readmore__content black line4 font-xmedium font-xvs pbc mline1 line2 tfont-xxvs">
@@ -404,25 +404,27 @@
       </div>
 
       <div class="vision-mobile fx-dc-all-center padtb50 mpad4-tb ">
-        <section id="section1" class="mobile-section w40 mpad2 mw90 w80 tpad1-tb" data-aos="fade-up"
+        <div class="w80 mw90">
+        <section id="section1" class="mobile-section  mpad2  tpad1-tb" data-aos="fade-up"
           data-aos-duration="1500">
           <h2 class="font-bold l-blue line1  pbh mline2 mpads-b">Vission</h2>
-          <h3 class=" font-xs font-thin black line1  pbc mline3 ">To be the leading trusted Software and Digital
+          <h3 class=" font-xs font-thin black line1 pbc mline3 ">To be the leading trusted Software and Digital
             Marketing company. </h3>
         </section>
-        <section id="section1" class="mobile-section w40 mw90 mpad2 w80 tpad1-tb" data-aos="fade-up"
+        <section id="section1" class="mobile-section mpad2 tpad1-tb" data-aos="fade-up"
           data-aos-duration="1500">
           <h2 class=" font-bold l-blue line1  pbh mline2 mpads-b ">Mission</h2>
           <h3 class=" font-xs font-thin black line1  pbc mline3 ">To elevate businesses with revenue-building
             strategies.</h3>
         </section>
-        <section id="section1" class="mobile-section w40 mw90 mpad2 w80 tpad1-tb" data-aos="fade-up"
+        <section id="section1" class="mobile-section  mpad2 tpad1-tb" data-aos="fade-up"
           data-aos-duration="1500">
           <h2 class="font-bold l-blue line1  pbh mline2 mpads-b">Value</h2>
           <h3 class=" font-xs font-thin black line1  pbc mline3 ">To offer businesses all over the world industry
             leading digital marketing & IT services through a leading expert team.</h3>
         </section>
       </div>
+    </div>
 
       <!-- <div class="testimonials  font-medium fx-center">
         <div class="card-1 w70 fx-dr">
@@ -444,20 +446,22 @@
         </div>
       </div> -->
 
-
-      <div class="font-bold tx-center fx-dc-acenter padtb50 mpad4-tb">
+      <div class="design-page font-bold tx-center fx-dc-acenter padtb50 mpad4-tb" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
         <div class="w80 mw90">
-          <h3 class="mar0 dg-blue font-xmd ft-w6 txc pad1-tb pbc mline1 tfont-xmd">
+          <h3 class="mar0 dg-blue font-xmd ft-w6 txc padtb50 pbc mline1">
             Let's revolutionize your brand into a high revenue-driving business
             model.
           </h3>
         </div>
-        <div class="design-btn txc pad1-tb mpad1-tb w100">
-          <button class="dg-blue font-xvs ft-w6 pbc bw12 pad1-tb mw30 mpadb-tb tsv" type="submit">
-            Read More
-          </button>
-        </div>
+        <!-- <div class="design-btn txc pad1-tb mpad1-tb w100">
+          <a href="./contact-us.html">
+            <button class="dg-blue font-xvs ft-w6 pbc bw12 pad1-tb mw30 mpadb-tb tsv" type="submit">Enquiry
+            </button>
+          </a>
+        </div> -->
       </div>
+    
+      
 
       <!-- footer -->
 
@@ -584,8 +588,8 @@
         contentSection.each(function () {
           var sectionName = $(this).attr('id');
           var navigationMatch = $('nav a[href="#' + sectionName + '"]');
-          console.log($(this).offset().top);
-          console.log($(window).height());
+          // console.log($(this).offset().top);
+          // console.log($(window).height());
           if (($(this).offset().top - $(window).height() / 2 < $(window).scrollTop()) &&
             ($(this).offset().top + $(this).height() - $(window).height() / 2 > $(window).scrollTop())) {
             navigationMatch.addClass('active-section');
@@ -673,13 +677,13 @@
   </script>
 
 
- 
 
-    <!-- script for animation -->
 
-    <script>
-      AOS.init();
-    </script>
+  <!-- script for animation -->
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
