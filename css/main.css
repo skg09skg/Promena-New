@@ -1317,6 +1317,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 1.3vw;
 }
 
 .dropFlex p {
@@ -1362,7 +1363,11 @@ body {
 }
 
 /*FOOTER DESIGN */
-
+.design-page{
+  background-image: url('./../images/background-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 button[type="submit"] {
   border: none;
   border-radius: 8px;
@@ -1386,7 +1391,6 @@ button[type="submit"]::before {
 
 button[type="submit"]:hover::before {
   background-color: #031f4b;
-
   animation: loadingWave 0.3s linear;
 }
 
@@ -2222,6 +2226,12 @@ ul {
   }
   .line2{
     line-height: 2.3vw;
+  }
+  .gap1{
+    gap: 2.8vw;
+  }
+  .w30{
+    width: 30%;
   }
 }
 
