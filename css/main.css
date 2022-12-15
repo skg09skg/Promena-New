@@ -2220,6 +2220,9 @@ ul {
   .tw85 {
     width: 85%;
   }
+  .line2{
+    line-height: 2.3vw;
+  }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 2560px) {
