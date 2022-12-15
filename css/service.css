@@ -82,7 +82,9 @@
   .mw65 {
     width: 65%;
   }
-
+  .mw70 {
+    width: 70%;
+  }
   .home-next-content {
     margin: 0;
   }
@@ -105,6 +107,10 @@
   .dropbox-cont.col1:after {
     background: transparent url(../images/header-back.svg) repeat-x 0 80%;
     background-size: 179%;
+  }
+  .hs-service h2,
+  .hs-service h4 {
+    font-size: 34px;
   }
 }
 
@@ -132,3 +138,6 @@
     width: 90%;
   }
 }
+/* 
+ /* */
+/*  */
