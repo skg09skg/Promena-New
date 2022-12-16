@@ -712,42 +712,42 @@ body {
 /* / Line Height / */
 
 .linelr {
-  line-height: 80px;
+  line-height: 6.15vw; /*80px*/
 }
 
 .linemd {
-  line-height: 60px;
+  line-height: 4.61vw; /*60px*/  
 }
 
 .linexs {
-  line-height: 56px;
+  line-height: 4.3vw;  /*56px*/
 }
 .linesm {
-  line-height: 50px;
+  line-height: 3.846vw; /*50px*/
 }
 
 .linevs {
-  line-height: 44px;
-}
+  line-height: 3.38vw;  /*44px*/
+ }
 
 .line1 {
-  line-height: 40px;
+  line-height: 3.076vw;  /*40px*/
 }
 
 .line2 {
-  line-height: 36px;
+  line-height: 2.77vw;   /*36px*/
 }
 
 .line3 {
-  line-height: 32px;
+  line-height: 2.46vw;   /*32px*/
 }
 
 .line4 {
-  line-height: 28px;
+  line-height: 2.15vw;   /*28px*/
 }
 
 .line5 {
-  line-height: 24px;
+  line-height: 1.846vw;  /*24px*/
 }
 
 /* / Positions / */
@@ -2029,6 +2029,7 @@ ul {
     font-size: 3vw;
   }
 
+
   /* Line-height */
 
   .mline1 {
@@ -2072,6 +2073,9 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1020px) {
   .w80 {
     width: 85%;
+  }
+  .w100{
+    width: 100%;
   }
 
   /* Header */
@@ -2142,6 +2146,9 @@ ul {
   .line2 {
     line-height: 3.4vw;
   }
+  .line3{
+    line-height: 3.6vw;
+  }
 
   .tsv {
     font-size: 1.8vw;
@@ -2205,6 +2212,9 @@ ul {
   .tsv {
     font-size: 1.6vw;
   }
+  .tvs {
+    font-size: 2.6vw;
+  }
 
   .bw12 {
     width: 16vw;
@@ -2242,4 +2252,14 @@ ul {
   .line2 {
     line-height: 2.3vw;
   }
+  .padtb-1{
+    padding: 1vw 0;
+  }
+  .font-vs{
+    font-size: 2.23vw;
+  }
+  .w30{
+    width: 30%;
+  }
+ 
 }
