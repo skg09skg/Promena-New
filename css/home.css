@@ -292,6 +292,7 @@ h1 {
   }
   .hs-box {
     padding: 170px 0 70px;
+    display: none;
   }
 
   .scrollTop {
@@ -380,3 +381,67 @@ h1 {
     font-size: 20px;
   }
 }
+/*  */
+.md {
+  display: none;
+}
+@media screen and (min-width: 280px) and (max-width: 760px) {
+  .md {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .fx-child {
+    width: 80%;
+  }
+  .pqhi {
+    font-size: 8.4vw;
+    padding-bottom: 10px;
+  }
+  .pd-top {
+    padding-top: 20px;
+  }
+  .li-fx {
+    font-size: 4vw;
+    padding-bottom: 15px;
+  }
+  .pq {
+    font-size: 2.4vw;
+  }
+  .pad-li {
+    padding-bottom: 8px;
+  }
+  .h-serv-ul-3 {
+    padding-left: 14px;
+    padding-top: 10px;
+  }
+}
+/* @media screen and (min-width: 768px) and (max-width: 1020px) {
+  .md {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .fx-child {
+    width: 66%;
+  }
+  .pqhi {
+    font-size: 8.4vw;
+    padding-bottom: 10px;
+  }
+  .pd-top {
+    padding-top: 20px;
+  }
+  .li-fx {
+    font-size: 4vw;
+    padding-bottom: 15px;
+  }
+  .pq {
+    font-size: 2.4vw;
+  }
+  .pad-li {
+    padding-bottom: 8px;
+  }
+} */
