@@ -1884,7 +1884,7 @@ ul {
   }
 
   .mpad1-b {
-    padding: 0 0 0 4vw;
+    padding: 0 0 4vw 0;
   }
 
   .mpad1-r {
@@ -1912,7 +1912,7 @@ ul {
   }
 
   .mpad2-b {
-    padding: 0 0 0 5vw;
+    padding: 0 0 5vw 0;
   }
 
   .mpad2-r {
@@ -1940,7 +1940,7 @@ ul {
   }
 
   .mpad3-b {
-    padding: 0 0 0 6vw;
+    padding: 0 0 6vw 0;
   }
 
   .mpad3-r {
@@ -1968,7 +1968,7 @@ ul {
   }
 
   .mpad4-b {
-    padding: 0 0 0 7vw;
+    padding: 0 0 7vw 0;
   }
 
   .mpad4-r {
@@ -2010,23 +2010,23 @@ ul {
   /* Font-Sizes */
 
   .pbh {
-    font-size: 5vw;
+    font-size: 5vw !important;
   }
 
   .pbhl {
-    font-size: 4vw;
+    font-size: 4vw !important;
   }
 
   .pbc {
-    font-size: 4vw;
+    font-size: 4vw !important;
   }
 
   .pqh {
-    font-size: 3.4vw;
+    font-size: 3.4vw !important;
   }
 
   .pc {
-    font-size: 3vw;
+    font-size: 3vw !important;
   }
 
   /* Line-height */
@@ -2142,9 +2142,14 @@ ul {
     font-size: 3vw;
   }
 
+  .mlinen {
+    line-height: 3vw;
+  }
+
   .line2 {
     line-height: 3.4vw;
   }
+
   .line3 {
     line-height: 3.6vw;
   }
@@ -2205,7 +2210,23 @@ ul {
   }
 
   .navigation li {
-    padding: 0 1vw;
+    padding: 0 1.4vw;
+  }
+
+  .navigation li a {
+    font-size: 1.4vw;
+  }
+
+  .drop .f-col {
+    width: 28%;
+  }
+
+  .dropbox-cont h6 {
+    font-size: 3vw;
+  }
+
+  .dropbox-cont p {
+    font-size: 1.4vw;
   }
 
   /* Banner */
@@ -2232,6 +2253,18 @@ ul {
     font-size: 1.3vw;
   }
 
+  .lw90 {
+    width: 90%;
+  }
+
+  .lw80 {
+    width: 80%;
+  }
+
+  .lw45 {
+    width: 45%;
+  }
+
   .tw85 {
     width: 85%;
   }
@@ -2243,6 +2276,10 @@ ul {
   }
   .w30 {
     width: 30%;
+  }
+
+  .llinen {
+    line-height: 2.6vw;
   }
 }
 
@@ -2258,5 +2295,145 @@ ul {
   }
   .w30 {
     width: 30%;
+  }
+}
+
+/* Service cards Animation */
+
+.dropbox-cont1 {
+  padding: 20px;
+  height: 100%;
+  border-radius: 7px;
+  text-transform: initial;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.dropbox-cont1 > div {
+  position: relative;
+  z-index: 1;
+}
+
+.dropbox-cont1:after {
+  content: "";
+  background-size: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: calc(100% + 30px);
+  opacity: 0.1;
+  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+}
+
+.dropbox-cont1.col1:after {
+  background: transparent url(../images/header-back.svg) repeat-x 0 80%;
+  background-size: 120%;
+}
+
+.dropbox-cont1.col2:after {
+  /* / background: transparent / */
+  /* / url(https://ik.imagekit.io/2eribsa8w/wave2_nfEiloOkqq.svg) repeat-x 0 80%; / */
+  background: transparent url(../images/header-back.svg) repeat-x 0 80%;
+  background-size: 120%;
+}
+
+.dropbox-cont1.col3:after {
+  /* / background: transparent / */
+  /* / url(https://ik.imagekit.io/2eribsa8w/wave3_zvDm6IWxql.svg) repeat-x 0 80%; / */
+  background: transparent url(../images/header-back.svg) repeat-x 0 80%;
+  background-size: 120%;
+}
+
+.dropbox-cont1:hover:after {
+  background-position: 100% 180%;
+  top: -100%;
+  background-size: 200%;
+}
+
+.dropbox-cont1:hover .dropFlex img {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.dropbox-cont1 h6 {
+  font-family: "gotham-medium", sans-serif;
+  font-size: 32px;
+  color: #031f4b;
+  line-height: 1;
+  margin: 0 0 5px 0;
+}
+
+.dropbox-cont1 p {
+  font-family: "gotham-medium", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #031f4b;
+  margin: 5px 0;
+}
+
+.dropFlex1 {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.3vw;
+}
+
+.dropFlex1 p {
+  width: 100%;
+}
+
+.dropFlex1 img {
+  margin-bottom: 5px;
+  width: 30px;
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 280px) and (max-width: 760px) {
+  .dropbox-cont1 {
+    padding: 3vw 4vw;
+    margin: 0 0 3vw 0;
+  }
+
+  .dropbox-cont1 h6 {
+    line-height: 0.6;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 2560px) {
+  .dropbox-cont1 {
+    padding: 1vw 1.2vw;
+    margin: 0;
+    width: 30% !important;
+  }
+
+  .dropbox-cont1 h6 {
+    line-height: 1;
+    font-size: 2.2vw;
+    margin: 0 0 0.4vw 0;
+  }
+
+  .dropbox-cont1 p {
+    font-size: 1.2vw;
+    line-height: 1.6vw;
+    margin: 0.4vw 0;
+  }
+
+  .dropFlex1 img {
+    width: 2.2vw;
+    margin-bottom: 0.4vw;
   }
 }
