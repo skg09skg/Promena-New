@@ -98,13 +98,13 @@
     padding-top: 20px;
   }
   .rs100 {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
-  .dropbox-cont {
+  /* .dropbox-cont {
     margin-bottom: 30px;
     width: 75%;
-  }
-  .dropbox-cont.col1:after {
+  } */
+  /* .dropbox-cont.col1:after {
     background: transparent url(../images/header-back.svg) repeat-x 0 80%;
     background-size: 179%;
   }
@@ -118,6 +118,7 @@
   }
   .dropbox-cont {
     padding: 10px 20px;
+  } */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
@@ -144,6 +145,3 @@
     width: 90%;
   }
 }
-/* 
- /* */
-/*  */
