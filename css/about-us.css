@@ -15,9 +15,11 @@ html{
 button.readmore__toggle {
   display: flex;
   justify-content: start;
-  margin-top: 1rem;
+  width: 100%;
+  padding-top: 1vw;
   border: none;
   cursor: pointer;
+  font-size: 1.4vw;
   
 }  
     /* testimonials */
@@ -137,7 +139,9 @@ nav .dot {
     }
     .vision-mobile{
       display: flex;
-   
+    }
+    button.readmore__toggle {
+      font-size: 4vw;
     }
   }
   
@@ -147,8 +151,10 @@ nav .dot {
     }
     .vision-mobile{
       display: flex;
-   
     } 
+    button.readmore__toggle {
+      font-size: 2.4vw;
+    }
   }
 /* SLIDER PAGE */
 * {
