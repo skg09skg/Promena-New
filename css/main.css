@@ -2293,7 +2293,10 @@ ul {
   .padtb-1 {
     padding: 1vw 0;
   }
-  .w30 {
+  .font-vvv{
+    font-size: 2.23vw;
+  }
+  .w30{
     width: 30%;
   }
 }
