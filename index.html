@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/service.css" />
     <link rel="stylesheet" href="./css/service.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link
       rel="stylesheet preload"
       as="style"
@@ -109,248 +111,247 @@
   </head>
   <body>
     <!-- Header -->
-   <!-- Header -->
 
-   <div class="navbar">
-    <!-- Navbar logo -->
-    <div class="nav-header">
-      <div class="nav-logo">
-        <a class="nav-brand" href="../index.html">
-          <img src="../images/PROMENA LOGO WHITE.png" alt="" />
-        </a>
+    <div class="navbar">
+      <!-- Navbar logo -->
+      <div class="nav-header">
+        <div class="nav-logo">
+          <a class="nav-brand" href="./index.html">
+            <img src="./images/PROMENA LOGO WHITE.png" alt="" />
+          </a>
+        </div>
       </div>
+
+      <!-- responsive navbar toggle button -->
+      <input type="checkbox" id="nav-check" />
+      <!-- <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div> -->
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <!-- Navbar items -->
+      <ul class="nav-links">
+        <!-- <a href="#">Home</a>
+        <a href="#">About</a> -->
+
+        <!-- Dropdown menu -->
+        <li class="dropdown">
+          <a class="dropBtn" href="./service.html"
+            >Services
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="drop-content">
+            <a href="./service.html">Design</a>
+            <a href="./technology.html">Technology</a>
+            <a href="./marketing.html">Marketing</a>
+
+            <!-- Creating sub menu Dropdown -->
+            <!-- <div class="dropdown2">
+              <a class="dropBtn2" href="#"
+                >More
+                <i class="fas fa-angle-right"></i>
+              </a>
+              <div class="drop-content2">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JavaScript</a>
+                <a href="#">jQuery</a>
+              </div>
+            </div> -->
+          </div>
+        </li>
+
+        <li><a href="./client.html">Client</a></li>
+        <li class="dropdown">
+          <a class="dropBtn" href="./about-us.html"
+            >About Us
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="drop-content">
+            <a href="./about-us.html">About Us</a>
+            <a href="./team.html">Team</a>
+            <a href="./career.html">Career</a>
+          </div>
+        </li>
+        <li><a href="./blockchain.html">BlockChain</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact-us.html">Contact Us</a></li>
+        <!-- <button class="loginBtn">Login</button> -->
+      </ul>
     </div>
 
-    <!-- responsive navbar toggle button -->
-    <input type="checkbox" id="nav-check" />
-    <!-- <div class="hamburger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div> -->
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-
-    <!-- Navbar items -->
-    <ul class="nav-links">
-      <!-- <a href="#">Home</a>
-      <a href="#">About</a> -->
-
-      <!-- Dropdown menu -->
-      <li class="dropdown">
-        <a class="dropBtn" href="#"
-          >Services
-          <i class="fas fa-angle-down"></i>
-        </a>
-        <div class="drop-content">
-          <a href="../service.html">Design</a>
-          <a href="../technology.html">Technology</a>
-          <a href="../marketing.html">Marketing</a>
-
-          <!-- Creating sub menu Dropdown -->
-          <!-- <div class="dropdown2">
-            <a class="dropBtn2" href="#"
-              >More
-              <i class="fas fa-angle-right"></i>
+    <!-- <header class="new-header">
+      <div class="con w80">
+        <nav class="new-nav mpad1-tb">
+          <a class="nav-brand" href="../index.html">
+            <img src="../images/PROMENA LOGO WHITE.png" alt="" />
             </a>
-            <div class="drop-content2">
-              <a href="#">HTML</a>
-              <a href="#">CSS</a>
-              <a href="#">JavaScript</a>
-              <a href="#">jQuery</a>
-            </div>
-          </div> -->
-        </div>
-      </li>
-
-      <li><a href="../client.html">Client</a></li>
-      <li class="dropdown">
-        <a class="dropBtn" href="#"
-          >About Us
-          <i class="fas fa-angle-down"></i>
-        </a>
-        <div class="drop-content">
-          <a href="../about-us.html">About Us</a>
-          <a href="../team.html">Team</a>
-          <a href="../career.html">Career</a>
-        </div>
-      </li>
-      <li><a href="../blockchain.html">BlockChain</a></li>
-      <li><a href="../blog.html">Blog</a></li>
-      <li><a href="../contact-us.html">Contact Us</a></li>
-      <!-- <button class="loginBtn">Login</button> -->
-    </ul>
-  </div>
-
-  <!-- <header class="new-header">
-    <div class="con w80">
-      <nav class="new-nav mpad1-tb">
-        <a class="nav-brand" href="../index.html">
-          <img src="../images/PROMENA LOGO WHITE.png" alt="" />
-          </a>
-        <ul class="nav-list">
-          <li class="nav-item1"><a class="nav-link-li" href="">home</a></li>
-          <li class="nav-item1"><a class="nav-link-li" href="">about</a></li>
-          <li class="nav-item1"><a class="nav-link-li" href="">videos</a></li>
-          <li class="nav-item1">
-            <a class="nav-link-li" href="">competences</a>
-          </li>
-          <li class="nav-item1">
-            <a class="nav-link-li" href="">contacts</a>
-          </li>
-        </ul>
-        <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
-    </div>
-  </header> -->
-
-  <div class="deskHeader header-service">
-    <header class="desk-header innerHeader">
-      <div class="container w80">
-        <div class="logo-flex">
-          <a href="./index.html">
-            <img src="./images/PROMENALOGOBLUE.png" alt="" />
-          </a>
-        </div>
-        <div class="header-menu">
-          <ul class="navigation">
-            <li class="drop-box">
-              <a class="service-link">Services</a>
-              <div class="drop">
-                <ul class="f-row f-3">
-                  <li class="f-col">
-                    <a href="./service.html" class="anim-link">
-                      <div class="dropbox-cont col1">
-                        <div>
-                          <h6>Design</h6>
-                          <div class="dropFlex">
-                            <p>Handcraft the user experience.</p>
-                            <img
-                              src="./images/arrow-right.svg"
-                              alt="arrow-right"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="f-col">
-                    <a href="./technology.html" class="anim-link">
-                      <div class="dropbox-cont col1">
-                        <div>
-                          <h6>Technology</h6>
-                          <div class="dropFlex">
-                            <p>Leverage the power of code.</p>
-                            <img
-                              src="./images/arrow-right.svg"
-                              alt="arrow-right"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="f-col">
-                    <a href="./marketing.html" class="anim-link">
-                      <div class="dropbox-cont col1">
-                        <div>
-                          <h6>Marketing</h6>
-                          <div class="dropFlex">
-                            <p>Creative strategies for brands.</p>
-                            <img
-                              src="./images/arrow-right.svg"
-                              alt="arrow-right"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          <ul class="nav-list">
+            <li class="nav-item1"><a class="nav-link-li" href="">home</a></li>
+            <li class="nav-item1"><a class="nav-link-li" href="">about</a></li>
+            <li class="nav-item1"><a class="nav-link-li" href="">videos</a></li>
+            <li class="nav-item1">
+              <a class="nav-link-li" href="">competences</a>
             </li>
-            <li><a href="./client.html">Client</a></li>
-            <li class="drop-box">
-              <a class="about-link">About Us</a>
-              <div class="drop">
-                <ul class="f-row f-3">
-                  <li class="f-col">
-                    <a href="./about-us.html" class="anim-link">
-                      <div class="dropbox-cont col1">
-                        <div>
-                          <h6>About Us.</h6>
-                          <div class="dropFlex">
-                            <p>
-                              We are super-efficient yet humble to serve you!
-                            </p>
-                            <img
-                              src="./images/arrow-right.svg"
-                              alt="arrow-right"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="f-col">
-                    <a href="./team.html" class="anim-link">
-                      <div class="dropbox-cont col1">
-                        <div>
-                          <h6>Team.</h6>
-                          <div class="dropFlex">
-                            <p>
-                              We are proud of our experienced and accomplished
-                              team!
-                            </p>
-                            <img
-                              src="./images/arrow-right.svg"
-                              alt="arrow-right"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="f-col">
-                    <a href="./career.html" class="anim-link">
-                      <div class="dropbox-cont col1">
-                        <div>
-                          <h6>Career.</h6>
-                          <div class="dropFlex">
-                            <p>
-                              Can you offer such <br />
-                              experience?
-                            </p>
-                            <img
-                              src="./images/arrow-right.svg"
-                              alt="arrow-right"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <li class="nav-item1">
+              <a class="nav-link-li" href="">contacts</a>
             </li>
-            <!-- <li><a href="#">Training</a></li> -->
-            <li><a href="./blockchain.html">Blockchain</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact-us.html">Contact Us</a></li>
           </ul>
-        </div>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
       </div>
-    </header>
-  </div>
+    </header> -->
+
+    <div class="deskHeader header-service">
+      <header class="desk-header innerHeader">
+        <div class="container1 w80 lw90">
+          <div class="logo-flex">
+            <a href="./index.html">
+              <img src="./images/PROMENALOGOBLUE.png" alt="" />
+            </a>
+          </div>
+          <div class="header-menu">
+            <ul class="navigation">
+              <li class="drop-box">
+                <a class="service-link">Services</a>
+                <div class="drop">
+                  <ul class="f-row f-3">
+                    <li class="f-col">
+                      <a href="./service.html" class="anim-link">
+                        <div class="dropbox-cont col1">
+                          <div>
+                            <h6>Design</h6>
+                            <div class="dropFlex">
+                              <p>Handcraft the user experience.</p>
+                              <img
+                                src="./images/arrow-right.svg"
+                                alt="arrow-right"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="f-col">
+                      <a href="./technology.html" class="anim-link">
+                        <div class="dropbox-cont col1">
+                          <div>
+                            <h6>Technology</h6>
+                            <div class="dropFlex">
+                              <p>Leverage the power of code.</p>
+                              <img
+                                src="./images/arrow-right.svg"
+                                alt="arrow-right"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="f-col">
+                      <a href="./marketing.html" class="anim-link">
+                        <div class="dropbox-cont col1">
+                          <div>
+                            <h6>Marketing</h6>
+                            <div class="dropFlex">
+                              <p>Creative strategies for brands.</p>
+                              <img
+                                src="./images/arrow-right.svg"
+                                alt="arrow-right"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="./client.html">Client</a></li>
+              <li class="drop-box">
+                <a class="about-link">About Us</a>
+                <div class="drop">
+                  <ul class="f-row f-3">
+                    <li class="f-col">
+                      <a href="./about-us.html" class="anim-link">
+                        <div class="dropbox-cont col1">
+                          <div>
+                            <h6>About Us.</h6>
+                            <div class="dropFlex">
+                              <p>
+                                We are super-efficient yet humble to serve you!
+                              </p>
+                              <img
+                                src="./images/arrow-right.svg"
+                                alt="arrow-right"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="f-col">
+                      <a href="./team.html" class="anim-link">
+                        <div class="dropbox-cont col1">
+                          <div>
+                            <h6>Team.</h6>
+                            <div class="dropFlex">
+                              <p>
+                                We are proud of our experienced and accomplished
+                                team!
+                              </p>
+                              <img
+                                src="./images/arrow-right.svg"
+                                alt="arrow-right"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="f-col">
+                      <a href="./career.html" class="anim-link">
+                        <div class="dropbox-cont col1">
+                          <div>
+                            <h6>Career.</h6>
+                            <div class="dropFlex">
+                              <p>
+                                Can you offer such <br />
+                                experience?
+                              </p>
+                              <img
+                                src="./images/arrow-right.svg"
+                                alt="arrow-right"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- <li><a href="#">Training</a></li> -->
+              <li><a href="./blockchain.html">Blockchain</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
     <!--  -->
     <div class="fx-center padtb50 mart100 mmar0">
       <div class="w80 fx-spbtw fx-wrp t-mw90 clr">
@@ -362,10 +363,10 @@
           </video>
         </div>
         <div class="w50 mw100 t-mw55">
-          <h3 class="font-lr font-gotham mar0 pad30 pbc mline3">
+          <h3 class="font-lr font-bold mar0 pad30 pbc mline3">
             PASSION INNOVATION TECHNOLOGY
           </h3>
-          <h6 class="font-s font-medium font-thin mar0 pad4-tb line2 pbc linexs linevs mline3">
+          <h6 class="font-s font-medium font-thin mar0  line2 pbc linexs linevs mline3">
             We transform businesses into world-class leaders using technology
           </h6>
         </div>
@@ -436,8 +437,8 @@
           <div class="container">
             <div class="hs-service hs-service-1 stopSec">
               <div class="hs-service-in mw80">
-                  <h2>
-                      <span class="hsDotBox"><span class="hsdot hsdot-1"></span></span> <b class="font-bold">Design</b>
+                  <h2 >
+                      <span class="hsDotBox "><span class="hsdot hsdot-1"></span></span> <b class="font-bold">Design</b>
                   </h2>
                   <h2 class="hsTrigBtn">
                       <span class="hsDotBox"><span class="hsdot hsdot-2"></span></span> <b class="font-bold">Technology</b>
@@ -447,12 +448,11 @@
                   </h2>
                   <span class="h-serv-ul-dummy"></span>
                   <ul class="h-serv-ul-1">
-                      <li><a class="font-bold">UI Design</a></li>
-                      <li><a class="font-bold">UX Design</a></li>
-                      <li><a class="font-bold">UX Consultancy</a></li>
-                      <li><a class="font-bold">Design System</a></li>
-                      <li><a class="font-bold">Animation</a></li>
-                      <li><a class="font-bold">Illustrations</a></li>
+                      <li><a href="./DESIGN/UI-DESIGN.HTML" class="fx-a font-bold" >UI Design</a></li>
+                      <li><a href="./DESIGN/UX-DESIGN.HTML" class="fx-a font-bold">UX Design</a></li>
+                      <li><a href="./DESIGN/iconography.html" class="fx-a font-bold">Iconography</a></li>
+                      <li><a href="./DESIGN/ANIMATIONS.HTML" class="fx-a  font-bold">Animation</a></li>
+                      <li><a href="./DESIGN/ILLUSTRATIONS.HTML" class="fx-a font-bold">Illustrations</a></li>
                   </ul>
                   <div class="hs-img-mob-up">
                       <div class="hs-img-mob hs-img-mob-1">
@@ -471,12 +471,12 @@
                       <span class="hsDotBox"><span class="hsdot hsdot-2"></span></span> <b class="font-bold">Technology</b>
                   </h2>
                   <ul class="h-serv-ul-2">
-                      <li><a class="font-bold">Web Design</a></li>
-                      <li><a class="font-bold">Softwares</a></li>
-                      <li><a class="font-bold">Mobile APPS</a></li>
-                      <li><a class="font-bold">WEB APPS</a></li>
-                      <li><a class="font-bold">Front-end</a></li>
-                      <li><a class="font-bold">Back-end</a></li>
+                      <li><a href="./technology/web-development-technology.html" class="fx-a font-bold">Web Development</a></li>
+                      <li><a class="fx-a font-bold">Wordpress</a></li>
+                      <li><a href="./DESIGN/MOBILE-APPS/ios.html" class="fx-a font-bold">Mobile APPS</a></li>
+                      <li><a href="./DESIGN/MOBILE-APPS/android.html" class="fx-a font-bold">WEB APPS</a></li>
+                      <li><a href="./technology/ecommerce.html" class="fx-a font-bold">E-commerce</a></li>
+                      <li><a href="/technology/php.html" class="fx-a font-bold">PHP</a></li>
                   </ul>
                   <div class="hs-img-mob-up">
                       <div class="hs-img-mob hs-img-mob-2">
@@ -494,15 +494,16 @@
               <div class="hs-service-in">
                   <h2>
                       <span class="hsDotBox"><span class="hsdot hsdot-3 hsdot-3a"></span></span>
-                      <b class="font-bold">Business</b>
+                      <b class="font-bold">Marketing</b>
                   </h2>
-                  <ul class="h-serv-ul-3">
-                      <li><a class="font-bold">BRANDING</a></li>
-                      <li><a class="font-bold">BRAND NAME</a></li>
-                      <li><a class="font-bold">BRAND GUIDELINES</a></li>
-                      <li><a class="font-bold">STRATEGY</a></li>
-                      <li><a class="font-bold">DIGITAL MARKETING</a></li>
-                      <li><a class="font-bold">S.E.O.</a></li>
+                  <ul class="h-serv-ul-3 padb50
+                  ">
+                      <li><a href="./marketing/content-marketing.html" class="fx-a font-bold">Content Marketing</a></li>
+                      <li><a href="./marketing/email-marketing.html" class="fx-a font-bold">E-mail Marketing</a></li>
+                      <li><a href="./marketing/branding.html" class="fx-a font-bold">Branding</a></li>
+                      <li><a href="./marketing/smm.html" class="fx-a font-bold">SMM</a></li>
+                      <li><a href="/marketing/ppc.html" class="fx-a font-bold">PPC</a></li>
+                      <li><a href="./marketing/seo.html" class="fx-a font-bold">S.E.O.</a></li>
                   </ul>
                   <div class="hs-img-mob-up">
                       <div class="hs-img-mob hs-img-mob-3">
@@ -665,43 +666,242 @@
         }
       </script>
 
-    <div class="fx-dc-all-center padtb50">
+    <!-- <div class="fx-dc-all-center padtb50 mart100">
       <div class="fx-center">
         <h2 class="font-bold l-blue ft-w9 font-s  mar0 font-xxvs pqh">
           DOMAINS WE HAVE WORKED FOR
         </h2>
       </div>
       <div class="w80">
-        <ul class="fx-wrp fx-center">
+        <ul class="fx-wrp fx-center pad3-t">
           <li class="w20 pad1-t mar1-rl">
-            <a class="mar4-rl font-s font-bold d-grey pq">FOODTECH </a>
+            <a href="#" class="fx-a font-s font-bold d-grey pq"> FOODTECH </a>
           </li>
           <li class="w20 pad1-t mar1-rl">
-            <a class="mar4-rl font-s font-bold d-grey pq">FINTECH </a>
+            <a href="#" class="fx-a font-s font-bold d-grey pq">FINTECH </a>
           </li>
           <li class="w20 pad1-t mar1-rl">
-            <a class="mar4-rl font-s font-bold d-grey pq">HEALTHTECH </a>
+            <a href="#" class="fx-a font-s font-bold d-grey pq">HEALTHTECH </a>
           </li>
           <li class="w20 pad1-t mar1-rl">
-            <a class="mar4-rl font-s font-bold d-grey pq">AI BOTS </a>
+            <a href="#" class="fx-a font-s font-bold d-grey pq">AI BOTS </a>
           </li>
           <li class="w20 pad1-t mar1-rl">
-            <a class="mar4-rl font-s font-bold d-grey pq">TRAVELTECH </a>
+            <a href="#" class="fx-a font-s font-bold d-grey pq">TRAVELTECH </a>
           </li>
           <li class="w20 pad1-t mar1-rl">
-            <a class="mar4-rl font-s font-bold d-grey pq">ECOM </a>
+            <a href="#" class="fx-a font-s font-bold d-grey pq">ECOM </a>
           </li>
           <li class="w20 pad1-t mar1-rl">
-            <a class="mar4-rl font-s font-bold d-grey pq">REALTECH </a>
+            <a href="#" class="fx-a font-s font-bold d-grey pq">REALTECH </a>
           </li>
           <li class="w20 pad1-t mar1-rl">
-            <a class="mar4-rl font-s font-bold d-grey pq">EDUTECH </a>
+            <a href="#" class="fx-a font-s font-bold d-grey pq">EDUTECH </a>
           </li>
         </ul>
       </div>
+    </div> -->
+    <!--  -->
+
+   
+    <div class="">
+      <!-- <h2
+        class="fx-center pad4-tb font-vs d-blue font-bold reveal fade-bottom fx-center padt50 pqh"
+      >
+        EXPERTISE
+      </h2> -->
+      <div class="waviy fx-center pad4-tb font-vs l-blue font-bold reveal fade-bottom fx-center padt50 pqh">
+        <span style="--i:1">E</span>
+        <span style="--i:2">X</span>
+        <span style="--i:3">P</span>
+        <span style="--i:4">E</span>
+        <span style="--i:5">R</span>
+        <span style="--i:6">T</span>
+        <span style="--i:7">I</span>
+        <span style="--i:8">S</span>
+        <span style="--i:9">E</span>
+      
+       </div>
+      <h2
+        class="fx-center font-s l-blue font-bold reveal fade-bottom fx-center pqh"
+      >
+        DOMAINS WE HAVE WORKED FOR
+      </h2>
+      <div class="fx-dc-acenter padt50 fx-wrap">
+        <div class="fx-wrp w80 pad30 fx-center">
+          <div class="txc w15 pad4-tb mw30 tw25">
+            <div class="img ">
+              <img 
+                class="reveal fade-bottom"
+                src="./images/clients-images/exp1.svg"
+                width="45%"
+              />
+              <h3
+                class="font-bold pad4-tb reveal fade-bottom pc c-font l-font"
+              >
+                Automobiles
+              </h3>
+            </div>
+          </div>
+          <div class="txc w15 pad4-tb mw30 tw25">
+            <div class="img">
+              <img
+                class="reveal fade-bottom"
+                src="./images/clients-images/exp2.svg"
+                width="45%"
+              />
+              <h3
+                class="font-bold pad4-tb reveal fade-bottom pc c-font l-font"
+              >
+                Capital
+              </h3>
+            </div>
+          </div>
+          <div class="txc w15 pad4-tb mw30 tw25">
+            <div class="img">
+              <img
+                class="reveal fade-bottom"
+                src="./images/clients-images/exp3.svg"
+                width="45%"
+              />
+              <h3
+                class="font-bold pad4-tb reveal fade-bottom pc c-font l-font"
+              >
+                Consulting
+              </h3>
+            </div>
+          </div>
+          <div class="txc w15 pad4-tb mw30 tw25">
+            <div class="img">
+              <img
+                class="reveal fade-bottom"
+                src="./images/clients-images/exp4.svg"
+                width="45%"
+              />
+              <h3
+                class="font-bold pad4-tb reveal fade-bottom pc c-font l-font"
+              >
+                E-COMMERCE
+              </h3>
+            </div>
+          </div>
+          <div class="txc w15 pad4-tb mw30 tw25">
+            <div class="img">
+              <img
+                class="reveal fade-bottom"
+                src="./images/clients-images/exp5.svg"
+                width="45%"
+              />
+              <h3
+                class="font-bold pad4-tb reveal fade-bottom pc c-font l-font"
+              >
+                Education
+              </h3>
+            </div>
+          </div>
+          <div class="txc w15 pad4-tb mw30 tw25">
+            <div class="img">
+              <img
+                class="reveal fade-bottom"
+                src="./images/clients-images/exp6.svg"
+                width="45%"
+              />
+              <h3
+                class="font-bold pad4-tb reveal fade-bottom pc c-font l-font"
+              >
+                Energy
+              </h3>
+            </div>
+          </div>
+          <div class="txc w15 pad4-tb mw30 tw25">
+            <div class="img">
+              <img
+                class="reveal fade-bottom"
+                src="./images/clients-images/exp7.svg"
+                width="45%"
+              />
+              <h3
+                class="font-bold pad4-tb reveal fade-bottom pc c-font l-font"
+              >
+                Events
+              </h3>
+            </div>
+          </div>
+          <div class="txc w15 pad4-tb mw30 tw25">
+            <div class="img">
+              <img
+                class="reveal fade-bottom"
+                src="./images/clients-images/exp8.svg"
+                width="45%"
+              />
+              <h3
+                class="font-bold pad4-tb reveal fade-bottom pc c-font l-font"
+              >
+                Food
+              </h3>
+            </div>
+          </div>
+          <div class="txc w15 pad4-tb mw30 tw25">
+            <div class="img">
+              <img
+                class="reveal fade-bottom"
+                src="./images/clients-images/exp9.svg"
+                width="45%"
+              />
+              <h3
+                class="font-bold pad4-tb reveal fade-bottom pc c-font l-font"
+              >
+                Hardware
+              </h3>
+            </div>
+          </div>
+          <div class="txc w15 pad4-tb mw30 tw25">
+            <div class="img">
+              <img
+                class="reveal fade-bottom"
+                src="./images/clients-images/exp10.svg"
+                width="45%"
+              />
+              <h3
+                class="font-bold pad4-tb reveal fade-bottom pc c-font l-font"
+              >
+                Healthcare
+              </h3>
+            </div>
+          </div>
+          <div class="txc w15 pad4-tb mw30 tw25">
+            <div class="img">
+              <img
+                class="reveal fade-bottom"
+                src="./images/clients-images/exp11.svg"
+                width="45%"
+              />
+              <h3
+                class="font-bold pad4-tb reveal fade-bottom pc c-font l-font"
+              >
+                Hospitality
+              </h3>
+            </div>
+          </div>
+          <div class="txc w15 pad4-tb mw30 tw25">
+            <div class="img">
+              <img
+                class="reveal fade-bottom"
+                src="./images/clients-images/exp12.svg"
+                width="45%"
+              />
+              <h3
+                class="font-bold pad4-tb reveal fade-bottom pc c-font l-font"
+              >
+                Industries
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!---->
-    <div class="md">
+    <div class="md padb50">
       <div class="fx-child" >
         <div class="pd-top">
         <h2 class="font-bold black ft-w9  mar0 font-xxvs pqhi w80 reveal fade-bottom">Design</h2>
@@ -713,7 +913,7 @@
           <li class="pad-li reveal fade-left"><a class="li-fx font-thin    ">Animation</a></li>
           <li class="pad-li reveal fade-left"><a class="li-fx font-thin    ">Illustrations</a></li>
       </ul>
-      <video playsinline autoplay muted loop class="w100 mw100 t-mw90 reveal fade-right">
+      <video playsinline autoplay muted loop class="w100 mw100 t-mw90 ht100 reveal fade-right">
         <source src="./videos/home-3.mp4" />
       </video>
         </div>
@@ -727,7 +927,7 @@
             <li class="pad-li reveal fade-left"><a class="li-fx font-thin">Front-end</a></li>
             <li class="pad-li reveal fade-left"><a class="li-fx font-thin">Back-end</a></li>
         </ul>
-        <video playsinline autoplay muted loop class="w100 ht60 reveal fade-right">
+        <video playsinline autoplay muted loop class="w100 ht100 reveal fade-right">
           <source src="./videos/home-1.mp4" />
           </div>
           <div class="pd-top">
@@ -740,16 +940,17 @@
               <li class="pad-li reveal fade-left"><a class="li-fx font-thin">DIGITAL MARKETING</a></li>
               <li class="pad-li reveal fade-left"><a class="li-fx font-thin">S.E.O.</a></li>
           </ul>
-          <video playsinline autoplay muted loop class="w100 ht60 reveal fade-right">
+          <video playsinline autoplay muted loop class="w100 ht100 reveal fade-right">
             <source src="./videos/home-2.mp4" />
             </div>
       </div>
     </div>
     <!--  -->
-    <div class="fx-center padtb50">
+ 
+    <div class="fx-center padtb50 mpad4-tb">
       <div class="font-bold">
         <h2
-          class="font-bold l-blue ft-w9 font-s  mar0 font-xxvs pqh"
+          class="font-bold l-blue ft-w9 font-s reveal fade-bottom mar0 font-xxvs pqh"
         >
           OUR SERVICES
         </h2>
@@ -757,25 +958,23 @@
     </div>
     <div class="fx-center t-pad padb50">
       <div class="fx-spev w80 mtxc mw100 mpad4-b mtxs mw100 mpad4-b rs100">
-        <div class="dropbox-cont col1 w40">
+        <div class="dropbox-cont1 col1 w40 mw80 reveal fade-bottom k-pad">
           <div>
             <h6>
-              <a class="black pbc k-font" href="./technology.html"
-                >Technology</a
-              >
+              <a class="black pbh" href="./technology.html">Technology</a>
             </h6>
-            <div class="dropFlex">
+            <div class="dropFlex1">
               <p class="rw-p pbc k-pbc">Handcraft the user experience.</p>
               <img src="./images/arrow-right.svg" alt="arrow-right" />
             </div>
           </div>
         </div>
-        <div class="dropbox-cont col1 w40 ">
+        <div class="dropbox-cont1 col1 w40 mw80 reveal fade-bottom k-pad">
           <div>
             <h6>
-              <a class="black pbc k-font" href="./marketing.html">Marketing</a>
+              <a class="black pbh" href="./marketing.html">Marketing</a>
             </h6>
-            <div class="dropFlex">
+            <div class="dropFlex1">
               <p class="rw-p pbc k-pbc">Handcraft the user experience.</p>
               <img src="./images/arrow-right.svg" alt="arrow-right" />
             </div>
@@ -796,7 +995,7 @@
               your sector
             </p>
           </div>
-          <div class="footer-col-2 pad1-rl w18 mw45 mpad1-t">
+          <div class="footer-col-2 pad1-rl w18 mw80 mpad1-t">
             <h4 class="wl-blue font-xvs ft-w5 mar4-b pbc">Services</h4>
             <ul class="mpad1-t">
               <li class="mar2-b">
@@ -813,7 +1012,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer-col-2 pad1-rl w20 mw45 mpad1-t">
+          <div class="footer-col-2 pad1-rl w20 mw80 mpad1-t">
             <h4 class="wl-blue font-xvs ft-w5 mar4-b pbc">Quick Links</h4>
             <ul class="mpad1-t">
               <li class="mar2-b">
@@ -851,9 +1050,9 @@
               >
               <li class="wl-blue font-vs pqh">
                 <ul class="fx-dr pad2-t mpad1-t">
-                  <li class="mpad1-r">
+                  <li class="mpad1-r ">
                     <a
-                      class="white"
+                      class="white "
                       href="https://www.facebook.com/PromenaLLP/"
                       target="_blank"
                     >
@@ -918,6 +1117,10 @@
       }
 
       window.addEventListener("scroll", reveal);
+    </script>
+    <!-- aos -->
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
