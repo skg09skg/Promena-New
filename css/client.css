@@ -2,3 +2,18 @@
   margin: 0;
   padding: 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .tw25 {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+  .l-font {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 2560px) {
+  .l-font {
+    font-size: 1.6vw;
+  }
+}
