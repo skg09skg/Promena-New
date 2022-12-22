@@ -752,6 +752,10 @@ body {
 
 /* / Positions / */
 
+.ps-rel {
+  position: relative;
+}
+
 .ps-ab {
   position: absolute;
 }
@@ -892,7 +896,7 @@ body {
 }
 
 .font-xvss {
-  font-size: 0.923vw;
+  font-size: 1vw;
   /* 12px */
 }
 
@@ -1129,6 +1133,12 @@ body {
   justify-content: space-between;
 }
 
+.desk-header .container1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .drop {
   opacity: 0;
   pointer-events: none;
@@ -1158,7 +1168,7 @@ body {
   box-shadow: 0 0 20px rgb(0 0 0 / 10%);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0;
   position: fixed;
   left: 0;
@@ -1600,6 +1610,10 @@ ul {
 /* 280 to 760 responsive */
 
 @media screen and (min-width: 280px) and (max-width: 760px) {
+  /* blog */
+  .mw60 {
+    width: 60%;
+  }
   /* Header */
 
   .desk-header {
@@ -2087,6 +2101,10 @@ ul {
     align-items: flex-start;
   }
 
+  .desk-header .container1 {
+    align-items: flex-start;
+  }
+
   .navigation li {
     padding: 0 1.2vw;
   }
@@ -2209,6 +2227,10 @@ ul {
     justify-content: flex-start;
   }
 
+  .desk-header .container1 {
+    justify-content: flex-start;
+  }
+
   .navigation li {
     padding: 0 1.4vw;
   }
@@ -2293,10 +2315,10 @@ ul {
   .padtb-1 {
     padding: 1vw 0;
   }
-  .font-vvv{
+  .font-vvv {
     font-size: 2.23vw;
   }
-  .w30{
+  .w30 {
     width: 30%;
   }
 }
