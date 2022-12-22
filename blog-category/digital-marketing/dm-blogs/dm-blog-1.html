@@ -1,386 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital-marketing-1</title>
-    <link rel="stylesheet" href="./../../../css/main.css">
-    <script src="https://kit.fontawesome.com/4ee427eb24.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="./../../../css/main.css" />
 
-<body>
-    <div class="deskHeader header-service">
-        <header class="desk-header innerHeader">
-          <div class="container w80">
-            <div class="logo-flex">
-              <a href="../../index.html">
-                <img src="./../../../images/PROMENALOGOBLUE.png" alt="" />
+    <script
+      src="https://kit.fontawesome.com/4ee427eb24.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <!-- Navbar logo -->
+      <div class="nav-header">
+        <div class="nav-logo">
+          <a class="nav-brand" href="../../../index.html">
+            <img src="../../../images/PROMENA LOGO WHITE.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <!-- responsive navbar toggle button -->
+      <input type="checkbox" id="nav-check" />
+      <!-- <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div> -->
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <!-- Navbar items -->
+      <ul class="nav-links">
+        <!-- <a href="#">Home</a>
+        <a href="#">About</a> -->
+
+        <!-- Dropdown menu -->
+        <li class="dropdown">
+          <a class="dropBtn" href="../../../service.html"
+            >Services
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="drop-content">
+            <a href="../../../service.html">Design</a>
+            <a href="../../../technology.html">Technology</a>
+            <a href="../../../marketing.html">Marketing</a>
+
+            <!-- Creating sub menu Dropdown -->
+            <!-- <div class="dropdown2">
+              <a class="dropBtn2" href="#"
+                >More
+                <i class="fas fa-angle-right"></i>
               </a>
+              <div class="drop-content2">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JavaScript</a>
+                <a href="#">jQuery</a>
+              </div>
+            </div> -->
+          </div>
+        </li>
+
+        <li><a href="../../../client.html">Client</a></li>
+        <li class="dropdown">
+          <a class="dropBtn" href="../../../about-us.html"
+            >About Us
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="drop-content">
+            <a href="../../../about-us.html">About Us</a>
+            <a href="../../../team.html">Team</a>
+            <a href="../../../career.html">Career</a>
+          </div>
+        </li>
+        <li><a href="../../../blockchain.html">BlockChain</a></li>
+        <li><a href="../../../blog.html">Blog</a></li>
+        <li><a href="../../../contact-us.html">Contact Us</a></li>
+        <!-- <button class="loginBtn">Login</button> -->
+      </ul>
+    </div>
+
+    <!-- <header class="new-header">
+      <div class="con w80">
+        <nav class="new-nav mpad1-tb">
+          <a class="nav-brand" href="../index.html">
+            <img src="../images/PROMENA LOGO WHITE.png" alt="" />
+            </a>
+          <ul class="nav-list">
+            <li class="nav-item1"><a class="nav-link-li" href="">home</a></li>
+            <li class="nav-item1"><a class="nav-link-li" href="">about</a></li>
+            <li class="nav-item1"><a class="nav-link-li" href="">videos</a></li>
+            <li class="nav-item1">
+              <a class="nav-link-li" href="">competences</a>
+            </li>
+            <li class="nav-item1">
+              <a class="nav-link-li" href="">contacts</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </div>
+    </header> -->
+
+    <div class="deskHeader header-service">
+      <header class="desk-header innerHeader">
+        <div class="container w80 lw90">
+          <div class="logo-flex">
+            <a href="../../../index.html">
+              <img src="../../../images/PROMENALOGOBLUE.png" alt="" />
+            </a>
+          </div>
+          <div class="header-menu">
+            <ul class="navigation">
+              <li class="drop-box">
+                <a class="service-link">Services</a>
+                <div class="drop">
+                  <ul class="f-row f-3">
+                    <li class="f-col">
+                      <a href="../../../service.html" class="anim-link">
+                        <div class="dropbox-cont col1">
+                          <div>
+                            <h6>Design</h6>
+                            <div class="dropFlex">
+                              <p>Handcraft the user experience.</p>
+                              <img
+                                src="../../../images/arrow-right.svg"
+                                alt="arrow-right"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="f-col">
+                      <a href="../../../technology.html" class="anim-link">
+                        <div class="dropbox-cont col1">
+                          <div>
+                            <h6>Technology</h6>
+                            <div class="dropFlex">
+                              <p>Leverage the power of code.</p>
+                              <img
+                                src="../../../images/arrow-right.svg"
+                                alt="arrow-right"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="f-col">
+                      <a href="../../../marketing.html" class="anim-link">
+                        <div class="dropbox-cont col1">
+                          <div>
+                            <h6>Marketing</h6>
+                            <div class="dropFlex">
+                              <p>Creative strategies for brands.</p>
+                              <img
+                                src="../../../images/arrow-right.svg"
+                                alt="arrow-right"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="../../../client.html">Client</a></li>
+              <li class="drop-box">
+                <a class="about-link">About Us</a>
+                <div class="drop">
+                  <ul class="f-row f-3">
+                    <li class="f-col">
+                      <a href="../../../about-us.html" class="anim-link">
+                        <div class="dropbox-cont col1">
+                          <div>
+                            <h6>About Us.</h6>
+                            <div class="dropFlex">
+                              <p>
+                                We are super-efficient yet humble to serve you!
+                              </p>
+                              <img
+                                src="../../../images/arrow-right.svg"
+                                alt="arrow-right"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="f-col">
+                      <a href="../../../team.html" class="anim-link">
+                        <div class="dropbox-cont col1">
+                          <div>
+                            <h6>Team.</h6>
+                            <div class="dropFlex">
+                              <p>
+                                We are proud of our experienced and accomplished
+                                team!
+                              </p>
+                              <img
+                                src="../../../images/arrow-right.svg"
+                                alt="arrow-right"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="f-col">
+                      <a href="../../../career.html" class="anim-link">
+                        <div class="dropbox-cont col1">
+                          <div>
+                            <h6>Career.</h6>
+                            <div class="dropFlex">
+                              <p>
+                                Can you offer such <br />
+                                experience?
+                              </p>
+                              <img
+                                src="../../../images/arrow-right.svg"
+                                alt="arrow-right"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- <li><a href="#">Training</a></li> -->
+              <li><a href="../../../blockchain.html">Blockchain</a></li>
+              <li><a href="../../../blog.html">Blog</a></li>
+              <li><a href="../../../contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="dg-blog-1 fx-dc-all-center mart100 fx-wrp mmar0 mpad2-t">
+      <div class="blog-header w60 fx-dc mw100 t-mw100">
+        <ul class="fx-spbtw fx-wrp mw60 mtxc mpad3-rl">
+          <li>
+            <a
+              class="font-xvs font-medium lblue pbc"
+              href="./../digital-marketing-main.html"
+              >Digital Marketing</a
+            >
+          </li>
+          <li>
+            <a class="font-xvs font-medium black pbc" href="#">Technology</a>
+          </li>
+          <li>
+            <a class="font-xvs font-medium black pbc" href="#">Development</a>
+          </li>
+          <li>
+            <a class="font-xvs font-medium black pbc" href="#">Block Chain</a>
+          </li>
+          <li><a class="font-xvs font-medium black pbc" href="#">Design</a></li>
+        </ul>
+      </div>
+      <div class="blog-container fx-dc w70 mart40">
+        <h2 class="font-xsv font-bold txc pqh mline1">
+          How Google my business could help your small business scaleup
+        </h2>
+        <img
+          class="ht70"
+          src="https://i0.wp.com/visibilita.net/wp-content/uploads/2021/10/Lavorare-nel-Digital-Marketing.jpg?fit=1000%2C685&ssl=1"
+        />
+
+        <div class="pad3">
+          <p class="font-xvs font-bold black line2 txs pbc mline1 mtxs">
+            Google is becoming an important element of how users explore
+            services and products in their area as people rely increasingly
+            heavily on it to get answers to their most immediate issues. Almost
+            billions of people search for things on Google every day, from local
+            coffee shops to celebrity news and so on. This is why it is
+            important to establish a position in Google my business to increase
+            audience reach and sales to your business. Google Business Profile
+            is a free Google business listing. It allows you to provide
+            information and photographs about your company, such as its
+            location, services, and products. Having a profile in Google My
+            Business aids in making your business more transparent and visible.
+            Google is estimated to receive 5.6 billion searches per day, of
+            which a majority of the queries are related to local intent. This
+            indicates that the majority of the users are looking for businesses
+            or places nearby them. Google Business Profile is solely accessible
+            to businesses that have consumer contact. This includes both
+            physical enterprises and firms that provide services via meeting
+            with customers in various locations. Creating this free account is
+            an excellent method to boost your presence across Google services.
+            Your Google Business Profile information may display in Google
+            Search, Maps, and Shopping. Given below are the top few methods how
+            Google my business could help your small business scale up.
+          </p>
+          <h4 class="font-s font-bold black pqh mline1">
+            Control business information and increase engagement
+          </h4>
+          <p class="font-xvs font-thin black line5 pbc mline1 tline1">
+            Your Google My Company page allows you to manage and modify your
+            contact information, business hours, and other important information
+            as needed. Google My Business accounts offer numerous chances for
+            interaction. With a single tap or click, potential clients can visit
+            your website or reach you. Even more useful is the ability to
+            schedule a table or an appointment immediately from your ad.
+          </p>
+          <h4 class="font-s font-bold black pqh">Boost sales</h4>
+          <p class="font-xvs font-thin black line5 pbc mline1 tline1">
+            While a quick search is useful for narrowing down alternatives, 86%
+            of users use Google Maps to find businesses nearby. When clients
+            find it more convenient to come to your business if you're close by,
+            you're more likely to make that transaction. Furthermore, shoppers
+            who discover a business through their Google My Business listing are
+            up to 50% more inclined to purchase. Simply by setting up a Google
+            My Business page and finishing the verification requirements, your
+            store location will begin to appear in Maps for local searches.
+          </p>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfbgUr8aNrp7zdKgGKgIsfc_lFjM7Zju2OL0LmMc-tATkDbntFXHhWzMwzbrYYtHVv0vI&usqp=CAU"
+            alt=""
+          />
+          <h4 class="font-s font-bold black pqh mline1">
+            Build trust with clients
+          </h4>
+          <p class="font-xvs font-bold black line5 pbc mline1 tline1">
+            The problem clients mostly face in the digital world is building
+            trust with a brand or business confident enough to purchase a
+            product or service. There is a way for a business owner for you to
+            tackle this issue and that is to provide the location of your
+            business on Google My Business so your clients can verify and
+            purchase from you. According to a survey conducted by Google, it was
+            found out that clients are 3 x more probable to buy a product or
+            service if the brand shows up on Google search. This is due, in
+            part, to the well-established credibility of the Google My Business
+            verification procedure. Because it is well recognized that
+            businesses must follow specified measures to appear in a search
+            algorithm, Google is a trusted environment on which people can rely.
+          </p>
+          <div class="fx-spbtw fx-wrp">
+            <img
+              class="w40 mw100"
+              src="https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/b42023a0ff8d70e7516d41df4405d254-1593430314934/what%20is%20digital%20marketing-fiverr.jpg"
+              alt=""
+            />
+            <div class="w55 fx-dc mw90">
+              <h4 class="font-s font-bold black pqh">Increased Traffic</h4>
+              <p class="font-xvs font-thin black line5 pbc mline1 tline1">
+                Just by having your business listed on Google My business, you
+                can witness about 70% more quality website traffic and in-store
+                visits. Additionally, it is also observed that having an account
+                on Google My Business increases about 35% of clicks to websites.
+              </p>
             </div>
-            <div class="header-menu">
-              <ul class="navigation">
-                <li class="drop-box">
-                  <a class="service-link">Services</a>
-                  <div class="drop">
-                    <ul class="f-row f-3">
-                      <li class="f-col">
-                        <a href="../../../service.html" class="anim-link">
-                          <div class="dropbox-cont col1">
-                            <div>
-                              <h6>Design</h6>
-                              <div class="dropFlex">
-                                <p>Handcraft the user experience.</p>
-                                <img src="./../../../images/arrow-right.svg" alt="arrow-right" />
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="f-col">
-                        <a href="../../../technology.html" class="anim-link">
-                          <div class="dropbox-cont col1">
-                            <div>
-                              <h6>Technology</h6>
-                              <div class="dropFlex">
-                                <p>Leverage the power of code.</p>
-                                <img src="./../../../images/arrow-right.svg" alt="arrow-right" />
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="f-col">
-                        <a href="../../../marketing.html" class="anim-link">
-                          <div class="dropbox-cont col1">
-                            <div>
-                              <h6>Marketing</h6>
-                              <div class="dropFlex">
-                                <p>Creative strategies for brands.</p>
-                                <img src="./../../../images/arrow-right.svg" alt="arrow-right" />
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+          </div>
+          <h4 class="font-s font-bold black pqh">
+            Rank better in Google Searches
+          </h4>
+          <p class="font-xvs font-thin black line5 pbc mline1 tline1">
+            Google, like the rest of us, has a job to do. While it may appear
+            that Google is working against you at times, Google wants to notify
+            customers about your company because it needs to deliver valuable
+            information to searchers. The more information Google has about your
+            company, the higher it will rank you in search engine and Maps
+            results.<br />
+            How can you persuade Google to favor your company more? By providing
+            reliable, consistent, and up-to-date information. Your Google My
+            Business profile is the greatest place to provide Google with this
+            information so that it can successfully meet the search needs of
+            your customers.
+          </p>
+          <h4 class="font-s font-bold black pqh mline1">Increase Engagement</h4>
+          <p class="font-xvs font-thin black line5 pbc mline1 tline1">
+            Listing your business on Google My Business enables a wide range of
+            opportunities to engage with your ideal customers. This is possible
+            as your potential clients can access your website or call within a
+            touch. They can directly book or reserve a table or take an
+            appointment by going through your listed business.
+          </p>
+          <h4 class="font-s font-bold black pqh mline1">
+            Lead your competitors with Google My Business
+          </h4>
+          <p class="font-xvs font-thin black line5 pbc mline1 tline1">
+            Your Google My Business description, through a tiny bit of
+            information, allows you to stand out from your competition in a
+            consumer's initial skim through search results. It shows a brief
+            explanation to help users quickly determine whether your company is
+            what they're looking for. A good Google My Business description
+            provides a glimpse of your company, includes essential keywords, and
+            represents something distinctive or authentic to assist you in
+            demonstrating your worth.<br />
+            If you are looking for the best digital marketing company in
+            Bangalore, look no further. Promena offers a wide range of marketing
+            solutions tailored to your business needs. Our carefully curated
+            strategies are custom-made to satisfy your marketing goals. Leverage
+            your business with Promena, the best digital marketing company.
+          </p>
+        </div>
+      </div>
+
+      <div class="blog-list w80 mart100 mmar0 mpad4-t">
+        <h2 class="txc font-medium font-s d-blue pqh">RELATED BLOGS</h2>
+        <div class="blog-list-col fx-wrp">
+          <div class="card mar-card fx-dc-spbtw w30 mw100">
+            <div class="card-image mw100">
+              <img
+                src="https://www.socialmediamagazine.org/wp-content/uploads/2022/08/Digital-Advertising.webp"
+              />
+            </div>
+            <h4 class="font-xvs font-bold l-blue mar0 pad1 pqh">
+              Digital Marketing
+            </h4>
+            <h5 class="font-xxvs font-bold pad1 mar0 pbc mline1">
+              <a
+                class="black"
+                href="./blog-category/digital-marketing/dm-blogs/dm-blog-1.html"
+              >
+                A Comprehensive Digital Marketing Strategy for Your Business</a
+              >
+            </h5>
+            <div class="card-footer fx-spbtw pad1 primary-col2 wl-blue">
+              <p class="font-vs font-medium mar0 pc">August 6 2022</p>
+              <ul class="fx-center">
+                <li>
+                  <i class="fa fa-instagram pad1-r" aria-hidden="true"></i>
                 </li>
-                <li><a href="../../../client.html">Client</a></li>
-                <li class="drop-box">
-                  <a class="about-link">About Us</a>
-                  <div class="drop">
-                    <ul class="f-row f-3">
-                      <li class="f-col">
-                        <a href="../../../about-us.html" class="anim-link">
-                          <div class="dropbox-cont col1">
-                            <div>
-                              <h6>About Us.</h6>
-                              <div class="dropFlex">
-                                <p>
-                                  We are super-efficient yet humble to serve you!
-                                </p>
-                                <img src="./../../../images/arrow-right.svg" alt="arrow-right" />
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="f-col">
-                        <a href="../../../team.html" class="anim-link">
-                          <div class="dropbox-cont col1">
-                            <div>
-                              <h6>Team.</h6>
-                              <div class="dropFlex">
-                                <p>
-                                  We are proud of our experienced and accomplished
-                                  team!
-                                </p>
-                                <img src="./../../../images/arrow-right.svg" alt="arrow-right" />
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="f-col">
-                        <a href="../../../career.html" class="anim-link">
-                          <div class="dropbox-cont col1">
-                            <div>
-                              <h6>Career.</h6>
-                              <div class="dropFlex">
-                                <p>
-                                  Can you offer such <br />
-                                  experience?
-                                </p>
-                                <img src="./../../../images/arrow-right.svg" alt="arrow-right" />
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                <li>
+                  <i
+                    class="fa fa-facebook-official pad1-r"
+                    aria-hidden="true"
+                  ></i>
                 </li>
-                <li><a href="../blockchain.html">Blockchain</a></li>
-                <li><a href="../../../blog.html" style="color: #1973d1;">Blog</a></li>
-                <li><a href="../../../contact-us.html">Contact Us</a></li>
+                <li>
+                  <i
+                    class="fa fa-linkedin-square pad1-r"
+                    aria-hidden="true"
+                  ></i>
+                </li>
+                <li>
+                  <i class="fa fa-twitter-square pad1-r" aria-hidden="true"></i>
+                </li>
               </ul>
             </div>
           </div>
-        </header>
-    </div>
-    <div class="dg-blog-1 fx-dc-all-center mart100">
-        <div class="blog-header w60">
-            <ul class="fx-spbtw ">
-              <li><a class="font-xvs font-medium lblue" href="./../digital-marketing-main.html">Digital Marketing</a></li>
-              <li><a class="font-xvs font-medium black" href="#">Technology</a></li>
-              <li><a class="font-xvs font-medium black" href="#">Development</a></li>
-              <li><a class="font-xvs font-medium black" href="#">Block Chain</a></li>
-              <li><a class="font-xvs font-medium black" href="#">Design</a></li>
-            </ul>
-          </div>
-        <div class="blog-container fx-dc w70 mart40">
-            <h2 class="font-xsv font-bold txc">How Google my business could help your small business scaleup</h2>
-        <img class="ht70"
-            src="https://i0.wp.com/visibilita.net/wp-content/uploads/2021/10/Lavorare-nel-Digital-Marketing.jpg?fit=1000%2C685&ssl=1">
-
-            <div class="pad3">
-                <p class="font-xvs font-thin black">Google is becoming an important element of how users explore services and products in their area as people
-                    rely increasingly heavily on it to get answers to their most immediate issues. Almost billions of people
-                    search for things on Google every day, from local coffee shops to celebrity news and so on. This is why it
-                    is important to establish a position in Google my business to increase audience reach and sales to your
-                    business.
-                    Google Business Profile is a free Google business listing. It allows you to provide information and
-                    photographs about your company, such as its location, services, and products. Having a profile in Google My
-                    Business aids in making your business more transparent and visible.
-                    Google is estimated to receive 5.6 billion searches per day, of which a majority of the queries are related
-                    to local intent. This indicates that the majority of the users are looking for businesses or places nearby
-                    them.
-                    Google Business Profile is solely accessible to businesses that have consumer contact. This includes both
-                    physical enterprises and firms that provide services via meeting with customers in various locations.
-                    Creating this free account is an excellent method to boost your presence across Google services. Your Google
-                    Business Profile information may display in Google Search, Maps, and Shopping.
-                    Given below are the top few methods how Google my business could help your small business scale up.
-                </p>
-                <h4 class="font-s font-bold black">Control business information and increase engagement</h4>
-                <p class="font-xvs font-thin black">Your Google My Company page allows you to manage and modify your contact information, business hours, and
-                    other important information as needed. Google My Business accounts offer numerous chances for interaction.
-                    With a single tap or click, potential clients can visit your website or reach you. Even more useful is the
-                    ability to schedule a table or an appointment immediately from your ad.</p>
-                <h4 class="font-s font-bold black">Boost sales</h4>
-                <p class="font-xvs font-thin black">While a quick search is useful for narrowing down alternatives, 86% of users use Google Maps to find
-                    businesses nearby. When clients find it more convenient to come to your business if you're close by, you're
-                    more likely to make that transaction.
-                    Furthermore, shoppers who discover a business through their Google My Business listing are up to 50% more
-                    inclined to purchase. Simply by setting up a Google My Business page and finishing the verification
-                    requirements, your store location will begin to appear in Maps for local searches.
-                </p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfbgUr8aNrp7zdKgGKgIsfc_lFjM7Zju2OL0LmMc-tATkDbntFXHhWzMwzbrYYtHVv0vI&usqp=CAU"
-                    alt="">
-                <h4 class="font-s font-bold black">Build trust with clients</h4>
-                <p class="font-xvs font-thin black">The problem clients mostly face in the digital world is building trust with a brand or business confident
-                    enough to purchase a product or service. There is a way for a business owner for you to tackle this issue
-                    and that is to provide the location of your business on Google My Business so your clients can verify and
-                    purchase from you.
-                    According to a survey conducted by Google, it was found out that clients are 3 x more probable to buy a
-                    product or service if the brand shows up on Google search.
-                    This is due, in part, to the well-established credibility of the Google My Business verification procedure.
-                    Because it is well recognized that businesses must follow specified measures to appear in a search
-                    algorithm, Google is a trusted environment on which people can rely.
-                </p>
-                <div class="fx-spbtw">
-                    <img class="w40" src="https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/b42023a0ff8d70e7516d41df4405d254-1593430314934/what%20is%20digital%20marketing-fiverr.jpg"
-                        alt="">
-                        <div class="w55 fx-dc">
-                            <h4  class="font-s font-bold black">Increased Traffic</h4>
-                    <p class="font-xvs font-thin black">Just by having your business listed on Google My business, you can witness about 70% more quality website
-                        traffic and in-store visits. Additionally, it is also observed that having an account on Google My
-                        Business increases about 35% of clicks to websites.</p>
-                        </div>
-                    
-                </div>
-                <h4 class="font-s font-bold black">Rank better in Google Searches</h4>
-                <p class="font-xvs font-thin black">Google, like the rest of us, has a job to do. While it may appear that Google is working against you at
-                    times, Google wants to notify customers about your company because it needs to deliver valuable information
-                    to searchers. The more information Google has about your company, the higher it will rank you in search
-                    engine and Maps results.<br>
-                    How can you persuade Google to favor your company more? By providing reliable, consistent, and up-to-date
-                    information. Your Google My Business profile is the greatest place to provide Google with this information
-                    so that it can successfully meet the search needs of your customers.</p>
-                <h4 class="font-s font-bold black">Increase Engagement </h4>
-                <p class="font-xvs font-thin black">Listing your business on Google My Business enables a wide range of opportunities to engage with your ideal
-                    customers. This is possible as your potential clients can access your website or call within a touch. They
-                    can directly book or reserve a table or take an appointment by going through your listed business.</p>
-                <h4 class="font-s font-bold black">Lead your competitors with Google My Business</h4>
-                <p class="font-xvs font-thin black">Your Google My Business description, through a tiny bit of information, allows you to stand out from your
-                    competition in a consumer's initial skim through search results. It shows a brief explanation to help users
-                    quickly determine whether your company is what they're looking for. A good Google My Business description
-                    provides a glimpse of your company, includes essential keywords, and represents something distinctive or
-                    authentic to assist you in demonstrating your worth.<br>
-                    If you are looking for the best digital marketing company in Bangalore, look no further. Promena offers a
-                    wide range of marketing solutions tailored to your business needs. Our carefully curated strategies are
-                    custom-made to satisfy your marketing goals. Leverage your business with Promena, the best digital marketing
-                    company. </p>
-        
+          <div class="card mar-card fx-dc-spbtw w30 mw100">
+            <div class="card-image mw100">
+              <img
+                src="https://www.socialmediamagazine.org/wp-content/uploads/2022/08/Digital-Advertising.webp"
+              />
             </div>
-
-           
+            <h4 class="font-xvs font-bold l-blue mar0 pad1 pqh">
+              Digital Marketing
+            </h4>
+            <h5 class="font-xxvs font-bold pad1 mar0 pbc mline1">
+              <a
+                class="black"
+                href="./blog-category/digital-marketing/dm-blogs/dm-blog-1.html"
+              >
+                Top 10 proven strategies for writing exceptional PPC ad copy</a
+              >
+            </h5>
+            <div class="card-footer fx-spbtw pad1 primary-col2 wl-blue">
+              <p class="font-vs font-medium mar0 pc">July 15 2022</p>
+              <ul class="fx-center">
+                <li>
+                  <i class="fa fa-instagram pad1-r" aria-hidden="true"></i>
+                </li>
+                <li>
+                  <i
+                    class="fa fa-facebook-official pad1-r"
+                    aria-hidden="true"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa fa-linkedin-square pad1-r"
+                    aria-hidden="true"
+                  ></i>
+                </li>
+                <li>
+                  <i class="fa fa-twitter-square pad1-r" aria-hidden="true"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mar-card fx-dc-spbtw w30 mw100">
+            <div class="card-image mw100">
+              <img
+                src="https://www.socialmediamagazine.org/wp-content/uploads/2022/08/Digital-Advertising.webp"
+              />
+            </div>
+            <h4 class="font-xvs font-bold l-blue mar0 pad1 pqh">
+              Digital Marketing
+            </h4>
+            <h5 class="font-xxvs font-bold pad1 mar0 pbc mline1">
+              <a
+                class="black"
+                href="./blog-category/digital-marketing/dm-blogs/dm-blog-1.html"
+                >How to scale your start-up business through digital
+                marketing</a
+              >
+            </h5>
+            <div class="card-footer fx-spbtw pad1 primary-col2 wl-blue">
+              <p class="font-vs font-medium mar0 pc">September 3 2022</p>
+              <ul class="fx-center">
+                <li>
+                  <i class="fa fa-instagram pad1-r" aria-hidden="true"></i>
+                </li>
+                <li>
+                  <i
+                    class="fa fa-facebook-official pad1-r"
+                    aria-hidden="true"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa fa-linkedin-square pad1-r"
+                    aria-hidden="true"
+                  ></i>
+                </li>
+                <li>
+                  <i class="fa fa-twitter-square pad1-r" aria-hidden="true"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="blog-list w80 mart100">
-            <h2 class="txc font-medium font-s d-blue">RELATED BLOGS</h2>
-            <div class="blog-list-col fx-wrp">
-              <div class="card mar-card fx-dc-spbtw w30">
-                <div class="card-image ">
-                  <img src="https://www.socialmediamagazine.org/wp-content/uploads/2022/08/Digital-Advertising.webp">
-                </div>
-                <h4 class="font-xvs font-bold l-blue mar0 pad1">Digital Marketing</h4>
-                <h5 class="font-xxvs font-bold pad1 mar0"> <a class="black" href="./blog-category/digital-marketing/dm-blogs/dm-blog-1.html"> A Comprehensive Digital Marketing Strategy for Your Business</a> </h5>
-                <div class="card-footer fx-spbtw pad1 primary-col2 wl-blue">
-                  <p class="font-vs font-medium mar0 ">August 6 2022</p>
-                  <ul class="fx-center">
-                    <li><i class="fa fa-instagram pad1-r" aria-hidden="true"></i></li>
-                    <li>
-                      <i class="fa fa-facebook-official pad1-r" aria-hidden="true"></i>
+      <!-- <div class="comment-section w80 fx-dc-acenter gap10 mpad4-tb">
+        <h4 class="mar0 font-s font-medium black pbc">Comments</h4>
+        <textarea
+          class="w80 mw100 mpad3-b"
+          name="comment"
+          placeholder="write a comment"
+        ></textarea>
+      </div> -->
+
+      <footer class="footer primary-col">
+        <div class="container w80 mw90 padtb50 mpad3-tb tw85">
+          <div class="row fx-wrp fx-spbtw">
+            <div class="footer-col-1 pad1-rl w33 mw100">
+              <img src="../../../images/white-logo.png" class="w60 mw30" />
+              <p
+                class="wl-blue font-xvss pad1-tb line5 w90 mline1 pc mar1-t tfontp"
+              >
+                Give your business the digital power of PROMENA, to make your
+                brand value bigger, connect with the bigger brand to be top in
+                your sector
+              </p>
+            </div>
+            <div class="footer-col-2 pad1-rl w18 mw80 mpad1-t">
+              <h4 class="wl-blue font-xvs ft-w5 mar4-b pbc">Services</h4>
+              <ul class="mpad1-t">
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#"
+                    >Digital Marketing</a
+                  >
+                </li>
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#"
+                    >UI|UX Development</a
+                  >
+                </li>
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#"
+                    >Influence Marketing</a
+                  >
+                </li>
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#"
+                    >Mobile development</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col-2 pad1-rl w20 mw80 mpad1-t">
+              <h4 class="wl-blue font-xvs ft-w5 mar4-b pbc">Quick Links</h4>
+              <ul class="mpad1-t">
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#">About Us</a>
+                </li>
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#">Careers</a>
+                </li>
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#">Blogs</a>
+                </li>
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#"
+                    >Social Media Marketing</a
+                  >
+                </li>
+                <li class="mar2-b">
+                  <a class="wl-blue font-xvss pc tfontl" href="#"
+                    >Privacy Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col-2 pad1-rl w18 mw100 tw20">
+              <h4 class="wl-blue font-xvs ft-w5 mar4-b pbc">Contact Us</h4>
+              <ul class="mpad1-t">
+                <a href="tel:9900043908">
+                  <li class="wl-blue font-xvss mar1-b pc tfontl">
+                    <i class="fa-solid fa-phone wl-blue"></i> +91 9900043908
+                  </li></a
+                >
+                <a href="mailto:contact@promena.in">
+                  <li class="wl-blue font-xvss mar1-b pc tfontl">
+                    <i class="fa-solid fa-envelope wl-blue"></i>
+                    contact@promena.in
+                  </li></a
+                >
+                <li class="wl-blue font-vs pbh">
+                  <ul class="fx-dr pad2-t mpad1-t">
+                    <li class="mpad1-r">
+                      <a
+                        class="white tsv"
+                        href="https://www.facebook.com/PromenaLLP/"
+                        target="_blank"
+                      >
+                        <i
+                          class="fa fa-instagram pad1-r"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
                     </li>
-                    <li>
-                      <i class="fa fa-linkedin-square pad1-r" aria-hidden="true"></i>
+                    <li class="mpad1-r">
+                      <a
+                        class="white tsv"
+                        href="https://www.facebook.com/PromenaLLP/"
+                        target="_blank"
+                      >
+                        <i
+                          class="fa fa-facebook-official pad1-r"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
                     </li>
-                    <li>
-                      <i class="fa fa-twitter-square pad1-r" aria-hidden="true"></i>
+                    <li class="mpad1-r">
+                      <a
+                        class="white tsv"
+                        href="https://www.linkedin.com/company/promena-in/mycompany/"
+                        target="_blank"
+                      >
+                        <i
+                          class="fa fa-linkedin-square pad1-r"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="mpad1-r">
+                      <a
+                        class="white tsv"
+                        href="https://api.whatsapp.com/message/DEEJEJJ7JI4KL1?autoload=1&app_absent=0"
+                        target="_blank"
+                      >
+                        <i class="fa fa-whatsapp pad1-r" aria-hidden="true"></i>
+                      </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div class="card mar-card fx-dc-spbtw w30 ">
-                <div class="card-image">
-                  <img src="https://www.socialmediamagazine.org/wp-content/uploads/2022/08/Digital-Advertising.webp">
-                </div>
-                <h4 class="font-xvs font-bold l-blue mar0 pad1">Digital Marketing</h4>
-                <h5 class="font-xxvs font-bold pad1 mar0"> <a class="black" href="./blog-category/digital-marketing/dm-blogs/dm-blog-1.html"> Top 10 proven strategies for writing exceptional PPC ad copy</a> </h5>
-                <div class="card-footer fx-spbtw pad1 primary-col2 wl-blue">
-                  <p class="font-vs font-medium mar0 ">July 15 2022</p>
-                  <ul class="fx-center">
-                    <li><i class="fa fa-instagram pad1-r" aria-hidden="true"></i></li>
-                    <li>
-                      <i class="fa fa-facebook-official pad1-r" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-linkedin-square pad1-r" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-twitter-square pad1-r" aria-hidden="true"></i>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card mar-card fx-dc-spbtw w30">
-                <div class="card-image">
-                  <img src="https://www.socialmediamagazine.org/wp-content/uploads/2022/08/Digital-Advertising.webp">
-                </div>
-                <h4 class="font-xvs font-bold l-blue mar0 pad1">Digital Marketing</h4>
-                <h5 class="font-xxvs font-bold pad1 mar0"> <a class="black" href="./blog-category/digital-marketing/dm-blogs/dm-blog-1.html">How to scale your start-up business through digital marketing</a> </h5>
-                <div class="card-footer fx-spbtw pad1 primary-col2 wl-blue">
-                  <p class="font-vs font-medium mar0 ">September 3 2022</p>
-                  <ul class="fx-center">
-                    <li><i class="fa fa-instagram pad1-r" aria-hidden="true"></i></li>
-                    <li>
-                      <i class="fa fa-facebook-official pad1-r" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-linkedin-square pad1-r" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-twitter-square pad1-r" aria-hidden="true"></i>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-          
-           
+                </li>
+              </ul>
             </div>
           </div>
-
-          <div class="comment-section w80 fx-dc-acenter gap10">
-            <h4 class="mar0 font-s font-medium black">Comments</h4>
-            <textarea class="w80 " name="comment"  placeholder="write a comment"></textarea>
-          </div>   
-
-          <footer class="footer primary-col  mart100">
-            <div class="container">
-              <div class="row fx-wrp fx-spbtw">
-                <div class="footer-col-1 pad1-rl w33">
-                  <img src="./../../../images/white-logo.png" width="60%" />
-                  <p class="wl-blue font-xvss pad1-tb line4 w90">
-                    Give your business the digital power of PROMENA, to make your
-                    brand value bigger, connect with the bigger brand to be top in
-                    your sector
-                  </p>
-                </div>
-                <div class="footer-col-2 pad1-rl w18">
-                  <h4 class="wl-blue font-xvs ft-w5">Services</h4>
-                  <ul>
-                    <li>
-                      <a class="wl-blue font-xvss" href="#">Digital Marketing</a>
-                    </li>
-                    <li>
-                      <a class="wl-blue font-xvss" href="#">UI|UX Development</a>
-                    </li>
-                    <li>
-                      <a class="wl-blue font-xvss" href="#">Influence Marketing</a>
-                    </li>
-                    <li>
-                      <a class="wl-blue font-xvss" href="#">Mobile development</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="footer-col-2 pad1-rl w20">
-                  <h4 class="wl-blue font-xvs ft-w5">Quick Links</h4>
-                  <ul>
-                    <li><a class="wl-blue font-xvss" href="#">About Us</a></li>
-                    <li><a class="wl-blue font-xvss" href="#">Careers</a></li>
-                    <li><a class="wl-blue font-xvss" href="#">Blogs</a></li>
-                    <li>
-                      <a class="wl-blue font-xvss" href="#">Social Media Marketing</a>
-                    </li>
-                    <li>
-                      <a class="wl-blue font-xvss" href="#">Privacy Policy</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="footer-col-2 pad1-rl w18">
-                  <h4 class="wl-blue font-xvs ft-w5">Contact Us</h4>
-                  <ul>
-                    <li class="wl-blue font-xvss">
-                      <i class="fa-solid fa-phone wl-blue"></i> +91 9900043908
-                    </li>
-                    <li class="wl-blue font-xvss">
-                      <i class="fa-solid fa-envelope wl-blue"></i>
-                      contact@promena.in
-                    </li>
-                    <li class="wl-blue font-vs">
-                      <ul class="fx-dr pad2-t">
-                        <li><i class="fa fa-instagram pad1-r " aria-hidden="true"></i></li>
-                        <li><a href="https://www.facebook.com/PromenaLLP/"  rel="http://www.facebook.com/">
-                          <i class="fa fa-facebook-official pad1-r" aria-hidden="true"></i>
-                        </li></a>
-                        <li>
-                          <i class="fa fa-linkedin-square pad1-r" aria-hidden="true"></i>
-                        </li>
-                        <li>
-                          <i class="fa fa-twitter-square pad1-r" aria-hidden="true"></i>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </footer>
+        </div>
+      </footer>
     </div>
-
-  
-</body>
-
+  </body>
 </html>

@@ -145,3 +145,26 @@
     width: 90%;
   }
 }
+
+/*  */
+/* @import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap";
+.buffer2 {
+  background-image: url(https://www.promena.in/images/background/3.png);
+}
+.parallax-container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  background-attachment: fixed;
+  background-position: center;
+}
+.parallax-container2 {
+  background-image: url(https://www.promena.in/images/background/4.jpg);
+} */
+/* Marketing */
+
+.fx-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
