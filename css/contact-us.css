@@ -60,7 +60,7 @@
   padding-right: 6px;
 }
 .fx-header {
-  background-color: #0000008c;
+  /* background-color: #0000008c; */
   height: 100%;
 }
 .fx-hr {
@@ -106,7 +106,8 @@ input {
   border-radius: 10px;
   width: 38vh;
   margin-bottom: 10px;
-  background-color: #f1f1f1;
+  background-color: transparent;
+  border: 2px solid white;
 }
 textarea {
   border-radius: 7px;
@@ -116,6 +117,10 @@ textarea {
 }
 .btn-n {
   border: none;
+}
+.btn-n:hover {
+  transition: all 2s ease-in-out;
+  background-image: url(../images/Contactpage.jpg);
 }
 .btn {
   float: right;
@@ -172,6 +177,17 @@ textarea {
     padding-bottom: 69px !important;
     padding-top: 10px !important;
   }
+  .form-container ::placeholder {
+    font-size: 3vw !important;
+  }
+  .textarea-2 {
+    height: 9vw !important;
+    border-radius: 10px !important;
+    width: 38vh !important;
+    margin-bottom: 10px !important;
+    background-color: transparent !important;
+    border: 2px solid white !important;
+  }
   .textarea-2 {
     height: 16vw !important;
     border-radius: 10px !important;
@@ -195,7 +211,24 @@ textarea {
     width: 30%;
     height: 34vh;
   }
+  .form-container ::placeholder {
+    font-size: 2vw !important;
+  }
+  .textarea-2 {
+    height: 9vw !important;
+    border-radius: 10px !important;
+    width: 38vh !important;
+    margin-bottom: 10px !important;
+    background-color: transparent !important;
+    border: 2px solid white !important;
+  }
 }
+@media screen and (min-width: 1024px) and (max-width: 2570px) {
+  .bnr-contact-img {
+    width: 100%;
+  }
+}
+
 /*  */
 /* .cf_trigger {
   position: fixed;
@@ -270,7 +303,7 @@ input[type="submit"]:hover {
   right: -95px;
   top: 50%;
   font-weight: bold;
-  background-image: linear-gradient(#4e65ff, #92effd);
+  background-image: url(../images/Contactpage.jpg);
   color: white;
   padding: 12px 22px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
@@ -298,7 +331,7 @@ input[type="submit"]:hover {
   /* padding: 60px; */
   /* height: 30vh; */
   background-color: white;
-  background-image: linear-gradient(#09203f, #537895);
+  background-image: url(../images/Contactpage.jpg);
   padding-left: 54px;
   padding-right: 68px;
   padding-bottom: 115px;
@@ -322,10 +355,15 @@ input[type="submit"]:hover {
   padding: 15px;
   /* align-items: center; */
   /* margin: 5px 0 22px 0; */
-  border: none;
-  background: #f1f1f1;
+  border: 2px solid white;
+  background: transparent;
   width: 95%;
   border-radius: 7px;
+}
+.form-container ::placeholder {
+  color: white;
+  font-size: 1vw;
+  font-weight: bold;
 }
 
 /* When the inputs get focus, do something */
@@ -341,14 +379,15 @@ input[type="submit"]:hover {
 }
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-image: linear-gradient(#4e65ff, #92effd);
+  background: transparent;
   color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   width: 100%;
   margin-bottom: 10px;
-  opacity: 0.8;
+  /* opacity: 0.8; */
+  border: 2px solid white;
 }
 
 /* Add a red background color to the cancel button */
@@ -363,25 +402,29 @@ input[type="submit"]:hover {
 .form-container .btn:hover,
 .open-button:hover {
   opacity: 1;
-  background-image: linear-gradient(#a1c4fd, #c2e9fb);
+  background: rgb(1, 1, 44);
   transition: 0.4s ease-in-out;
+  box-shadow: 2px 2px #8bbef5;
+  transition: all 2s ease-in-out;
+  border: 1px solid white;
 }
 button[type="submit"] {
   border: none;
   border-radius: 25px;
   background-color: transparent;
-  border: #cacaca solid 1px;
+  border: 2px solid white;
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
 .btn-top {
-  background-image: linear-gradient(#93a5cf, #e4efe9);
+  background: transparent;
   border-radius: 16%;
   padding: 10px;
   margin-top: 10px;
   margin-right: 10px;
   float: right;
+  border: 2px solid white;
 }
 .btn-top:hover {
   background-image: linear-gradient(#4e65ff, #92effd);
@@ -394,3 +437,4 @@ button[type="submit"] {
   display: flex;
   justify-content: center;
 }
+/*  */

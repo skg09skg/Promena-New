@@ -39,7 +39,7 @@
 .ht100 {
   height: 100vh;
 }
-.fx-a {
+/* .fx-a {
   color: #18272f;
   position: relative;
   text-decoration: none;
@@ -62,7 +62,18 @@
 .fx-a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+} */
+/* HOVER TEXT */
+
+.fx-a:hover {
+  color: #0000;
+  background: linear-gradient(90deg, #1095c1 100%, #000 0) var(--_p, 100%) /
+    200% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 0.4s;
 }
+
 /*  */
 .container {
   width: 100%;
@@ -494,10 +505,46 @@ h1 {
   .tw25 {
     width: 25%;
   }
+  .hs-box {
+    display: none;
+  }
+  .md {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .fx-child {
+    width: 80%;
+  }
+  .pqhi {
+    font-size: 8.4vw;
+    padding-bottom: 10px;
+  }
+  .pd-top {
+    padding-top: 20px;
+  }
+  .li-fx {
+    font-size: 4vw;
+    padding-bottom: 15px;
+  }
+  .pq {
+    font-size: 2.4vw;
+  }
+  .pad-li {
+    padding-bottom: 8px;
+  }
+  .h-serv-ul-3 {
+    padding-left: 14px;
+    padding-top: 10px;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1299px) {
   .l-font {
     font-size: 1.5vw;
+  }
+  .TW30 {
+    width: 30%;
   }
 }
 @media screen and (min-width: 1300px) and (max-width: 2560px) {
