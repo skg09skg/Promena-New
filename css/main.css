@@ -418,6 +418,9 @@ body {
 }
 
 /* / Padding / */
+.pad-l {
+  padding-left: 8vw !important;
+}
 
 .pad1 {
   padding: 1vw;
@@ -530,6 +533,9 @@ body {
 .pad4-rl {
   padding: 0 2vw;
 }
+.pad6-l {
+  padding-left: 2.4vw;
+}
 
 .pad30 {
   padding: 2.31vw 0;
@@ -573,6 +579,10 @@ body {
 
 .padinput {
   padding: 15px 10px;
+}
+
+.pad6-b {
+  padding-bottom: 5.2vw;
 }
 
 /* / Margin / */
@@ -1627,7 +1637,7 @@ ul {
     justify-content: space-between;
     width: 100%;
     padding: 5vw 0 4vw 0px;
-    background-color: #061993;
+    background-color: #394963;
     position: relative;
   }
   .navbar .nav-header {
@@ -1646,7 +1656,7 @@ ul {
   .navbar .nav-links a {
     text-decoration: none;
     font-weight: 550;
-    color: white;
+    color: black;
   }
   /* Hover effects */
   .navbar .nav-links a:hover {
@@ -1692,7 +1702,7 @@ ul {
       display: block;
       text-align: center;
       width: 100%;
-      background-color: #1973d1;
+      background-color: grey;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 56px;
@@ -1706,7 +1716,7 @@ ul {
     }
 
     .navbar ul li a {
-      border-bottom: 1px solid #d1d1d1;
+      border-bottom: 1px solid #d1d1d133;
     }
 
     /* when nav toggle button not checked */
@@ -2462,3 +2472,7 @@ ul {
     margin-bottom: 0.4vw;
   }
 }
+
+/* colors */
+/* #1111eb
+4682b482 */
