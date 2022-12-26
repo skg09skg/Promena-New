@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_5945" data-name="Ellipse 5945" cx="25" cy="25" r="25" transform="translate(11503 7281)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="hubspot" transform="translate(-11503 -7281)" clip-path="url(#clip-path)">
+    <path id="hubspot-2" data-name="hubspot" d="M41.514,13.332a9.111,9.111,0,0,0-4.139-1.764h.006V7.417a3.2,3.2,0,0,0,1.846-2.885v-.1a3.207,3.207,0,0,0-3.2-3.2h-.1a3.207,3.207,0,0,0-3.2,3.2v.1a3.2,3.2,0,0,0,1.846,2.885v4.16a9.07,9.07,0,0,0-4.313,1.9L18.851,4.583A3.642,3.642,0,1,0,17.146,6.8L28.37,15.54A9.1,9.1,0,0,0,28.51,25.8l-3.416,3.416a2.934,2.934,0,0,0-.847-.138,2.965,2.965,0,1,0,2.965,2.965,2.922,2.922,0,0,0-.138-.847l3.379-3.379A9.111,9.111,0,1,0,41.514,13.332ZM35.987,25.246l-.011,0a3.97,3.97,0,1,1,.011,0Z" transform="translate(11499.607 7288.498)" fill="#ff7b57"/>
+  </g>
+</svg>
