@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_5908" data-name="Ellipse 5908" cx="25" cy="25" r="25" transform="translate(12494 7042)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Visual_studio" data-name="Visual studio" transform="translate(-12494 -7042)" clip-path="url(#clip-path)">
+    <g id="visual-studio" transform="translate(12494 7042)">
+      <circle id="Ellipse_5907" data-name="Ellipse 5907" cx="25" cy="25" r="25" fill="#6e64c3"/>
+      <path id="Path_60783" data-name="Path 60783" d="M135.358,103.623l-6.841-2.765-12.051,11.677-7.281-5.523-2.762,1.381.035,14.592,17.5,17.5a24.8,24.8,0,0,0,21.739-24.6q0-1.009-.08-2Z" transform="translate(-96.117 -91.091)" fill="#5046af"/>
+      <path id="Path_60784" data-name="Path 60784" d="M135.358,103.623l-6.841-2.765-12.051,11.677-7.281-5.523-2.762,1.381.035,14.592,2.762,1.381,7.281-5.523,12.051,11.677,6.841-2.765Zm-25.447,15.157V112.6l3.417,3.09h.035Zm17.92,2.056-6.869-5.146h-.035l6.9-5.146v10.292Z" transform="translate(-96.117 -91.091)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
