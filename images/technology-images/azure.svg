@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_5917" data-name="Ellipse 5917" cx="25" cy="25" r="25" transform="translate(12078 6894)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="azure" transform="translate(-12078 -6894)" clip-path="url(#clip-path)">
+    <g id="azure-2" data-name="azure" transform="translate(12085 6834.402)">
+      <path id="Path_60795" data-name="Path 60795" d="M10.813,91.794H0L9.749,75.109,20.62,69.6Z" fill="#009ad2"/>
+      <path id="Path_60796" data-name="Path 60796" d="M153.8,120.245H126.163v-2.151h15.358l-7.813-10,5.568-12.7Z" transform="translate(-117.127 -23.945)" fill="#007caa"/>
+    </g>
+  </g>
+</svg>
