@@ -489,7 +489,6 @@ h1 {
 .waviy span {
   position: relative;
   display: inline-block;
-  font-size: 40px;
   text-transform: uppercase;
   animation: flip 2s infinite;
   animation-iteration-count: 5;

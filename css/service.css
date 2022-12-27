@@ -22,7 +22,7 @@
   margin: 1vw 2vw;
   /* transition: 0.5s ease-out; */
   transition: all 0.6s ease;
-  background: linear-gradient(to left, #f9f9f9 50%, #1b4cd36b 50%) right;
+  background: linear-gradient(to left, #f9f9f9 50%, #a8b8e36b 50%) right;
   background-size: 200%;
   border-radius: 7px;
   box-shadow: 0 2px 7px rgb(55 126 249 / 14%);
@@ -91,6 +91,7 @@
   .mw65 {
     width: 65%;
   }
+
   .mw70 {
     width: 70%;
   }
@@ -176,4 +177,67 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+/* FLIP CARD */
+
+.flip-card {
+  background-color: transparent;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  margin-left: 26px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  height: 50vh;
+  border-radius: 12px;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-image: linear-gradient(to left, #7114ef, #1475f7);
+  border-radius: 10px;
+  color: black;
+}
+
+.flip-card-back {
+  border-radius: 12px;
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.p-awesome {
+  color: #4f3dff !important;
+  margin-bottom: 14px;
+}
+.small-dot {
+  border-radius: 50px;
+  color: blue;
+  width: 10px;
+}
+.flip {
+  background-image: url(https://promena.in/images/background/1.png);
+  height: 80vh;
 }
