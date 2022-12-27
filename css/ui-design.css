@@ -60,7 +60,7 @@ input {
   background-image: url(../images/Contactpage.jpg);
   justify-content: space-around;
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
   position: relative;
 }
 .btn-form {
@@ -89,5 +89,14 @@ input {
 @media screen and (min-width: 280px) and (max-width: 760px) {
   .hire-ux {
     margin: 0 0 0 0;
+  }
+  .fx-start {
+    display: flex;
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 760px) {
+  .t-padl {
+    padding-left: 2vw;
   }
 }
